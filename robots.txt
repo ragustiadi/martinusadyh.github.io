@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://martinusadyh.github.io/sitemap.xml 
