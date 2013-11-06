@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Getting Your BIOS Vendor Information in GNU/Linux - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Bingung bagaimana cara mendapatkan informasi dari BIOS (Basic Input/Ouput System) di Sistem Operasi GNU/Linux ? Jika iya, mungkin teman-teman perlu &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://martinusadyh.github.io/2009/12/01/getting-your-bios-vendor-information-in-gnulinux">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:martinusadyh.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Getting Your BIOS Vendor Information in GNU/Linux</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-12-01T14:01:08+07:00" pubdate data-updated="true">Dec 1<span>st</span>, 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Bingung bagaimana cara mendapatkan informasi dari <a href="">BIOS</a> (Basic Input/Ouput System) di Sistem Operasi GNU/Linux ? Jika iya, mungkin teman-teman perlu melihat lagi isi dari direktori <strong>/sys/class/dmi/id/</strong> yang didalam-nya terdapat beberapa file yang isinya kurang lebih seperti ini :</p>
+
+<pre><code>root@martinusadyh:[~]# ls /sys/class/dmi/id/
+bios_date     board_asset_tag  board_vendor       chassis_serial  chassis_version  product_name    product_version  uevent
+bios_vendor   board_name       board_version      chassis_type    modalias         product_serial  subsystem@
+bios_version  board_serial     chassis_asset_tag  chassis_vendor  power/           product_uuid    sys_vendor
+root@martinusadyh:[~]#
+</code></pre>
+
+<p>Nah sedangkan isi dari file-file tersebut kurang lebih isi-ya seperti dibawah ini :</p>
+
+<pre><code>root@martinusadyh:[~]# cat /sys/class/dmi/id/product_uuid
+44454C4C-4800-104B-804D-B1C04F4C4B31
+root@martinusadyh:[~]# cat /sys/class/dmi/id/chassis_serial
+1HKMLK1
+root@martinusadyh:[~]# cat /sys/class/dmi/id/board_serial
+.1HKMLK1.CN1296197P0164.
+root@martinusadyh:[~]# cat /sys/class/dmi/id/board_name
+0186NX
+root@martinusadyh:[~]# cat /sys/class/dmi/id/sys_vendor
+Dell Inc.
+root@martinusadyh:[~]# cat /sys/class/dmi/id/bios_version
+A01
+root@martinusadyh:[~]#
+</code></pre>
+
+<p><strong>Note: Beda hardware harus-nya informasi yang ditampilkan juga berbeda. Jadi informasi diatas tergantung dari hardware yang teman-teman gunakan</strong></p>
+
+<p>Semoga sedikit informasi ini bisa berguna buat teman-teman :) Maklum saya juga baru tahu koq :D</p>
+
+<p><strong>Link-link terkait :</strong>
+&ndash; <a href="http://en.wikipedia.org/wiki/BIOS">Basic Input/Output System</a>
+&ndash; <a href="http://0pointer.de/blog">No More dmidecode</a></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">admin</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-12-01T14:01:08+07:00" pubdate data-updated="true">Dec 1<span>st</span>, 2009</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/java/'>Java</a>, <a class='category' href='/blog/categories/netbeans/'>NetBeans</a>, <a class='category' href='/blog/categories/slackware/'>Slackware</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://martinusadyh.github.io/2009/12/01/getting-your-bios-vendor-information-in-gnulinux/" data-via="" data-counturl="http://martinusadyh.github.io/2009/12/01/getting-your-bios-vendor-information-in-gnulinux/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2009/11/25/changing-editor-fonts-in-netbeans-ide/" title="Previous Post: Changing Editor Fonts In NetBeans IDE">&laquo; Changing Editor Fonts In NetBeans IDE</a>
+      
+      
+        <a class="basic-alignment right" href="/2009/12/03/enabling-font-smoothing-in-gnome/" title="Next Post: Enabling Font Smoothing In GNOME">Enabling Font Smoothing In GNOME &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2013/07/27/cara-mudah-mendebug-widget-di-dojo/">Cara Mudah Mendebug Widget Di Dojo</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/07/21/persiapan-sebelum-melakukan-pendakian/">Persiapan Sebelum Melakukan Pendakian</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/06/27/pendakian-gunung-sindoro-3153-mdpl/">Pendakian Gunung Sindoro 3153 Mdpl</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/06/22/howto-disable-individual-jetpack-module/">Howto Disable Individual Jetpack Module</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/06/14/bercengkrama-dengan-nusantarider-di-event-ride-n-roast/">Bercengkrama Dengan Nusantarider Di Event Ride N Roast</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

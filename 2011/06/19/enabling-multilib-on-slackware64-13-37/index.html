@@ -1,0 +1,437 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Enabling Multilib on Slackware64 13.37 - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Setelah webcam terdeteksi di Slackware melalui bantuan aplikasi Cheese, sekarang waktunya untuk mencoba menginstall googletalk-plugin dari google :) &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://martinusadyh.github.io/2011/06/19/enabling-multilib-on-slackware64-13-37">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:martinusadyh.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Enabling Multilib on Slackware64 13.37</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-06-19T23:32:06+07:00" pubdate data-updated="true">Jun 19<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Setelah webcam terdeteksi di Slackware melalui bantuan aplikasi Cheese, sekarang waktunya untuk mencoba menginstall googletalk-plugin dari google :) Kenapa tidak menggunakan Skype ? Karena menurut pendapat saya Skype itu lebih berat daripada Google Talk :D Nah minggu kemarin ketika menginstall googletalk-plugin di Slackware64, ternyata googletalk-plugin ini membutuhkan library untuk arsitektur 32 bit dan ini bisa kita lihat dengan perintah <code>file /opt/google/talkplugin/*</code> seperti dibawah ini :
+[plain]
+root@artivisi:/mnt/DATA/SLACKBUILDS/googletalk-plugin# file /opt/google/talkplugin/*
+/opt/google/talkplugin/GoogleTalkPlugin:         ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked (uses shared libs), stripped
+/opt/google/talkplugin/cron:                     directory
+/opt/google/talkplugin/lib:                      directory
+/opt/google/talkplugin/libnpgoogletalk64.so:     ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, stripped
+/opt/google/talkplugin/libnpgtpo3dautoplugin.so: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, stripped
+/opt/google/talkplugin/openssl.txt:              ASCII English text
+/opt/google/talkplugin/windowpicker.glade:       XML document text
+[/plain]</p>
+
+<p>Dari hasil perintah diatas, kita bisa melihat bahwa file <code>/opt/google/talkplugin/GoogleTalkPlugin</code> ternyata merupakan file executable untuk arsitektur 32bit, nah untung-nya di Slackware64 sudah mendukung penggunaan multilib yang maksudnya kita bisa menggunakan aplikasi berbasis 32bit di arsitektur 64bit :) Dengan mengaktifkan dukungan multilib pada Slackware64, maka kita akan dapat menggunakan aplikasi seperti Skype, Wine atau aplikasi 32bit lain-nya yang belum terdapat di arsitektur 64 bit :)</p>
+
+<p>Nah tulisan ini murni merupakan langkah-langkah yang sudah dijelaskan pada halaman <a href="http://alien.slackbook.org/dokuwiki/doku.php?id=slackware:multilib">Multilib Slackware for x86_64</a>, dan saya posting ulang disini supaya <strong>saya tidak lupa apa yang saya lakukan sekarang</strong> :D</p>
+
+<!-- more -->
+
+
+<p>Nah daripada melakukan kompilasi satu persatu, kita dapat menggunakan cara yang lebih mudah yaitu mendownload binary package yang sudah disediakan oleh Fred Emmott dan Eric Hameleers pada repository <a href="http://slackware.com/~alien/multilib/">http://slackware.com/~alien/multilib/</a>. Download semua binary package pada repository diatas yang sesuai dengan versi Slackware yang kita gunakan, karena saya menggunakan Slackware64 13.37 maka jalankan perintah <code>lftp -c 'open http://slackware.com/~alien/multilib/ ; mirror 13.37'</code> seperti dibawah ini :
+[plain]
+martinus@artivisi:[/mnt/DATA/SLACKBUILDS/multilib/]$ lftp -c &lsquo;open <a href="http://slackware.com/~alien/multilib/">http://slackware.com/~alien/multilib/</a> ; mirror 13.37&rsquo;
+cd: received redirection to `<a href="http://connie.slackware.com/~alien/multilib/">http://connie.slackware.com/~alien/multilib/</a>&lsquo;
+martinus@artivisi:[/mnt/DATA/SLACKBUILDS/multilib/]$
+[/plain]</p>
+
+<p>Jika sudah, sekarang masuklah pada direktori yang sesuai dengan versi Slackware yang kita gunakan, dan jalankan perintah <code>upgradepkg --reinstall --install-new *.t?z</code> untuk melakukan proses upgrade package gcc dan glibc ke versi multilib seperti dibawah ini :
+[plain]
+root@artivisi:/mnt/DATA/SLACKBUILDS/multilib/13.37# upgradepkg &mdash;reinstall &mdash;install-new *.t?z</p>
+
+<p>+==============================================================================
+| Installing new package ./compat32-tools-2.1-noarch-9alien.tgz
++==============================================================================</p>
+
+<p>Verifying package compat32-tools-2.1-noarch-9alien.tgz.
+Installing package compat32-tools-2.1-noarch-9alien.tgz:
+PACKAGE DESCRIPTION:</p>
+
+<h1>compat32-tools (32bit compatibility tools for 64bit Slackware)</h1>
+
+<p>#</p>
+
+<h1>The compat32-tools are a series of scripts that allow</h1>
+
+<h1>the user to add a 32bit compatibility layer (multilib)</h1>
+
+<h1>to 64bit Slackware.</h1>
+
+<p>#</p>
+
+<h1>Written by Fred Emmott and Eric Hameleers</h1>
+
+<p>#
+Executing install script for compat32-tools-2.1-noarch-9alien.tgz.
+Package compat32-tools-2.1-noarch-9alien.tgz installed.</p>
+
+<p>+==============================================================================
+| Upgrading gcc-4.5.2-x86_64-2 package using ./gcc-4.5.2_multilib-x86_64-2alien.txz
++==============================================================================</p>
+
+<p>Pre-installing package gcc-4.5.2_multilib-x86_64-2alien&hellip;</p>
+
+<p>Removing package /var/log/packages/gcc-4.5.2-x86_64-2-upgraded-2011-06-19,15:04:58&hellip;</p>
+
+<p>Verifying package gcc-4.5.2_multilib-x86_64-2alien.txz.
+Installing package gcc-4.5.2_multilib-x86_64-2alien.txz:
+PACKAGE DESCRIPTION:</p>
+
+<h1>gcc (Base GCC package with C support)</h1>
+
+<p>#</p>
+
+<h1>GCC is the GNU Compiler Collection.</h1>
+
+<p>#</p>
+
+<h1>This package contains those parts of the compiler collection needed to</h1>
+
+<h1>compile C code.  Other packages add C++, Fortran, Objective-C, and</h1>
+
+<h1>Java support to the compiler core.</h1>
+
+<p>#
+Executing install script for gcc-4.5.2_multilib-x86_64-2alien.txz.
+Package gcc-4.5.2_multilib-x86_64-2alien.txz installed.</p>
+
+<p>Package gcc-4.5.2-x86_64-2 upgraded with new package ./gcc-4.5.2_multilib-x86_64-2alien.txz.</p>
+
+<p>&hellip;.
+&hellip;.
+&hellip;.
+Verifying package glibc-zoneinfo-2.13_multilib-noarch-4alien.txz.
+Installing package glibc-zoneinfo-2.13_multilib-noarch-4alien.txz:
+PACKAGE DESCRIPTION:</p>
+
+<h1>glibc-zoneinfo (timezone database)</h1>
+
+<p>#</p>
+
+<h1>This package allows you to configure your time zone.</h1>
+
+<p>#</p>
+
+<h1>This timezone database comes from the tzdata and tzcode packages by</h1>
+
+<h1>Arthur David Olson et.al.  The latest version and more information</h1>
+
+<h1>may be found at <a href="ftp://elsie.nci.nih.gov/pub/">ftp://elsie.nci.nih.gov/pub/</a></h1>
+
+<p>#</p>
+
+<h1>Use the timeconfig utility to set your local time zone.</h1>
+
+<p>#
+Executing install script for glibc-zoneinfo-2.13_multilib-noarch-4alien.txz.
+Package glibc-zoneinfo-2.13_multilib-noarch-4alien.txz installed.</p>
+
+<p>Package glibc-zoneinfo-2.13-noarch-4 upgraded with new package ./glibc-zoneinfo-2.13_multilib-noarch-4alien.txz.</p>
+
+<p>root@artivisi:/mnt/DATA/SLACKBUILDS/multilib/13.37#
+[/plain]</p>
+
+<p>Setelah selesai, sekarang install-lah package compatibility agar kita bisa menjalankan aplikasi berbasis 32-bit dengan cara masuk pada direktori <code>slackware64-compat32</code> dan jalankan perintah <code>upgradepkg --install-new *-compat32/*.t?z</code> seperti dibawah ini :
+[plain]
+root@artivisi:/mnt/DATA/SLACKBUILDS/multilib/13.37# cd slackware64-compat32/
+root@artivisi:/mnt/DATA/SLACKBUILDS/multilib/13.37/slackware64-compat32# upgradepkg &mdash;install-new <em>-compat32/</em>.t?z</p>
+
+<p>+==============================================================================
+| Installing new package a-compat32/aaa_elflibs-compat32-13.37-x86_64-7.txz
++==============================================================================</p>
+
+<p>Verifying package aaa_elflibs-compat32-13.37-x86_64-7.txz.
+Installing package aaa_elflibs-compat32-13.37-x86_64-7.txz:
+PACKAGE DESCRIPTION:</p>
+
+<h1>aaa_elflibs-compat32 (shared libraries needed by many programs)</h1>
+
+<p>#</p>
+
+<h1>This is a collection of shared libraries needed to run Linux programs.</h1>
+
+<h1>ELF (Executable and Linking Format) is the standard Linux binary</h1>
+
+<h1>format.  These libraries are gathered from other Slackware packages</h1>
+
+<h1>and are intended to give a fairly complete initial set of libraries.</h1>
+
+<h1>This package should be not upgraded or reinstalled (it could copy</h1>
+
+<h1>over newer library versions).</h1>
+
+<p>#</p>
+
+<h1>This package contains 32-bit compatibility binaries.</h1>
+
+<p>Executing install script for aaa_elflibs-compat32-13.37-x86_64-7.txz.
+Package aaa_elflibs-compat32-13.37-x86_64-7.txz installed.</p>
+
+<p>&hellip;
+&hellip;
+&hellip;</p>
+
+<p>+==============================================================================
+| Installing new package xap-compat32/sane-compat32-1.0.22-x86_64-2.txz
++==============================================================================</p>
+
+<p>Verifying package sane-compat32-1.0.22-x86_64-2.txz.
+Installing package sane-compat32-1.0.22-x86_64-2.txz:
+PACKAGE DESCRIPTION:</p>
+
+<h1>sane-compat32 (Scanner Access Now Easy)</h1>
+
+<p>#</p>
+
+<h1>SANE is a universal scanner interface that provides standardized</h1>
+
+<h1>access to any raster image scanner hardware, such as flatbed scanners,</h1>
+
+<h1>hand-held scanners, video and still cameras, frame-grabbers, and other</h1>
+
+<h1>similar devices.</h1>
+
+<p>#</p>
+
+<h1>This package contains 32-bit compatibility binaries.</h1>
+
+<p>Executing install script for sane-compat32-1.0.22-x86_64-2.txz.
+Package sane-compat32-1.0.22-x86_64-2.txz installed.</p>
+
+<p>root@artivisi:/mnt/DATA/SLACKBUILDS/multilib/13.37/slackware64-compat32#
+[/plain]</p>
+
+<p>Nah sampai disini kita sudah dapat menggunakan / menginstall aplikasi berbasis 32-bit pada Slackware64 kita dengan aman dan nyaman :)
+<strong>Catatan:</strong></p>
+
+<ol>
+<li><p> <strong>Menjalankan Aplikasi 32-bit,</strong>
+Setelah melakukan proses diatas, kita sudah bisa menginstall dan menggunakan aplikasi 32-bit di Slackware64 secara normal. Dan jika aplikasi yang kita jalankan membutuhkan library 32-bit, kita bisa melakukan proses konversi library dari 32-bit ke 64-bit dengan menggunakan aplikasi <code>convertpkg-compat32</code> pada package 32-bit dan menginstall hasil dari proses konversi ini ke  Slackware64.</p></li>
+<li><p> <strong>Kompilasi Aplikasi 32-bit,</strong>
+Jika kita ingin melakukan kompilasi untuk aplikasi 32-bit pada Slackware64, sebelum melakukan kompilasi persiapkan dahulu environment kita dengan menjalankan perintah <code>. /etc/profile.d/32dev.sh</code> (perhatikan tanda titik, titik disini merupakan bagian dari perintah yang harus kita ketikkan). Setelah menjalankan prosedur ini, kita bisa menggunakan SlackBuild standart untuk membangun aplikasi 32-bit untuk Slackware64. Ada beberapa yang perlu diperhatikan yaitu :</p>
+
+<ol>
+<li><p> Kita harus tetap mendefinisikan variabel <code>ARCH</code> ke <code>'x86_64'</code> meskipun kita mengkompilasi aplikasi 32-bit</p></li>
+<li><p> Gantilah nilai dari variabel <code>LIBDIRSUFFIX="64"</code> ke <code>LIBDIRSUFFIX=""</code> supaya direktori library yang digunakan dalam proses kompilasi adalah <code>lib/</code> bukannya <code>lib64/</code></p></li>
+</ol>
+</li>
+</ol>
+
+
+<p>Nah hasil dari seluruh proses diatas adalah akhirnya saya bisa menggunakan webcam saya di googletalk seperti terlihat pada gambar dibawah ini :
+[caption id=&ldquo;attachment_1374&rdquo; align=&ldquo;alignleft&rdquo; width=&ldquo;150&rdquo; caption=&ldquo;GoogleTalk Plugin Slackware64&rdquo;]<a href="http://martinusadyh.web.id/wp-content/uploads/2011/06/Screenshot-1.png"><img src="http://martinusadyh.web.id/wp-content/uploads/2011/06/Screenshot-1-150x150.png" alt="GoogleTalk Plugin Slackware64" /></a>[/caption]</p>
+
+<p>Referensi-referensi :</p>
+
+<ol>
+<li><p> <a href="http://connie.slackware.com/~alien/multilib/">Halaman README Multilib Slackware64</a></p></li>
+<li><p> <a href="http://slackbuilds.org/repository/13.37/multimedia/google-talkplugin/">Google TalkPlugin SlackBuild Script</a></p></li>
+</ol>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">admin</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-06-19T23:32:06+07:00" pubdate data-updated="true">Jun 19<span>th</span>, 2011</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/slackware/'>Slackware</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://martinusadyh.github.io/2011/06/19/enabling-multilib-on-slackware64-13-37/" data-via="" data-counturl="http://martinusadyh.github.io/2011/06/19/enabling-multilib-on-slackware64-13-37/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2011/06/03/june-issue-of-bsd-magazine-nanobsd-and-alix/" title="Previous Post: June issue of BSD magazine NanoBSD and ALIX">&laquo; June issue of BSD magazine NanoBSD and ALIX</a>
+      
+      
+        <a class="basic-alignment right" href="/2011/06/22/security-info-backdoor-pada-wordpress-plugin/" title="Next Post: Security Info Backdoor pada WordPress Plugin">Security Info Backdoor pada WordPress Plugin &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2013/07/27/cara-mudah-mendebug-widget-di-dojo/">Cara Mudah Mendebug Widget Di Dojo</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/07/21/persiapan-sebelum-melakukan-pendakian/">Persiapan Sebelum Melakukan Pendakian</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/06/27/pendakian-gunung-sindoro-3153-mdpl/">Pendakian Gunung Sindoro 3153 Mdpl</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/06/22/howto-disable-individual-jetpack-module/">Howto Disable Individual Jetpack Module</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/06/14/bercengkrama-dengan-nusantarider-di-event-ride-n-roast/">Bercengkrama Dengan Nusantarider Di Event Ride N Roast</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

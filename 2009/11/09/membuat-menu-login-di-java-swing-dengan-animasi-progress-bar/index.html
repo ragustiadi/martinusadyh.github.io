@@ -1,0 +1,640 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Membuat Menu Login Di Java Swing dengan Animasi Progress Bar - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Setelah kita mengerti tentang Thread-thread dasar yang terdapat pada Java Swing dan mengetahui bagaimana cara menggunakan Background Thread dengan &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://martinusadyh.github.io/2009/11/09/membuat-menu-login-di-java-swing-dengan-animasi-progress-bar">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:martinusadyh.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Membuat Menu Login Di Java Swing Dengan Animasi Progress Bar</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-11-09T19:02:04+07:00" pubdate data-updated="true">Nov 9<span>th</span>, 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Setelah kita mengerti tentang <strong>Thread-thread</strong> dasar yang terdapat pada Java Swing dan mengetahui bagaimana cara menggunakan <strong>Background Thread</strong> dengan <strong>SwingWorker</strong> (pembahasan tentang SwingWorker bisa dilihat pada tulisan <a href="http://martinusadyh.web.id/2009/11/07/lebih-dekat-dengan-class-swingworker/">Lebih Dekat Dengan Class SwingWorker</a>), sekarang mari kita coba membuat sebuah <strong>Project</strong> yang menggunakan Menu Login yang proses otentikasinya kita lakukan langsung ke database :)</p>
+
+<p>Sebelum memulai latihan kali ini, ada beberapa hal yang harus dipersiapkan terlebih dahulu yaitu :
+&ndash; Inisialisasi Master Data Pada DataBase
+&ndash; Pembuatan Project Menu Login
+&ndash; Hasil Akhir</p>
+
+<p>Pada tulisan kali ini saya tidak akan memberikan penjelasan source code dari baris ke baris seperti pada tulisan-tulisan sebelumnya, tetapi sebagai gantinya penjelasan dapat dilihat pada komentar yang terdapat pada source code yang bersangkutan supaya lebih mudah di ingat-ingat nantinya :)</p>
+
+<!-- more -->
+
+
+<h3>Inisialisasi Master Data Pada DataBase</h3>
+
+<p>Sebelum mulai membuat sebuah <strong>Project</strong> buatlah dahulu database dan tabel yang akan kita akses dari aplikasi Java, untuk membuat sebuah database dan tabel yang akan kita gunakan secara otomatis simpanlah <strong>schema</strong> database dibawah ini dengan nama <strong>MenuLoginSchema.sql</strong> :</p>
+
+<pre><code>-- DataBase Schema Untuk Contoh MenuLogin
+
+CREATE DATABASE `menulogin`;
+
+USE `menulogin`;
+
+--
+-- Table structure for table `T_USER`
+--
+DROP TABLE IF EXISTS `T_USER`;
+CREATE TABLE `T_USER` (
+  `id` int auto_increment not null,
+  `username` varchar(255) default NULL,
+  `password` varchar(255) default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `T_USER`
+--
+INSERT INTO `T_USER` (`username`,`password`) VALUES 
+('martin', 'menulogin'), ('ahmad','ganteng'),('slackware','linux');
+</code></pre>
+
+<p><strong>Note: DataBase yang digunakan pada tulisan ini yaitu MySQL</strong></p>
+
+<p>Setelah file <strong>MenuLoginSchema.sql</strong> tersimpan pada komputer, sekarang bukalah terminal atau command prompt kemudian masuklah kedalam direktori tempat dimana kita menyimpan file <strong>MenuLoginSchema.sql</strong> tersebut kemudian jalankanlah perintah seperti dibawah ini :</p>
+
+<pre><code>martinus@martinusadyh:~/Downloads$ mysql -u root -padmin &lt; MenuLoginSchema.sql
+</code></pre>
+
+<p>Jika tidak ada pesan error, maka seharusnya kita akan mempunyai 1 database dengan nama <strong>menulogin</strong> dan 1  tabel dengan nama <strong>T_USER</strong> beserta isinya seperti dibawah ini :</p>
+
+<pre><code>mysql&gt; show tables;
++---------------------+
+| Tables_in_menulogin |
++---------------------+
+| T_USER              | 
++---------------------+
+1 row in set (0.00 sec)
+
+mysql&gt; select * from T_USER;
++----+-----------+-----------+
+| id | username  | password  |
++----+-----------+-----------+
+|  1 | martin    | menulogin | 
+|  2 | ahmad     | ganteng   | 
+|  3 | slackware | linux     | 
++----+-----------+-----------+
+3 rows in set (0.00 sec)
+
+mysql&gt; 
+</code></pre>
+
+<p>Jika tampilan pada terminal atau command prompt kita sudah seperti diatas, maka proses Inisialisasi bisa dikatan sudah selesai dan kita siap untuk membuat sebuah <strong>Project</strong> :)</p>
+
+<h3>Pembuatan Project Menu Login</h3>
+
+<p>Sekarang buatlah sebuah <strong>Project</strong> dengan nama <strong>MenuLogin</strong> dari NetBeans IDE, kemudian buatlah <strong>Domain</strong> classnya terlebih dahulu pada packages <strong>domain</strong> dengan nama <strong>UserApp</strong> yang isinya adalah sebagai berikut :</p>
+
+<pre><code>public class UserApp {
+    private Integer id;
+    private String userName;
+    private String password;
+
+    // Generate Getter n Setter
+}
+</code></pre>
+
+<p><strong>Note: Klik <a href="http://code.google.com/p/martin-personal-project/source/browse/trunk/java/MenuLogin/src/id/web/martinusadyh/menulogin/domain/UserApp.java">UserApp.java</a> untuk melihat source code lengkap</strong></p>
+
+<p>Urusan dengan <strong>Domain Class</strong> sudah selesai, sekarang mari kita buatkan <strong>Service</strong> layer-nya dengan membuat sebuah packages <strong>service</strong> kemudian buatlah sebuah <strong>java interface</strong> dengan nama <strong>LoginService</strong> seperti dibawah ini :</p>
+
+<pre><code>public interface LoginService {
+    /** Method ini akan mengecek apakah &lt;code&gt;username&lt;/code&gt; dengan &lt;code&gt;password&lt;/code&gt;
+     * ada atau tidak di database
+     * @param username user yang ingin di cek di database
+     * @param password password untuk user
+     * @return UserApp null jika tidak ditemukan
+     */
+    public UserApp login(String username, String password);
+}
+</code></pre>
+
+<p><strong>Note: Klik <a href="http://code.google.com/p/martin-personal-project/source/browse/trunk/java/MenuLogin/src/id/web/martinusadyh/menulogin/service/LoginService.java">LoginService.java</a> untuk melihat source code lengkap</strong></p>
+
+<p>Sebelum membuat implementasi dari <strong>LoginService</strong> diatas, tambahkanlah dahulu library <strong>MySQL JDBC Driver</strong> kedalam <strong>Project</strong> hingga tampilan <strong>Node Libraries</strong> kita menjadi seperti gambar dibawah ini :
+<a href="http://martinusadyh.web.id/gallery/?album=4&amp;gallery=3&amp;pid=130"><img src="http://martinusadyh.web.id/wp-content/gallery/tutorial/addjdbcdriver.png" alt="Adding JDBC Driver" /></a><br/>
+Adding JDBC Driver</p>
+
+<p>Tetap pada packages <strong>service</strong> sekarang buatlah implementasi dari <strong>LoginService</strong> diatas dengan nama <strong>LoginServiceImpl</strong> yang isinya kurang lebih seperti dibawah ini :</p>
+
+<pre><code>public class LoginServiceImpl implements LoginService {
+
+    private Connection connection;
+    private PreparedStatement findUserByUserAndPassword;
+    private final String QRY_LOGIN = "select * from T_USER where" +
+            " T_USER.username = ? and T_USER.password = ?";
+
+    public LoginServiceImpl(Connection connection) {
+        try {
+            this.connection = connection;
+            findUserByUserAndPassword = this.connection.prepareStatement(QRY_LOGIN);
+        } catch (SQLException ex) {
+            Logger.getLogger(LoginServiceImpl.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    public UserApp login(String username, String password) {
+        try {
+            /* Lakukan pencarian berdasarkan username dan password */
+            findUserByUserAndPassword.setString(1, username);
+            findUserByUserAndPassword.setString(2, password);
+
+            /* Ambil resultset-nya */
+            ResultSet rs = findUserByUserAndPassword.executeQuery();
+            while (rs.next()) {
+                UserApp userApp = new UserApp();
+                userApp.setId(rs.getInt("id"));
+                userApp.setUserName(rs.getString("username"));
+                userApp.setPassword(rs.getString("password"));
+
+                return userApp;
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(LoginServiceImpl.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        return null;
+    }
+}
+</code></pre>
+
+<p><strong>Note: Klik <a href="http://code.google.com/p/martin-personal-project/source/browse/trunk/java/MenuLogin/src/id/web/martinusadyh/menulogin/service/LoginServiceImpl.java">LoginServiceImpl.java</a> untuk melihat source code lengkap</strong></p>
+
+<p>Hmm.. urusan <strong>domain</strong> dan <strong>service</strong> layer sudah beres, sekarang waktu yang paling menyenangkan yaitu membuat <strong>UI</strong> layer-nya :) Ok, sekarang mari kita buat sebuah <strong>Login Dialog</strong> dengan menggunakan class JDialog dan simpanlah pada packages <strong>ui</strong>. Setelah itu, design-lah <strong>Login Dialog</strong> tersebut hingga seperti gambar dibawah ini :
+<a href="http://martinusadyh.web.id/gallery/?album=4&amp;gallery=3&amp;pid=131"><img src="http://martinusadyh.web.id/wp-content/gallery/tutorial/designlogindialog.png" alt="Design Login Dialog" /></a><br/>
+Design Login Dialog</p>
+
+<p>Sekarang tambahkan sebuah label untuk pesan error dengan cara masuk ke menu <strong>Inspector</strong> dan pada node <strong>Other Components</strong> tambahkanlah sebuah JLabel seperti gambar dibawah ini:
+<a href="http://martinusadyh.web.id/gallery/?album=4&amp;gallery=3&amp;pid=129"><img src="http://martinusadyh.web.id/wp-content/gallery/tutorial/adderrorlabel.png" alt="Menambahkan Error Label" /></a><br/>
+Menambahkan Error Label</p>
+
+<p>Setelah selesai men-design <strong>Login Dialog</strong>, sekarang masuklah ke mode <strong>Source</strong> dan tambahkan 1 buah variabel bertipe boolean dan 1 buah method yaitu <strong>showDialog()</strong> tidak lupa hilangkan juga method <strong>main</strong>. Dan hasil akhir yang kita dapatkan kurang lebih isinya seperti dibawah ini :</p>
+
+<pre><code>public class LoginDialog extends javax.swing.JDialog {
+
+    private boolean notLogin = true;
+    private GroupLayout gl;
+
+    /** Creates new form LoginDialog */
+    public LoginDialog(java.awt.Frame parent, boolean modal) {
+        super(parent, modal);
+        initComponents();
+
+        /* Mendeteksi penekanan icon close, jika di close keluar dari aplikasi */
+        addWindowListener(new java.awt.event.WindowAdapter() {
+
+            @Override
+            public void windowClosing(java.awt.event.WindowEvent e) {
+                System.exit(0);
+            }
+        });
+
+        jProgressBar1.setVisible(false);
+
+        /* Membuat space progress bar tidak di *wrap* oleh button */
+        gl = (GroupLayout) getContentPane().getLayout();
+        gl.setHonorsVisibility(jProgressBar1, false);
+
+        /* Beri fokus ke txtUsername ketika dialog tampil */
+        txtUserName.requestFocusInWindow();
+
+        /* Posisikan dialog seakan-akan berada di tengah-2x layar */
+        setLocationRelativeTo(null);
+    }
+
+    /** This method is called from within the constructor to
+     * initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is
+     * always regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // &lt;editor-fold defaultstate="collapsed" desc=" Generated Code "&gt;                          
+    private void initComponents() { 
+         ....
+    }
+    // &lt;/editor-fold&gt;                        
+
+    public boolean showDialog() {
+        setVisible(true);
+        return notLogin;
+    }
+
+    // Variables declaration - do not modify  
+    ...                   
+    // End of variables declaration                   
+}
+</code></pre>
+
+<p>Tetap pada packages yang sama yaitu packages <strong>ui</strong> sekarang buatlah sebuah <strong>Menu Utama</strong> dengan menggunakan class JFrame dan simpanlah dengan nama <strong>MainForm</strong>. Sedangkan pada <strong>MainForm</strong> ini, tambahkanlah sebuah JMenuBar dan tambahkanlah 3 JMenuItem pada <strong>File</strong> atau <strong>jMenu1</strong> hingga tampilannya seperti gambar dibawah ini :
+<a href="http://martinusadyh.web.id/gallery/?album=4&amp;gallery=3&amp;pid=132"><img src="http://martinusadyh.web.id/wp-content/gallery/tutorial/designmainform.png" alt="Design Main Form Dengan Menu Login dan Logout" /></a><br/>
+Design Main Form Dengan Menu Login dan Logout</p>
+
+<p>Setelah semua selesai, sekarang editlah file <strong>Main.java</strong> menjadi seperti dibawah ini :</p>
+
+<pre><code>public class Main {
+
+    private static MainForm mainForm;
+    private static LoginService loginService;
+
+    public static MainForm getMainForm() {
+        return mainForm;
+    }
+
+    public static LoginService getLoginService() {
+        return loginService;
+    }
+
+    /** Method ini akan menginisialisassi Form Utama kemudian akan melakukan
+     * proses &lt;code&gt;loop&lt;/code&gt; untuk menampilkan login dialog sampai nilai
+     * notLogin = FALSE baru menampilkan Menu Utama */
+    public static void initLogin() {
+        if (mainForm == null) mainForm = new MainForm();
+        boolean notLogin = Boolean.TRUE;
+        while (notLogin) {
+            notLogin = new LoginDialog().showDialog();
+        }
+        mainForm = new MainForm();
+        mainForm.setVisible(true);
+    }
+
+    /** Method ini akan menginisialisasi object koneksi ke database yang akan 
+     * digunakan di seluruh aplikasi. */
+    private static void initDataBaseConnection() {
+        try {
+            MysqlDataSource dataSource = new MysqlDataSource();
+            /* Setting koneksi ke database */
+            dataSource.setUser("root");
+            dataSource.setPassword("admin");
+            dataSource.setDatabaseName("menulogin");
+            dataSource.setServerName("localhost");
+            dataSource.setPortNumber(3306);
+
+            loginService = new LoginServiceImpl(dataSource.getConnection());
+        } catch (SQLException ex) {
+            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        initDataBaseConnection();
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                try {
+                    UIManager.setLookAndFeel("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel");
+                } catch (ClassNotFoundException ex) {
+                    Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (InstantiationException ex) {
+                    Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (IllegalAccessException ex) {
+                    Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (UnsupportedLookAndFeelException ex) {
+                    Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                initLogin();
+            }
+        });
+    }
+}
+</code></pre>
+
+<p>Dengan kode yang sudah kita tulis, aplikasi harusnya  sudah bisa berjalan tanpa mengalami kesalahan sama sekali. Tapi sayangnya kita belum mengimplementasikan proses login yang sebenarnya, untuk mengimplementasikan proses login yang sebenarnya sekarang tambahkanlah sebuah private class dengan nama <strong>WorkerLogin</strong> pada <strong>LoginDialog</strong> yang isinya kurang lebih seperti dibawah ini :</p>
+
+<pre><code>    private class WorkerLogin extends SwingWorker&lt;UserApp, Void&gt; {
+
+        @Override
+        protected void done() {
+            try {
+                if (get() != null) {
+                    notLogin = false;
+                    closeLoginDialog();
+                } else {
+                    gl.replace(jProgressBar1, lblError);
+                    txtUserName.requestFocusInWindow();
+                    txtUserName.selectAll();
+                }
+                btnLogin.setEnabled(true);
+                jProgressBar1.setIndeterminate(false);
+                jProgressBar1.setVisible(false);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(LoginDialog.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (ExecutionException ex) {
+                Logger.getLogger(LoginDialog.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+
+        @Override
+        protected UserApp doInBackground() throws Exception {
+            /* Hilangkan ini jika digunakan pada production */
+            Thread.sleep(1000);
+            return Main.getLoginService().login(txtUserName.getText(),
+                    String.valueOf(txtPassword.getPassword()));
+        }
+    }
+</code></pre>
+
+<p>Dan tambahkan method <strong>closeLoginDialog()</strong> dibawah method <strong>showDialog()</strong> seperti dibawah ini :</p>
+
+<pre><code>    private void closeLoginDialog() {
+        this.dispose();
+    }
+</code></pre>
+
+<p>Setelah selesai membuat sebuah <strong>WorkerLogin</strong> sekarang deklarasikanlah class <strong>WorkerLogin</strong> agar menjadi class variabel dan modifikasilah konstruktor dari <strong>LoginDialog</strong> hingga menjadi seperti dibawah ini :</p>
+
+<pre><code>    ...
+    private WorkerLogin workerLogin;
+
+    /** Creates new form LoginDialog */
+    public LoginDialog() {
+        super(Main.getMainForm(), Boolean.TRUE);
+        initComponents();
+        ...
+    }
+</code></pre>
+
+<p>Agar proses login berjalan ketika kita menekan tombol <strong>Login</strong>, sekarang berilah <strong>Action Listener</strong> pada tombol <strong>Login</strong> dengan cara klik kanan kemudian pilihlah menu <strong>Event > Action > actionPerformed[btnLoginActionPerformed]</strong> dan pastekan kode seperti dibawah ini :</p>
+
+<pre><code>    private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        /* Cek dahulu apakah workerLogin masih berjalan, kalau masih jalan
+         * cancel dan set ke null */
+        if (workerLogin != null &amp;&amp; !workerLogin.isDone()) {
+            workerLogin.cancel(true);
+            workerLogin = null;
+        }
+
+        //TODO: cek untuk mengembalikan state lblError ke Progress Bar, 
+        // bagaimana cara mengecek apakah lblError sudah ditambahkan atau belum ?
+        try {
+            gl.replace(lblError, jProgressBar1);
+        } catch (java.lang.IllegalArgumentException ae) {
+            // Do nothing here
+        }
+
+        workerLogin = new WorkerLogin();
+        workerLogin.execute();
+
+        /* Disable tombol LOGIN, tampilkan dan jalankan PROGRESS BAR */
+        btnLogin.setEnabled(false);
+        jProgressBar1.setVisible(true);
+        jProgressBar1.setIndeterminate(true);
+    }   
+</code></pre>
+
+<p>Sedangkan untuk tombol <strong>Cancel</strong>-nya, berikan <strong>Action Listener</strong> seperti kode dibawah ini :</p>
+
+<pre><code>    private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        System.exit(0);
+    }                                         
+</code></pre>
+
+<p>Konfigurasi pada <strong>Login Dialog</strong> sepenuhnya sudah selesai, sekarang mari kita modifikasi file <strong>MainForm</strong> agar ketika menu <strong>Logout</strong> ditekan, maka akan menampilkan <strong>Login Dialog</strong>. Sekarang berilah <strong>Action Event</strong> pada menu <strong>Logout</strong> dengan cara klik kanan pada menu Logout kemudian pilihlah menu <strong>Event > Action > actionPerformed[jMenuItem2ActionPerformed]</strong> dan pastekan kode seperti dibawah ini :</p>
+
+<pre><code>    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {                                           
+        /* Tutup form utama */
+        this.dispose();
+
+        /* Tampilkan LoginDialog-nya */
+        Main.initLogin();
+    }                                          
+</code></pre>
+
+<p>Sampai disini semua proses pembuatan <strong>Project Menu Login</strong> telah selesai, dan tampilan struktur <strong>Project</strong> kita kurang lebih seperti gambar dibawah ini :
+<a href="http://martinusadyh.web.id/gallery/?album=4&amp;gallery=3&amp;pid=137"><img src="http://martinusadyh.web.id/wp-content/gallery/tutorial/strukturprojectmenulogin.png" alt="Struktur Project Menu Login" /></a><br/>
+Struktur Project Menu Login</p>
+
+<h3>Hasil Akhir</h3>
+
+<p>Jika sudah selesai, sekarang mari kita jalankan <strong>Project Menu Login</strong> tersebut dengan menekan tombol <strong>F6</strong> dan jika tidak ada kesalahan maka kita akan mendapatkan tampilan dari <strong>Login Dialog</strong> seperti gambar-gambar dibawah ini :</p>
+
+<p><a href="http://martinusadyh.web.id/gallery/?album=4&amp;gallery=3&amp;pid=133"><img src="http://martinusadyh.web.id/wp-content/gallery/tutorial/logindialog.png" alt="1. Tampilan Awal Login Dialog" /></a><br/>
+1. Tampilan Awal Login Dialog</p>
+
+<p><a href="http://martinusadyh.web.id/gallery/?album=4&amp;gallery=3&amp;pid=136"><img src="http://martinusadyh.web.id/wp-content/gallery/tutorial/proseslogin.png" alt="2. Proses Pengecekan Username dan Password ke DataBase" /></a><br/>
+2. Proses Pengecekan Username dan Password ke DataBase</p>
+
+<p><a href="http://martinusadyh.web.id/gallery/?album=4&amp;gallery=3&amp;pid=134"><img src="http://martinusadyh.web.id/wp-content/gallery/tutorial/loginsalah.png" alt="3. Tampilan Ketika Proses Login Gagal" /></a><br/>
+3. Tampilan Ketika Proses Login Gagal</p>
+
+<p><a href="http://martinusadyh.web.id/gallery/?album=4&amp;gallery=3&amp;pid=135"><img src="http://martinusadyh.web.id/wp-content/gallery/tutorial/loginsukses.png" alt="4. Menu Utama DiTampilkan Ketika Login Sukses" /></a><br/>
+4. Menu Utama DiTampilkan Ketika Login Sukses</p>
+
+<p>Akhirnya selesai juga latihannya, bagaimana menurut teman-teman ?? Kalau ada yang bingung dengan penjelasan diatas, jangan sungkan-sungkan untuk tanya yah. Mari kita bahas bareng-bareng, sapa tau ada cara yang lebih baik dan elegan dari cara yang saya jelaskan disini :) :D</p>
+
+<p>Akhir kata, happy coding all :)</p>
+
+<p><strong>Link-link terkait:</strong>
+&ndash; <a href="http://martinusadyh.web.id/2009/11/07/lebih-dekat-dengan-class-swingworker/">Lebih Dekat Dengan Class SwingWorker</a>
+&ndash; <a href="http://martin-personal-project.googlecode.com/files/MenuLogin.zip">Download MenuLogin.zip</a>
+&ndash; <a href="http://code.google.com/p/martin-personal-project/source/browse/#svn/trunk/java/MenuLogin">Source Code Lengkap Project Menu Login</a>
+&ndash; <a href="mailto:netbeans-indonesia@yahoogroups.com">Milis NetBeans Indonesia</a>
+&ndash; <a href="http://martinusadyh.web.id/2010/03/13/subversion-mudah-dengan-rabbitvcs/">SubVersion Mudah Dengan RabbitVCS</a></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">admin</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-11-09T19:02:04+07:00" pubdate data-updated="true">Nov 9<span>th</span>, 2009</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/java/'>Java</a>, <a class='category' href='/blog/categories/netbeans/'>NetBeans</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://martinusadyh.github.io/2009/11/09/membuat-menu-login-di-java-swing-dengan-animasi-progress-bar/" data-via="" data-counturl="http://martinusadyh.github.io/2009/11/09/membuat-menu-login-di-java-swing-dengan-animasi-progress-bar/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2009/11/09/di-butuhkan-2-php-programmer/" title="Previous Post: Di butuhkan 2 PHP Programmer">&laquo; Di butuhkan 2 PHP Programmer</a>
+      
+      
+        <a class="basic-alignment right" href="/2009/11/13/the-best-of-xandria/" title="Next Post: The Best Of Xandria">The Best Of Xandria &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2013/07/27/cara-mudah-mendebug-widget-di-dojo/">Cara Mudah Mendebug Widget Di Dojo</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/07/21/persiapan-sebelum-melakukan-pendakian/">Persiapan Sebelum Melakukan Pendakian</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/06/27/pendakian-gunung-sindoro-3153-mdpl/">Pendakian Gunung Sindoro 3153 Mdpl</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/06/22/howto-disable-individual-jetpack-module/">Howto Disable Individual Jetpack Module</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/06/14/bercengkrama-dengan-nusantarider-di-event-ride-n-roast/">Bercengkrama Dengan Nusantarider Di Event Ride N Roast</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

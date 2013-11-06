@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>SlackBuild Script For Gitg - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Karena mencari di SlackBuild ternyata tidak ada, maka saya posting kesini aja sekalian :) Nah untuk teman-teman yang ingin menginstall aplikasi gitg &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://martinusadyh.github.io/2011/06/24/slackbuild-script-for-gitg">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:martinusadyh.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">SlackBuild Script for Gitg</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-06-24T00:01:38+07:00" pubdate data-updated="true">Jun 24<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Karena mencari di SlackBuild ternyata tidak ada, maka saya posting kesini aja sekalian :) Nah untuk teman-teman yang ingin menginstall aplikasi <a href="http://trac.novowork.com/git">gitg</a> bisa menggunakan SlackBuild script yang sudah saya siapkan dan sebelum menggunakan-nya, pastikan bahwa kita sudah menginstall <a href="http://projects.gnome.org/gtksourceview/">gtksourceview</a> dahulu yang SlackBuild script-nya bisa di download di <a href="http://slackbuilds.org/repository/13.37/libraries/gtksourceview/">sini</a></p>
+
+<p>Untuk sementara ini, dependencies yang baru saya temukan baru <a href="http://projects.gnome.org/gtksourceview/">gtksourceview</a> di Slackware64 + GSB 3.0.0. Bagi teman-teman yang tidak menggunakan GNOME sebagai Desktop Manager-nya, jika mengetahui ada dependencies yang kurang tolong di infokan disini sekalian biar saya bisa update file <code>slack-required</code> dengan info dependencies yang terbaru :)</p>
+
+<!-- more -->
+
+
+<p>Dan dibawah ini adalah file SlackBuild utama dari gitg yang saya gunakan, silahkan di copy paste :)</p>
+
+<pre><code>#!/bin/sh
+
+# Slackware build script for gitg
+
+# Copyright 2008-2009  Martinus Ady H &lt;martinus@artivisi.com&gt;
+# All rights reserved.
+#
+# Redistribution and use of this script, with or without modification, is
+# permitted provided that the following conditions are met:
+#
+# 1. Redistributions of this script must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+#
+# THIS SOFTWARE IS PROVIDED BY THE AUTHOR ''AS IS'' AND ANY EXPRESS OR IMPLIED
+# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+# EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+# SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+# OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+# OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+# ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+PRGNAM=gitg
+VERSION=0.0.8
+ARCH=${ARCH:-x86_64}
+BUILD=${BUILD:-2}
+TAG=${TAG:-_SBo}
+
+CWD=$(pwd)
+TMP=${TMP:-/tmp/SBo}
+PKG=$TMP/package-$PRGNAM
+OUTPUT=${OUTPUT:-/tmp}
+
+if [ "$ARCH" = "i486" ]; then
+  SLKCFLAGS="-O2 -march=i486 -mtune=i686"
+  LIBDIRSUFFIX=""
+elif [ "$ARCH" = "i686" ]; then
+  SLKCFLAGS="-O2 -march=i686 -mtune=i686"
+  LIBDIRSUFFIX=""
+elif [ "$ARCH" = "x86_64" ]; then
+  SLKCFLAGS="-O2 -fPIC"
+  LIBDIRSUFFIX="64"
+fi
+
+set -e
+
+rm -rf $TMP/$PRGNAM-$VERSION $PKG
+mkdir -p $TMP $PKG $OUTPUT 
+cd $TMP
+tar xvf $CWD/$PRGNAM-$VERSION.tar.bz2
+cd $PRGNAM-$VERSION
+chown -R root:root .
+chmod -R u+w,go+r-w,a-s .
+
+# Your application will probably need different configure flags;
+# these are provided as an example only. 
+# Be sure to build only shared libraries unless there's some need for
+# static.
+CFLAGS="$SLKCFLAGS" \
+CXXFLAGS="$SLKCFLAGS" \
+./configure \
+  --prefix=/usr \
+  --sysconfdir=/etc \
+  --localstatedir=/var \
+  --build=$ARCH-slackware-linux \
+  2&gt;&amp;1 | tee $PKGLOG/configure-$PKGNAM-$VERSION.log     # Log configure process.
+
+# Compile the application and install it into the $PKG directory
+make 2&gt;&amp;1 | tee $PKGLOG/make-$PKGNAM-$VERSION.log       # Log make process.
+make install DESTDIR=$PKG 2&gt;&amp;1 | tee $PKGLOG/make-install-$PKGNAM-$VERSION.log # Log make install process.
+
+# Creating symlink for executable makensis
+mkdir -p $PKG/usr/bin
+( cd $PKG/usr/bin ; ln -sf ../lib${LIBDIRSUFFIX}/nsis-2.46/makensis makensis )
+
+( cd $PKG
+  find . | xargs file | grep "executable" | grep ELF | cut -f 1 -d : | \
+    xargs strip --strip-unneeded 2&gt; /dev/null || true
+  find . | xargs file | grep "shared object" | grep ELF | cut -f 1 -d : | \
+    xargs strip --strip-unneeded 2&gt; /dev/null || true
+)
+
+# Compress man pages if they exist
+if [ -d $PKG/usr/man ] ; then
+    ( cd $PKG/usr/man
+        find . -type f -exec gzip -9 {} \;
+        for i in $(find . -type 1) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i; done
+    ) 
+fi
+
+mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
+cp -a \
+  AUTHORS COPYING ChangeLog INSTALL README \
+  $PKG/usr/doc/$PRGNAM-$VERSION
+cat $CWD/$PRGNAM.SlackBuild &gt; $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
+
+mkdir -p $PKG/install
+cat $CWD/slack-desc &gt; $PKG/install/slack-desc
+
+cd $PKG
+/sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}
+</code></pre>
+
+<p>Jika mau file lengkap-nya (sekalian beserta file <code>slack-desc, slack-required, gitg.info</code> dan <code>README</code>), silahkan merujuk langsung ke repository <a href="https://github.com/martinusadyh/martin-slackbuild/tree/development">https://github.com/martinusadyh/martin-slackbuild/tree/development</a></p>
+
+<p>Dan dibawah ini adalah hasil dari aplikasi gitg yang sudah berjalan pada Slackware64 + GSB 3.0.0 di laptop yang saya gunakan :)
+[caption id=&ldquo;attachment_1382&rdquo; align=&ldquo;alignleft&rdquo; width=&ldquo;150&rdquo; caption=&ldquo;Gitg&rdquo;]<a href="http://martinusadyh.web.id/wp-content/uploads/2011/06/Gitg.png"><img src="http://martinusadyh.web.id/wp-content/uploads/2011/06/Gitg-150x150.png" alt="Gitg" /></a>[/caption]</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">admin</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-06-24T00:01:38+07:00" pubdate data-updated="true">Jun 24<span>th</span>, 2011</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/project-management/'>Project Management</a>, <a class='category' href='/blog/categories/slackware/'>Slackware</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://martinusadyh.github.io/2011/06/24/slackbuild-script-for-gitg/" data-via="" data-counturl="http://martinusadyh.github.io/2011/06/24/slackbuild-script-for-gitg/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2011/06/22/security-info-backdoor-pada-wordpress-plugin/" title="Previous Post: Security Info Backdoor pada WordPress Plugin">&laquo; Security Info Backdoor pada WordPress Plugin</a>
+      
+      
+        <a class="basic-alignment right" href="/2011/07/01/kesan-pertama-mencoba-google/" title="Next Post: Kesan Pertama Mencoba Google+">Kesan Pertama Mencoba Google+ &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2013/07/27/cara-mudah-mendebug-widget-di-dojo/">Cara Mudah Mendebug Widget Di Dojo</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/07/21/persiapan-sebelum-melakukan-pendakian/">Persiapan Sebelum Melakukan Pendakian</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/06/27/pendakian-gunung-sindoro-3153-mdpl/">Pendakian Gunung Sindoro 3153 Mdpl</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/06/22/howto-disable-individual-jetpack-module/">Howto Disable Individual Jetpack Module</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/06/14/bercengkrama-dengan-nusantarider-di-event-ride-n-roast/">Bercengkrama Dengan Nusantarider Di Event Ride N Roast</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Changing Editor Fonts In NetBeans IDE - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Kemarin habis baca-baca artikel tentang Top 10 Programming Fonts, akhir-nya jadi iseng-iseng deh cobain ganti font di editor-nya NetBeans IDE supaya &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://martinusadyh.github.io/2009/11/25/changing-editor-fonts-in-netbeans-ide">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:martinusadyh.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Changing Editor Fonts in NetBeans IDE</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-11-25T01:21:56+07:00" pubdate data-updated="true">Nov 25<span>th</span>, 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Kemarin habis baca-baca artikel tentang <a href="http://hivelogic.com/articles/top-10-programming-fonts">Top 10 Programming Fonts</a>, akhir-nya jadi iseng-iseng deh cobain ganti font di editor-nya <a href="http://netbeans.org/">NetBeans IDE</a> supaya lebih betah lama-lama ngetik-nya :D</p>
+
+<p>Nah buat teman-teman yang ingin berburu font, mungkin bisa mengunjungi situs <a href="http://hivelogic.com/articles/top-10-programming-fonts">Top 10 Programming Fonts</a> untuk melihat-lihat font mana yang cocok kemudian download dan install deh :) Setelah proses download selesai, untuk menginstall font tersebut di GNU/Linux kita harus memasukkan font tersebut ke dalam direktori <strong>/usr/share/fonts/TTF</strong> agar font tersebut dikenali oleh user lain yang terdapat di sistem. Tapi kalau kita cuma ingin testing aja, kita bisa memasukkan font tersebut kedalam direktori <strong>.fonts</strong> yang terdapat di direktori home user kita masing-masing :)</p>
+
+<p>Bagaimana kalau direktori <strong>.fonts</strong> belum ada ? Ya mari kita buat direktori tersebut dengan perintah seperti dibawah ini :</p>
+
+<pre><code>martinus@martinusadyh:[~]$ mkdir ~/.fonts
+martinus@martinusadyh:[~]$
+</code></pre>
+
+<p>Setelah itu kopikan font yang sudah di download kedalam direktori <strong>~/.fonts</strong> tersebut seperti dibawah ini :</p>
+
+<pre><code>martinus@martinusadyh:[~]$ cp Inconsolata.ttf ~/.fonts/
+martinus@martinusadyh:[~]$ cd ~/.fonts/
+martinus@martinusadyh:[~/.fonts]$ ls
+Inconsolata.ttf
+martinus@martinusadyh:[~/.fonts]$
+</code></pre>
+
+<p>Sekarang mari kita update dahulu font cache kita dengan menjalankan perintah <strong>fc-cache -f -v</strong> agar font yang kita tambahkan bisa dikenali oleh NetBeans seperti dibawah ini :</p>
+
+<pre><code>martinus@martinusadyh:[~/.fonts]$ fc-cache -f -v
+/usr/share/fonts/OTF: caching, new cache contents: 23 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 92 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 59 fonts, 0 dirs
+/home/martinus/.fonts: caching, new cache contents: 1 fonts, 0 dirs
+/var/cache/fontconfig: not cleaning unwritable cache directory
+/home/martinus/.fontconfig: cleaning cache directory
+fc-cache: succeeded
+martinus@martinusadyh:[~/.fonts]$
+</code></pre>
+
+<!-- more -->
+
+
+<p>Sampai disini proses installasi font sudah bisa dikatan telah selesai, sekarang mari kita ganti default font untuk editor NetBeans dengan cara masuk ke dalam menu <strong>Tools > Options</strong> kemudian pilih-lah tab <strong>Fonts &amp; Colors</strong>. Pilih-lah <strong>Default</strong> pada pilihan <strong>Category</strong> kemudian klik tombol yang terdapat kolom isian <strong>Font</strong> dan kita sudah bisa melihat font yang kita tambahkan seperti gambar dibawah ini :
+<a href="http://www.flickr.com/photos/10243554@N02/4131646000/"><img src="http://farm3.static.flickr.com/2761/4131646000_58b36e2434_m.jpg" alt="Inconsolota" /><br/>
+Font Incosolota di Font Properties NetBeans IDE</a></p>
+
+<p>Dan dibawah ini adalah hasil dari perubahan font yang telah kita lakukan pada proses diatas :)
+<a href="http://www.flickr.com/photos/10243554@N02/4131646010/"><img src="http://farm3.static.flickr.com/2716/4131646010_c33e39b683.jpg" alt="NBInconsolota" /><br/>
+NetBeans with Incosolota Fonts</a></p>
+
+<p>Bagaimana menurut teman-teman ? Keren bukan, nah sekarang font apa yang menurut teman-teman paling bagus untuk digunakan di NetBeans IDE ? :)</p>
+
+<p><strong>Link-link terkait :</strong>
+&ndash; <a href="http://hivelogic.com/articles/top-10-programming-fonts">Top 10 Programming Fonts</a>
+&ndash; <a href="http://keithdevens.com/wiki/ProgrammerFonts">Programmer Fonts</a></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">admin</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-11-25T01:21:56+07:00" pubdate data-updated="true">Nov 25<span>th</span>, 2009</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/java/'>Java</a>, <a class='category' href='/blog/categories/netbeans/'>NetBeans</a>, <a class='category' href='/blog/categories/opensolaris/'>OpenSolaris</a>, <a class='category' href='/blog/categories/slackware/'>Slackware</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://martinusadyh.github.io/2009/11/25/changing-editor-fonts-in-netbeans-ide/" data-via="" data-counturl="http://martinusadyh.github.io/2009/11/25/changing-editor-fonts-in-netbeans-ide/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2009/11/23/adding-extra-icon-in-dia/" title="Previous Post: Adding Extra Icon In DIA">&laquo; Adding Extra Icon In DIA</a>
+      
+      
+        <a class="basic-alignment right" href="/2009/12/01/getting-your-bios-vendor-information-in-gnulinux/" title="Next Post: Getting Your BIOS Vendor Information in GNU/Linux">Getting Your BIOS Vendor Information in GNU/Linux &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2013/07/27/cara-mudah-mendebug-widget-di-dojo/">Cara Mudah Mendebug Widget Di Dojo</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/07/21/persiapan-sebelum-melakukan-pendakian/">Persiapan Sebelum Melakukan Pendakian</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/06/27/pendakian-gunung-sindoro-3153-mdpl/">Pendakian Gunung Sindoro 3153 Mdpl</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/06/22/howto-disable-individual-jetpack-module/">Howto Disable Individual Jetpack Module</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/06/14/bercengkrama-dengan-nusantarider-di-event-ride-n-roast/">Bercengkrama Dengan Nusantarider Di Event Ride N Roast</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

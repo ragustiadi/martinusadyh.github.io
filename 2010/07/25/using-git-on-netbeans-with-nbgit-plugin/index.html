@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Using Git On NetBeans with nbgit Plugin - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Beberapa hari terakhir ini, kita di ArtiVisi melakukan migrasi repository dari Subversion ke Git :) (cuma masih belum semua, melainkan hanya beberapa &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://martinusadyh.github.io/2010/07/25/using-git-on-netbeans-with-nbgit-plugin">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:martinusadyh.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Using Git on NetBeans With Nbgit Plugin</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-07-25T17:57:50+07:00" pubdate data-updated="true">Jul 25<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Beberapa hari terakhir ini, kita di <a href="http://artivisi.com/">ArtiVisi</a> melakukan migrasi repository dari <a href="http://subversion.tigris.org/">Subversion</a> ke <a href="http://git-scm.com/">Git</a> :) (cuma masih belum semua, melainkan hanya beberapa project saja yang di migrasikan sedangkan yang lain masih tetap menggunakan Subversion). Migrasi ini dilakukan karena <strong>main repo</strong> kita sedang di pindah juga, dan ternyata proses <strong>pindah server</strong> tidak berjalan mulus seperti yang dibayangkan (hard disk server baru ternyata bad sector). Nah untuk mengantisipasi hal ini (seluruh team tidak bisa kerja, karena repository utama mati), maka sebagian project yang masih <strong>in-development tree</strong> dan timeline-nya mepet dipindah menggunakan <a href="http://git-scm.com/">Git</a> :) Nah karena kita di <a href="http://artivisi.com/">ArtiVisi</a> menggunakan NetBeans sebagai IDE utama, maka hal pertama yang dicari adalah dukungan NetBeans terhadap Git dan untungnya kita bisa menginstall plugin <a href="http://code.google.com/p/nbgit/">nbgit</a> agar bisa menggunakan Git secara lancar di NetBeans IDE :)</p>
+
+<p>Untuk NetBeans 6.9, project <a href="http://code.google.com/p/nbgit/">nbgit</a> pada saat tulisan ini dibuat belum menyediakan file <strong>*.nbm</strong> melainkan menyediakan versi <strong>source code</strong> yang bisa kita download pada alamat <a href="http://nbgit.googlecode.com/files/nbgit-0.4-netbeans-6.9.zip">http://nbgit.googlecode.com/files/nbgit-0.4-netbeans-6.9.zip</a>. Agar dapat digunakan pada NetBeans, maka kita harus membuat file <strong>.nbm</strong> sendiri berdasarkan source code yang telah disediakan diatas. Untuk membuat file <strong>.nbm</strong> dan menginstallnya pada NetBeans, download dan ekstrak-lah <strong>source code</strong> nbgit tersebut kemudian bukalah pada NetBeans IDE kemudian klik kanan pada project <strong>nbgit</strong> dan pilihlah menu <strong>Create NBM</strong> seperti gambar dibawah ini :</p>
+
+<p><a href="http://www.flickr.com/photos/10243554@N02/4825927169/"><img src="http://farm5.static.flickr.com/4099/4825927169_f37eec4d28_m.jpg" alt="CreateNBM" /></a><br/>
+<strong>Membuat File NBM</strong></p>
+
+<!-- more -->
+
+
+<p>Atau jika tidak ingin membuat sebuah file <strong>.nbm</strong> kita bisa langsung menginstall secara <strong>&ldquo;on the fly&rdquo;</strong> ke NetBeans dengan memilih menu <strong>Install/Reload In Development IDE</strong> seperti gambar dibawah ini :</p>
+
+<p><a href="http://www.flickr.com/photos/10243554@N02/4825927181/"><img src="http://farm5.static.flickr.com/4079/4825927181_9a48df6ef1_m.jpg" alt="InstallOnTheFly" /></a><br/>
+<strong>Install On The Fly</strong></p>
+
+<p>Jika proses pembuatan (kompilasi) telah selesai, maka kita bisa mendapatkan file <strong>org-nbgit.nbm</strong> pada direktori <strong>$PROJECT-DIR/build/org-nbgit.nbm</strong>  (dimana <strong>$PROJECT-DIR</strong> adalah direktori hasil ekstrak file <strong>nbgit-0.4-netbeans-6.9.zip</strong>) yang ditampilkan pada jendela <strong>Output window</strong> yang isinya kurang lebih seperti dibawah ini :</p>
+
+<pre><code>Generating information for Auto Update...
+nbm:
+Building jar: /home/martinus/Desktop/nbgit-0.4-netbeans-6.9/build/org-nbgit.nbm
+Not signing NBM file /home/martinus/Desktop/nbgit-0.4-netbeans-6.9/build/org-nbgit.nbm; no stored-key password provided or keystore (/home/martinus/Desktop/nbgit-0.4-netbeans-6.9/${keystore}) doesn't exist
+BUILD SUCCESSFUL (total time: 21 seconds)
+</code></pre>
+
+<p>Jika sudah kita bisa meng-install plugin <strong>org-nbgit.nbm</strong> tersebut seperti plugin-plugin NetBeans yang lain (melalui menu <strong>Tools > Plugin</strong> dan pilih tab <strong>Downloaded</strong>) :) Nah jika plugin <strong>nbgit</strong> sudah terinstall pada NetBeans, sekarang bukalah menu <strong>Team</strong> dan harusnya sudah terdapat menu untuk <strong>Git</strong> seperti gambar dibawah ini :</p>
+
+<p><a href="http://www.flickr.com/photos/10243554@N02/4826573772/"><img src="http://farm5.static.flickr.com/4100/4826573772_1d4bc04612_m.jpg" alt="MenuGit" /></a><br/>
+<strong>Menu Git Pada NetBeans IDE</strong></p>
+
+<p>Sekarang kita sudah dapat menggunakan <strong>Git</strong> untuk kegiatan sehari-hari kita, dan dibawah ini adalah beberapa <strong>Git in Action</strong> pada NetBeans yang saya gunakan :D</p>
+
+<p><a href="http://www.flickr.com/photos/10243554@N02/4826573774/"><img src="http://farm5.static.flickr.com/4073/4826573774_308624c119.jpg" alt="NBGitDiffViewer" /></a><br/>
+<strong>Tampilan Diff Viewer NbGit</strong></p>
+
+<p><a href="http://www.flickr.com/photos/10243554@N02/4826573776/"><img src="http://farm5.static.flickr.com/4079/4826573776_a35921975a.jpg" alt="NbGitBrowser" /></a><br/>
+<strong>Tampilan NbGit Browser</strong></p>
+
+<p><a href="http://www.flickr.com/photos/10243554@N02/4826573766/"><img src="http://farm5.static.flickr.com/4138/4826573766_916c3eb2d0.jpg" alt="GitRepoProperties" /></a><br/>
+<strong>Tampilan Repository Properties NBGit</strong></p>
+
+<hr />
+
+<p>Nah bagaimana teman-teman siap menggunakan <a href="http://git-scm.com/">Git</a> di lingkungan teman-teman ?? :) Dan oh iya, dibawah ini mungkin referensi-referensi yang bisa teman-teman gunakan jika ingin bermain-main dengan <a href="http://git-scm.com/">Git</a> ;)</p>
+
+<p><strong>Link-link terkait :</strong></p>
+
+<ol>
+<li><p> <a href="http://git-scm.com/">Git</a></p></li>
+<li><p> <a href="http://subversion.tigris.org/">Subversion</a></p></li>
+<li><p> <a href="http://code.google.com/p/nbgit/">nbgit</a></p></li>
+<li><p> <a href="http://progit.org/book/">Book Pro Git</a></p></li>
+</ol>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">admin</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-07-25T17:57:50+07:00" pubdate data-updated="true">Jul 25<span>th</span>, 2010</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/java/'>Java</a>, <a class='category' href='/blog/categories/netbeans/'>NetBeans</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://martinusadyh.github.io/2010/07/25/using-git-on-netbeans-with-nbgit-plugin/" data-via="" data-counturl="http://martinusadyh.github.io/2010/07/25/using-git-on-netbeans-with-nbgit-plugin/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2010/07/08/tabbed-container-in-stand-alone-swing-application/" title="Previous Post: Tabbed Container In Stand Alone Swing Application">&laquo; Tabbed Container In Stand Alone Swing Application</a>
+      
+      
+        <a class="basic-alignment right" href="/2010/08/14/opensolaris-project-is-dead/" title="Next Post: OpenSolaris Project is Dead ???">OpenSolaris Project is Dead ??? &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2013/07/27/cara-mudah-mendebug-widget-di-dojo/">Cara Mudah Mendebug Widget Di Dojo</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/07/21/persiapan-sebelum-melakukan-pendakian/">Persiapan Sebelum Melakukan Pendakian</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/06/27/pendakian-gunung-sindoro-3153-mdpl/">Pendakian Gunung Sindoro 3153 Mdpl</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/06/22/howto-disable-individual-jetpack-module/">Howto Disable Individual Jetpack Module</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/06/14/bercengkrama-dengan-nusantarider-di-event-ride-n-roast/">Bercengkrama Dengan Nusantarider Di Event Ride N Roast</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

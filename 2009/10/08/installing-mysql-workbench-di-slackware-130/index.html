@@ -1,0 +1,468 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Installing MySQL WorkBench di Slackware 13.0 - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Hari ini saya ada kebutuhan untuk membuat sebuah database diagram (ER) untuk tujuan dokumentasi pribadi (maklum klo cuma ditulis dikertas, lama-lama &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://martinusadyh.github.io/2009/10/08/installing-mysql-workbench-di-slackware-130">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:martinusadyh.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Installing MySQL WorkBench Di Slackware 13.0</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-10-08T01:38:32+07:00" pubdate data-updated="true">Oct 8<span>th</span>, 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Hari ini saya ada kebutuhan untuk membuat sebuah database diagram (<a href="http://en.wikipedia.org/wiki/Entity-relationship_model">ER</a>) untuk tujuan dokumentasi pribadi (maklum klo cuma ditulis dikertas, lama-lama kertas-nya sobek-sobek :( ) Karena database yang biasa saya gunakan adalah <a href="http://www.mysql.com/?bydis_dis_index=1">MySQL</a> maka pilihan saya jatuh pada <a href="http://dev.mysql.com/downloads/workbench/5.1.html">MySQL WorkBench</a> :) Mungkin untuk pengguna distro yang mempunyai package manajemen seperti DEB dan RPM tidak begitu kesulitan, karena MySQL sudah menyediakan package binary yang sudah siap untuk di install :) Sedangkan untuk pengguna distro lain seperti Slackware, mari kita bikin sendiri binary package-nya via kompilasi dari source again :D :)</p>
+
+<p>Nah untung-nya lagi saya menemukan link <a href="http://www.mail-archive.com/slackbuilds-users@slackbuilds.org/msg02040.html">ini.</a> yang menjelaskan bagaimana cara meng-install <a href="http://dev.mysql.com/downloads/workbench/5.1.html">MySQL WorkBench</a>. Dan dibawah ini cuplikan bagaimana cara installasi-nya di <a href="http://slackware.com/">Slackware 13.0</a> :</p>
+
+<blockquote><p>has anyone, or could someone made a build script for mysql-workbench?</p></blockquote>
+
+<p>I did one, you can find it here:
+<a href="http://hba.ath.cx/projects/slackbuilds/testing/mysql-workbench-oss-5.1.18/">http://hba.ath.cx/projects/slackbuilds/testing/mysql-workbench-oss-5.1.18/</a></p>
+
+<p>But as Niels Horn has mentioned, &ldquo;it has too many dependencies&hellip; &rdquo;
+from gnome, so i installed first gnome from <a href="http://gnomeslackbuild.org">http://gnomeslackbuild.org</a>
+in slackware-13.0, then lua from SBo&rsquo;s repository and finally i
+builded mysql-workbench using my SlackBuild. But seriously&hellip; gnome
+still sucks for me. I&rsquo;m gonna reinstall slackware and then try to get
+mysql-workbench but without all the gnome thing.</p>
+
+<p>-hba</p>
+
+<p><strong>Posting asli ini bisa dibaca <a href="http://www.mail-archive.com/slackbuilds-users@slackbuilds.org/msg02100.html">disini</a></strong></p>
+
+<!-- more -->
+
+
+<p>Sebelum mencoba, pastikan dahulu kalau GNOME sudah ter-install pada mesin <a href="http://slackware.com">Slackware 13.0</a> (kita bisa menggunakan versi GNOME dari GNOME SlackBuild, untuk distribusi GNOME yang lain saya belum pernah mencoba :D ) Setelah GNOME ter-install, sekarang mari kita download dahulu SlackBuild script untuk library lua yang bisa di download dari situs <a href="http://slackbuild.org/">SlackBuild.org</a> seperti dibawah ini :</p>
+
+<pre><code>martinus@martinusadyh:~/SLACKBUILDS/lua$ wget -c http://slackbuilds.org/slackbuilds/13.0/development/lua.tar.gz
+--2009-10-07 22:51:17--  http://slackbuilds.org/slackbuilds/13.0/development/lua.tar.gz
+Resolving slackbuilds.org... 208.67.159.181
+Connecting to slackbuilds.org|208.67.159.181|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2149 (2.1K) [application/x-tar]
+Saving to: `lua.tar.gz'
+
+100%[===========================================================================================================&gt;] 2,149       --.-K/s   in 0s
+
+2009-10-07 22:51:18 (92.9 MB/s) - `lua.tar.gz' saved [2149/2149]
+
+martinus@martinusadyh:~/SLACKBUILDS/lua$
+</code></pre>
+
+<p>Setelah selesai mendownload file SlackBuild scrpit untuk <strong>lua</strong>, sekarang ekstrak kemudian masuk kedalam direktori <strong>lua</strong> dengan perintah <strong>cd</strong> dan download source code library <strong>lua</strong> sebenarnya seperti dibawah ini:</p>
+
+<pre><code>martinus@martinusadyh:~/SLACKBUILDS/lua$ tar zxf lua.tar.gz; cd lua; wget -c http://www.lua.org/ftp/lua-5.1.4.tar.gz
+--2009-10-07 22:53:13--  http://www.lua.org/ftp/lua-5.1.4.tar.gz
+Resolving www.lua.org... 87.237.62.181
+Connecting to www.lua.org|87.237.62.181|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 216679 (212K) [application/octet-stream]
+Saving to: `lua-5.1.4.tar.gz'
+
+100%[===========================================================================================================&gt;] 216,679     28.7K/s   in 7.4s
+
+2009-10-07 22:53:21 (28.7 KB/s) - `lua-5.1.4.tar.gz' saved [216679/216679]
+
+martinus@martinusadyh:~/SLACKBUILDS/lua/lua$ ls
+README  lua-5.1.4.tar.gz  lua.SlackBuild*  lua.info  slack-desc
+martinus@martinusadyh:~/SLACKBUILDS/lua/lua$
+</code></pre>
+
+<p>Sebelum menjalankan file <strong>lua.SlackBuild</strong>, ganti akses user dengan akses root kemudian jalankanlah file <strong>lua.SlackBuild</strong> seperti dibawah ini :</p>
+
+<pre><code>martinus@martinusadyh:~/SLACKBUILDS/lua/lua$ su
+Password:
+root@martinusadyh:/home/martinus/SLACKBUILDS/lua/lua# ./lua.SlackBuild
+lua-5.1.4/
+lua-5.1.4/doc/
+lua-5.1.4/doc/lua.1
+lua-5.1.4/doc/luac.1
+lua-5.1.4/doc/lua.html
+lua-5.1.4/doc/readme.html
+lua-5.1.4/doc/logo.gif
+....
+....
+....
+install/
+install/doinst.sh
+install/slack-desc
+
+Slackware package /tmp/lua-5.1.4-i486-3_SBo.tgz created.
+
+root@martinusadyh:/home/martinus/SLACKBUILDS/lua/lua#
+</code></pre>
+
+<p>Hurray&hellip;. packages binary <strong>lua</strong> sudah terbentuk dan sekarang kita bisa meng-install dengan perintah <strong>installpkg [nama-paket]</strong> seperti dibawah ini :</p>
+
+<pre><code>root@martinusadyh:/home/martinus/SLACKBUILDS/lua/lua# installpkg /tmp/lua-5.1.4-i486-3_SBo.tgz
+Verifying package lua-5.1.4-i486-3_SBo.tgz.
+Installing package lua-5.1.4-i486-3_SBo.tgz:
+PACKAGE DESCRIPTION:
+# Lua (a powerful, fast, light-weight, embeddable scripting language)
+#
+# Lua combines simple procedural syntax with powerful data description
+# constructs based on associative arrays and extensible semantics.
+# Lua is dynamically typed, runs by interpreting bytecode for a
+# register-based virtual machine, and has automatic memory management
+# with incremental garbage collection, making it ideal for
+# configuration, scripting, and rapid prototyping.
+#
+Executing install script for lua-5.1.4-i486-3_SBo.tgz.
+Package lua-5.1.4-i486-3_SBo.tgz installed.
+
+root@martinusadyh:/home/martinus/SLACKBUILDS/lua/lua#
+</code></pre>
+
+<p>Proses instalasi library telah selesai dilakukan, sekarang mari kita download source code dari <a href="http://dev.mysql.com/downloads/workbench/5.1.html">MySQL WorkBench</a> seperti dibawah ini :</p>
+
+<pre><code>martinus@martinusadyh:~/SLACKBUILDS/mysql-tool$ wget -c http://dev.mysql.com/get/Downloads/MySQLGUITools/mysql-workbench-oss-5.1.18.tar.gz/from/http://ftp.iij.ad.jp/pub/db/mysql/
+--2009-10-07 22:35:46--  http://dev.mysql.com/get/Downloads/MySQLGUITools/mysql-workbench-oss-5.1.18.tar.gz/from/http://ftp.iij.ad.jp/pub/db/mysql/
+Resolving dev.mysql.com... 213.136.52.29
+Connecting to dev.mysql.com|213.136.52.29|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: http://ftp.iij.ad.jp/pub/db/mysql/Downloads/MySQLGUITools/mysql-workbench-oss-5.1.18.tar.gz [following]
+--2009-10-07 22:35:48--  http://ftp.iij.ad.jp/pub/db/mysql/Downloads/MySQLGUITools/mysql-workbench-oss-5.1.18.tar.gz
+Resolving ftp.iij.ad.jp... 202.232.140.139, 202.232.140.135, 202.232.140.136, ...
+Connecting to ftp.iij.ad.jp|202.232.140.139|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 13368427 (13M) [application/x-gzip]
+Saving to: `mysql-workbench-oss-5.1.18.tar.gz'
+
+100%[===========================================================================================================&gt;] 13,368,427  23.2K/s   in 11m 8s
+
+2009-10-07 22:46:57 (19.5 KB/s) - `mysql-workbench-oss-5.1.18.tar.gz' saved [13368427/13368427]
+
+martinus@martinusadyh:~/SLACKBUILDS/mysql-tool$
+</code></pre>
+
+<p>Sekarang mari kita download seluruh file SlackBuild yang diperlukan untuk membuat binary packages dari <a href="http://dev.mysql.com/downloads/workbench/5.1.html">MySQL WorkBench</a> dari situs <a href="http://hba.ath.cx/projects/slackbuilds/testing/mysql-workbench-oss-5.1.18/">hba</a> seperti dibawah ini :</p>
+
+<pre><code>martinus@martinusadyh:~/SLACKBUILDS/mysql-tool$ wget -c http://hba.ath.cx/projects/slackbuilds/testing/mysql-workbench-oss-5.1.18/doinst.sh
+--2009-10-07 22:48:12--  http://hba.ath.cx/projects/slackbuilds/testing/mysql-workbench-oss-5.1.18/doinst.sh
+Resolving hba.ath.cx... 148.208.237.253
+Connecting to hba.ath.cx|148.208.237.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 436 [application/x-sh]
+Saving to: `doinst.sh'
+
+100%[===========================================================================================================&gt;] 436         --.-K/s   in 0s
+
+2009-10-07 22:48:13 (23.1 MB/s) - `doinst.sh' saved [436/436]
+
+martinus@martinusadyh:~/SLACKBUILDS/mysql-tool$ wget -c http://hba.ath.cx/projects/slackbuilds/testing/mysql-workbench-oss-5.1.18/mysql-workbench-oss.info
+--2009-10-07 22:48:22--  http://hba.ath.cx/projects/slackbuilds/testing/mysql-workbench-oss-5.1.18/mysql-workbench-oss.info
+Resolving hba.ath.cx... 148.208.237.253
+Connecting to hba.ath.cx|148.208.237.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 393 [text/plain]
+Saving to: `mysql-workbench-oss.info'
+
+100%[===========================================================================================================&gt;] 393         --.-K/s   in 0s
+
+2009-10-07 22:48:23 (21.6 MB/s) - `mysql-workbench-oss.info' saved [393/393]
+
+martinus@martinusadyh:~/SLACKBUILDS/mysql-tool$ wget -c http://hba.ath.cx/projects/slackbuilds/testing/mysql-workbench-oss-5.1.18/mysql-workbench-oss.SlackBuild
+--2009-10-07 22:48:32--  http://hba.ath.cx/projects/slackbuilds/testing/mysql-workbench-oss-5.1.18/mysql-workbench-oss.SlackBuild
+Resolving hba.ath.cx... 148.208.237.253
+Connecting to hba.ath.cx|148.208.237.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3362 (3.3K) [text/plain]
+Saving to: `mysql-workbench-oss.SlackBuild'
+
+100%[===========================================================================================================&gt;] 3,362       --.-K/s   in 0s
+
+2009-10-07 22:48:33 (125 MB/s) - `mysql-workbench-oss.SlackBuild' saved [3362/3362]
+
+martinus@martinusadyh:~/SLACKBUILDS/mysql-tool$ wget -c http://hba.ath.cx/projects/slackbuilds/testing/mysql-workbench-oss-5.1.18/README
+--2009-10-07 22:48:42--  http://hba.ath.cx/projects/slackbuilds/testing/mysql-workbench-oss-5.1.18/README
+Resolving hba.ath.cx... 148.208.237.253
+Connecting to hba.ath.cx|148.208.237.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 277 [text/plain]
+Saving to: `README'
+
+100%[===========================================================================================================&gt;] 277         --.-K/s   in 0s
+
+2009-10-07 22:48:43 (16.6 MB/s) - `README' saved [277/277]
+
+martinus@martinusadyh:~/SLACKBUILDS/mysql-tool$ wget -c http://hba.ath.cx/projects/slackbuilds/testing/mysql-workbench-oss-5.1.18/slack-desc
+--2009-10-07 22:48:52--  http://hba.ath.cx/projects/slackbuilds/testing/mysql-workbench-oss-5.1.18/slack-desc
+Resolving hba.ath.cx... 148.208.237.253
+Connecting to hba.ath.cx|148.208.237.253|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1014 [text/plain]
+Saving to: `slack-desc'
+
+100%[===========================================================================================================&gt;] 1,014       --.-K/s   in 0s
+
+2009-10-07 22:48:55 (58.9 MB/s) - `slack-desc' saved [1014/1014]
+
+martinus@martinusadyh:~/SLACKBUILDS/mysql-tool$
+</code></pre>
+
+<p>Sebelum memulai proses installasi <a href="http://dev.mysql.com/downloads/workbench/5.1.html">MySQL WorkBench</a>, ada baiknya kita membuat secangkir kopi dahulu untuk menemani. Karena proses installasi <a href="http://dev.mysql.com/downloads/workbench/5.1.html">MySQL WorkBench</a> ini tergolong <strong>lumayan lama</strong> di laptop yang saya gunakan :D Jika sudah siap, sekarang mari kita ganti akses ke user <strong>root</strong> dahulu dengan menggunakan perintah <strong>su</strong> kemudian berikan hak eksekusi pada file <strong>mysql-workbench-oss.SlackBuild</strong> kemudian jalankan file <strong>mysql-workbench-oss.SlackBuild</strong> tersebut seperti dibawah ini :</p>
+
+<pre><code>root@martinusadyh:/home/martinus/SLACKBUILDS/mysql-tool# chmod +x mysql-workbench-oss.SlackBuild
+root@martinusadyh:/home/martinus/SLACKBUILDS/mysql-tool# ./mysql-workbench-oss.SlackBuild
+....
+....
+usr/share/applications/MySQLWorkbench.desktop
+install/
+install/doinst.sh
+install/slack-desc
+WARNING:  zero length file usr/doc/mysql-workbench-oss-5.1.18/NEWS
+WARNING:  zero length file usr/doc/mysql-workbench-oss-5.1.18/AUTHORS
+WARNING:  zero length file usr/doc/mysql-workbench-oss-5.1.18/INSTALL
+
+Slackware package /tmp/mysql-workbench-oss-5.1.18-i486-1_SBo.tgz created.
+
+root@martinusadyh:/home/martinus/SLACKBUILDS/mysql-tool#
+</code></pre>
+
+<p>Akhirnya penantian lama kita tidak sia-sia juga, binary packages untuk <a href="http://dev.mysql.com/downloads/workbench/5.1.html">MySQL WorkBench</a> sudah siap di install. Ok tanpa banyak kata, mari kita install dengan perintah <strong>installpkg /tmp/mysql-workbench-oss-5.1.18-i486-1_SBo.tgz</strong> seperti dibawah ini :</p>
+
+<pre><code>root@martinusadyh:/home/martinus/SLACKBUILDS/mysql-tool# installpkg /tmp/mysql-workbench-oss-5.1.18-i486-1_SBo.tgz
+Verifying package mysql-workbench-oss-5.1.18-i486-1_SBo.tgz.
+Installing package mysql-workbench-oss-5.1.18-i486-1_SBo.tgz:
+PACKAGE DESCRIPTION:
+# MySQL Workbench (A visual database design tool developed by MySQL)
+#
+# MySQL Workbench is a cross-platform, visual database design tool
+# developed by MySQL. It is the highly anticipated successor
+# application of the DBDesigner4 project.
+#
+# This package is the Community OSS Edition.
+#
+# Homepage: http://dev.mysql.com/workbench/
+#
+Executing install script for mysql-workbench-oss-5.1.18-i486-1_SBo.tgz.
+Package mysql-workbench-oss-5.1.18-i486-1_SBo.tgz installed.
+
+root@martinusadyh:/home/martinus/SLACKBUILDS/mysql-tool#
+</code></pre>
+
+<p>Nah mudah kan ? Dan dibawah ini adalah beberapa screenshot <a href="http://dev.mysql.com/downloads/workbench/5.1.html">MySQL WorkBench</a> In Action di Slackware 13.0 saya :</p>
+
+<p><a href="http://www.flickr.com/photos/10243554@N02/3990907388/"><img src="http://farm3.static.flickr.com/2519/3990907388_a20c6ce774.jpg" alt="startup_mysql_workbench" /><br/>
+Tampilan Splash Screen MySQL WorkBench</a></p>
+
+<p><a href="http://www.flickr.com/photos/10243554@N02/3990907532/"><img src="http://farm4.static.flickr.com/3455/3990907532_dfe9b25b95.jpg" alt="mysql-workbench2" /><br/>
+Menampilkan Schema Sakila</a></p>
+
+<p><a href="http://www.flickr.com/photos/10243554@N02/3990907542/"><img src="http://farm3.static.flickr.com/2555/3990907542_743ab0b20d.jpg" alt="mysql-workbench-in-action" /><br/>
+Tampilan ER Diagram</a></p>
+
+<p>Happy Slacking All :)</p>
+
+<p><strong>Link-link terkait : </strong>
+&ndash; <a href="http://dev.mysql.com/downloads/workbench/5.1.html">MySQL WorkBench Download</a>
+&ndash; <a href="http://slackbuilds.org/repository/13.0/development/lua/">SlackBuild Script Untuk Lua</a>
+&ndash; <a href="http://hba.ath.cx/projects/slackbuilds/testing/mysql-workbench-oss-5.1.18/">SlackBuild Script Untuk MySQL WorkBench</a>
+&ndash; <a href="http://www.mail-archive.com/slackbuilds-users@slackbuilds.org/msg02040.html">Archive Milis SlackBuild User Tentang MySQL WorkBench</a></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">admin</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-10-08T01:38:32+07:00" pubdate data-updated="true">Oct 8<span>th</span>, 2009</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/database/'>DataBase</a>, <a class='category' href='/blog/categories/slackware/'>Slackware</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://martinusadyh.github.io/2009/10/08/installing-mysql-workbench-di-slackware-130/" data-via="" data-counturl="http://martinusadyh.github.io/2009/10/08/installing-mysql-workbench-di-slackware-130/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2009/10/08/gnome-2280-in-gsb-current-for-slackware-130/" title="Previous Post: GNOME 2.28.0 in gsb-current for Slackware 13.0">&laquo; GNOME 2.28.0 in gsb-current for Slackware 13.0</a>
+      
+      
+        <a class="basic-alignment right" href="/2009/10/10/konfigurasi-user-home-direktori-apache-di-slackware-130/" title="Next Post: Konfigurasi User Home Direktori Apache di Slackware 13.0">Konfigurasi User Home Direktori Apache di Slackware 13.0 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2013/07/27/cara-mudah-mendebug-widget-di-dojo/">Cara Mudah Mendebug Widget Di Dojo</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/07/21/persiapan-sebelum-melakukan-pendakian/">Persiapan Sebelum Melakukan Pendakian</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/06/27/pendakian-gunung-sindoro-3153-mdpl/">Pendakian Gunung Sindoro 3153 Mdpl</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/06/22/howto-disable-individual-jetpack-module/">Howto Disable Individual Jetpack Module</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/06/14/bercengkrama-dengan-nusantarider-di-event-ride-n-roast/">Bercengkrama Dengan Nusantarider Di Event Ride N Roast</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

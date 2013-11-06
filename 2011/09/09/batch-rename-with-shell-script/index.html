@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Batch Rename with Shell Script - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Kemarin di tempat saya bekerja ada kejadian bagaimana caranya me-rename nama file yang mempunyai akhiran &ldquo;S&rdquo; menjadi &ldquo;R&rdquo;, &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://martinusadyh.github.io/2011/09/09/batch-rename-with-shell-script">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:martinusadyh.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Batch Rename With Shell Script</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-09-09T19:50:09+07:00" pubdate data-updated="true">Sep 9<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Kemarin di tempat saya bekerja ada kejadian bagaimana caranya me-rename nama file yang mempunyai akhiran <strong>&ldquo;S&rdquo;</strong> menjadi <strong>&ldquo;R&rdquo;</strong>, masalahnya adalah semua file tersebut tidak mempunyai pattern yang sama kecuali 3 huruf di depan dan 1 huruf dibelakang yaitu huruf <strong>&ldquo;S&rdquo;</strong> yang harus dirubah menjadi <strong>&ldquo;R&rdquo;</strong> :D Contoh nama file yang akan direname kurang lebih seperti terlihat dibawah ini :
+[plain]
+martinus@artivisi:[~]$ ls
+EDW980012011S   EDW980T22011S
+EDW980G32011S   EDWSUBS42011S
+martinus@artivisi:[~]$
+[/plain]</p>
+
+<p>Pada kasus diatas, kita tidak bisa secara langsung melakukan kegiatan <strong>find and replace</strong> biasa. Karena ternyata huruf <strong>&ldquo;S&rdquo;</strong> juga terdapat ditengah-tengah nama file tersebut seperti terlihat pada tampilan diatas :( Setelah bertanya ke paman <a href="http://google.com/">Google</a> sebentar, akhirnya saya menemukan pattern untuk menghapus karakter terakhir dari sebuah string menggunakan command <code>sed</code>. Dan pattern tersebut adalah <code>sed 's/\(.*\)./\1/'</code> :D akhirnya setelah dikombinasikan dengan sedikit kemampuan di shell script jadilah script yang isinya adalah sebagai berikut :</p>
+
+<pre><code>#!/bin/sh
+
+ls EDW* &gt; file.txt
+
+find_file() {
+   cat file.txt | sort | cut -d " " -f1
+}
+
+for f in $(find_file) ; do
+   echo "Original filename $f"
+   # tampung nama file yang baru (remove last character)
+   newfilename=`echo $f | sed 's/\(.*\)./\1/'`
+   echo "After delete last character $newfilename"
+   r=R
+   newfile1=$newfilename$r
+   echo "New filename is $newfile1"
+   mv $f $newfile1
+done
+</code></pre>
+
+<p>Simpan script diatas dengan nama terserah (misalkan <code>batch_rename.sh</code>), kemudian beri akses execute dan jalankan. Jika tidak ada error, harusnya jika dijalankan akan merename semua file menjadi seperti dibawah ini :
+[plain]
+martinus@artivisi:[~]$ ls
+EDW980012011R   EDW980T22011R
+EDW980G32011R   EDWSUBS42011R
+martinus@artivisi:[~]$
+[/plain]</p>
+
+<p>Untuk penjelasan <code>sed</code> dan <code>regex</code>-nya, saya masih belum bisa menjelaskan :D Maklum saya juga masih belajar :D Semoga script diatas bisa berguna juga buat teman-teman yang mempunyai masalah yang sama :)</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">admin</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-09-09T19:50:09+07:00" pubdate data-updated="true">Sep 9<span>th</span>, 2011</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/shell-script/'>Shell Script</a>, <a class='category' href='/blog/categories/slackware/'>Slackware</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://martinusadyh.github.io/2011/09/09/batch-rename-with-shell-script/" data-via="" data-counturl="http://martinusadyh.github.io/2011/09/09/batch-rename-with-shell-script/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2011/09/05/pidgin-and-gnome-3/" title="Previous Post: Pidgin and GNOME 3">&laquo; Pidgin and GNOME 3</a>
+      
+      
+        <a class="basic-alignment right" href="/2011/11/28/job-vacancy-as-a-developer-team-in-scrum-environment-company/" title="Next Post: Job Vacancy as a Developer Team in Scrum Environment Company">Job Vacancy as a Developer Team in Scrum Environment Company &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2013/07/27/cara-mudah-mendebug-widget-di-dojo/">Cara Mudah Mendebug Widget Di Dojo</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/07/21/persiapan-sebelum-melakukan-pendakian/">Persiapan Sebelum Melakukan Pendakian</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/06/27/pendakian-gunung-sindoro-3153-mdpl/">Pendakian Gunung Sindoro 3153 Mdpl</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/06/22/howto-disable-individual-jetpack-module/">Howto Disable Individual Jetpack Module</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/06/14/bercengkrama-dengan-nusantarider-di-event-ride-n-roast/">Bercengkrama Dengan Nusantarider Di Event Ride N Roast</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

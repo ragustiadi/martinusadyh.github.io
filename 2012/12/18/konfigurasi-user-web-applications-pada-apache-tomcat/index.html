@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Konfigurasi User Web Applications Pada Apache Tomcat - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Untuk yang sering bermain dengan Apache HTTPD mungkin sudah tidak asing dengan module mod_userdir, modul ini berfungsi supaya aplikasi web kita tidak &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://martinusadyh.github.io/2012/12/18/konfigurasi-user-web-applications-pada-apache-tomcat">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:martinusadyh.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Konfigurasi User Web Applications Pada Apache Tomcat</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-18T23:27:09+07:00" pubdate data-updated="true">Dec 18<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Untuk yang sering bermain dengan <a href="http://httpd.apache.org/">Apache HTTPD</a> mungkin sudah tidak asing dengan <a href="http://httpd.apache.org/docs/2.2/mod/mod_userdir.html">module mod_userdir</a>, modul ini berfungsi supaya aplikasi web kita tidak perlu di simpan di direktori <code>/var/www</code> sesuai konfigurasi standart milik <strong>Apache</strong>, melainkan di direktori <code>~/public_html</code>. Keuntungan yang kita dapat adalah, kita tidak perlu merubah hak akses direktori <code>/var/www</code> ataupun menambahkan user kita kedalam group milik <strong>Apache</strong>. Dengan model seperti ini, proses <em>development</em> kita menjadi lebih mudah karena semuanya dilakukan pada direktori <code>/home</code> kita sendiri :)</p>
+
+<p>Nah tahukah kalian bahwa ternyata <a href="http://tomcat.apache.org/">Apache Tomcat</a> juga memiliki fitur yang sama seperti saudara-nya <strong>Apache HTTPD</strong> ? Jika di <strong>Apache HTTPD</strong> nama module-nya adalah <a href="http://httpd.apache.org/docs/2.2/mod/mod_userdir.html">mod_userdir</a>, maka pada <strong>Apache Tomcat</strong> dikenal dengan nama <a href="http://tomcat.apache.org/tomcat-7.0-doc/config/host.html#User_Web_Applications">User Web Applications</a>.</p>
+
+<p>Untuk mencoba-nya installah dahulu <a href="http://tomcat.apache.org/">Apache Tomcat</a> pada komputer/laptop anda, dan konfigurasikan supaya setiap kali komputer/laptop restart <strong>Apache Tomcat</strong> bisa langsung berjalan. Untuk pengguna distribusi <strong>Ubuntu</strong> kita bisa menginstall dengan mengetikkan perintah :
+[plain]
+martinusadyh@artivisi:~$ sudo apt-get install tomcat7
+[/plain]</p>
+
+<!-- more -->
+
+
+<p>Sebelum melakukan pengeditan, mari kita stop dahulu service tomcat yang secara otomatis dijalankan ketika kita melakukan proses installasi dengan perintah seperti berikut :
+[plain]
+martinusadyh@artivisi:~$ sudo /etc/init.d/tomcat7 stop
+[/plain]</p>
+
+<p>Jika sudah, sekarang bukalah file <code>/etc/tomcat7/server.xml</code> dan carilah baris kode seperti dibawah ini :</p>
+
+<pre><code>      &lt;host unpackwars="true" name="localhost" autodeploy="true" appbase="webapps"&gt;
+</code></pre>
+
+<p>Kemudian edit-lah hingga menjadi seperti dibawah ini :</p>
+
+<pre><code>      &lt;host unpackwars="true" name="localhost" autodeploy="true" appbase="webapps"&gt;
+
+      &lt;listener classname="org.apache.catalina.startup.UserConfig" userclass="org.apache.catalina.startup.PasswdUserDatabase" directoryname="public_webapps" homebase="/home"&gt;&lt;/listener&gt;
+</code></pre>
+
+<p>Sekarang buatlah direktori <code>public_webapps</code> di <code>home</code> dengan mengetikkan perintah <code>mkdir ~/public_webapps</code>, untuk mengetest-nya buatlah sebuah file dengan nama <code>index.jsp</code> dan pastekan kode dibawah ini :</p>
+
+<pre><code>&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Hello World !!&lt;/title&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;h1&gt;Hello World !!&lt;/h1&gt;
+        Today is : &lt;%= new java.util.Date().toString() %&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>Jika sudah, sekarang jalankan tomcat-nya dengan mengetikkan perintah :
+[plain]
+martinusadyh@artivisi:~$ sudo /etc/init.d/tomcat7 start
+[/plain]</p>
+
+<p>Dan bila tidak ada pesan kesalahan, maka coba buka browser dan arahkan pada alamat <code>http://localhost:8080/~namauser</code> kemudian tekan <code>ENTER</code>. Jika tidak ada kesalahan, maka kita akan melihat tampilan seperti gambar dibawah ini :
+[caption id=&ldquo;attachment_2094&rdquo; align=&ldquo;alignleft&rdquo; width=&ldquo;300&rdquo;]<a href="http://martinusadyh.web.id/2012/12/18/konfigurasi-user-web-applications-pada-apache-tomcat/tomcat-user-web-applications/"><img src="http://martinusadyh.web.id/wp-content/uploads/2012/12/Tomcat-User-Web-Applications-300x246.png" alt="Tomcat User Web Applications" /></a> Tomcat User Web Applications[/caption]</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">admin</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-18T23:27:09+07:00" pubdate data-updated="true">Dec 18<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/java/'>Java</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://martinusadyh.github.io/2012/12/18/konfigurasi-user-web-applications-pada-apache-tomcat/" data-via="" data-counturl="http://martinusadyh.github.io/2012/12/18/konfigurasi-user-web-applications-pada-apache-tomcat/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2012/12/08/touring-puncak-villa-kembar-cimacan-with-kawasaki-athelete-riders/" title="Previous Post: Touring Puncak Villa Kembar Cimacan with Kawasaki Athelete Riders">&laquo; Touring Puncak Villa Kembar Cimacan with Kawasaki Athelete Riders</a>
+      
+      
+        <a class="basic-alignment right" href="/2012/12/19/how-to-fixing-problem-jetpack-2-0-4-breaks-nextgen-galleries-plugins/" title="Next Post: How To Fixing Problem Jetpack 2.0.4 Breaks NextGen Galleries Plugins">How To Fixing Problem Jetpack 2.0.4 Breaks NextGen Galleries Plugins &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2013/07/27/cara-mudah-mendebug-widget-di-dojo/">Cara Mudah Mendebug Widget Di Dojo</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/07/21/persiapan-sebelum-melakukan-pendakian/">Persiapan Sebelum Melakukan Pendakian</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/06/27/pendakian-gunung-sindoro-3153-mdpl/">Pendakian Gunung Sindoro 3153 Mdpl</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/06/22/howto-disable-individual-jetpack-module/">Howto Disable Individual Jetpack Module</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/06/14/bercengkrama-dengan-nusantarider-di-event-ride-n-roast/">Bercengkrama Dengan Nusantarider Di Event Ride N Roast</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
