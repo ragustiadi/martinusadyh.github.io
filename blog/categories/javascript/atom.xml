@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: JavaScript | My Octopress Blog]]></title>
+  <title><![CDATA[Category: JavaScript | Martinus Ady H. BloG]]></title>
   <link href="http://martinusadyh.github.io/blog/categories/javascript/atom.xml" rel="self"/>
   <link href="http://martinusadyh.github.io/"/>
-  <updated>2013-11-06T23:06:04+07:00</updated>
+  <updated>2013-11-07T22:02:16+07:00</updated>
   <id>http://martinusadyh.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Martinus Ady H]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -23,16 +23,16 @@
 <p>Meskipun <a href="http://dojotoolkit.org/">Dojo Toolkit</a> juga mempunyai sebuah halaman <a href="http://dojotoolkit.org/api/">API Documentation</a>, tapi rasanya masih kurang lengkap menurut saya. Nah untuk mendebug sebuah widget Dojo untuk menampilkan seluruh function yang terdapat didalam-nya, maka kita memerlukan sebuah browser dan <a href="http://getfirebug.com/">Firebug</a> sebagai alat bantu kita (jika menggunakan Chrome, tidak perlu firebug lagi karena kita bisa membuka <strong>Developer Tools</strong> dengan menekan kombinasi tombol <strong>CTRL+SHIFT+J</strong>)</p>
 
 <p>Sebagai contoh misalkan kita mempunyai sebuah widget grid dengan id <code>tblSettingSegment</code> seperti gambar dibawah ini :
-[caption id=&ldquo;attachment_3102&rdquo; align=&ldquo;alignnone&rdquo; width=&ldquo;300&rdquo;]<a href="http://martinusadyh.web.id/gallery/?album=4&amp;gallery=3&amp;pid=669"><img src="http://martinusadyh.web.id/wp-content/uploads/2013/07/Contoh-Grid-300x54.png" alt="Contoh Grid" /></a> Contoh Grid[/caption]</p>
+<img src="/images/blog-images/javascript/cara-mudah-mendebug-widget-di-dojo/Contoh_Grid.png" title="&lsquo;Contoh Grid&rsquo;" ></p>
 
 <!-- more -->
 
 
 <p>jika grid tersebut sudah tampil di browser, maka bukalah firebug atau tekan kombinasi tombol <strong>CTRL+SHIFT+J</strong> kemudian di console ketikkan perintah <code>dijit.byId('tblSettingSegment')</code> kemudian tekan <strong>ENTER</strong> hingga Firebug tampilan-nya menjadi seperti dibawah ini :
-[caption id=&ldquo;attachment_3103&rdquo; align=&ldquo;alignnone&rdquo; width=&ldquo;300&rdquo;]<a href="http://martinusadyh.web.id/gallery/?album=4&amp;gallery=3&amp;pid=671"><img src="http://martinusadyh.web.id/wp-content/uploads/2013/07/Debug-Grid-Widget-300x41.png" alt="Debug Grid Widget" /></a> Debug Grid Widget[/caption]</p>
+<img src="/images/blog-images/javascript/cara-mudah-mendebug-widget-di-dojo/Debug_Grid_Widget.png" title="&lsquo;Debug Grid Widget&rsquo;" ></p>
 
 <p>Setelah hasilnya seperti diatas, maka kita bisa melihat seluruh fungsi yang terdapat di dojo grid tersebut dengan mengklik hasil output tersebut hingga tampilan-nya seperti gambar dibawah ini :
-[caption id=&ldquo;attachment_3104&rdquo; align=&ldquo;alignnone&rdquo; width=&ldquo;300&rdquo;]<a href="http://martinusadyh.web.id/gallery/?album=4&amp;gallery=3&amp;pid=670"><img src="http://martinusadyh.web.id/wp-content/uploads/2013/07/Daftar-Function-300x146.png" alt="Daftar Function" /></a> Daftar Function[/caption]</p>
+<img src="/images/blog-images/javascript/cara-mudah-mendebug-widget-di-dojo/Daftar_Function.png" title="&lsquo;Daftar Function&rsquo;" ></p>
 
 <p>Nah disini kita bisa melihat seluruh function yang digunakan oleh Dojo grid baik yang terdapat di halaman API Documentation maupun tidak :) Mudah bukan ?</p>
 ]]></content>
