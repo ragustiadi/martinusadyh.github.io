@@ -1,5 +1,4 @@
 ---
-author: admin
 comments: true
 date: 2013-06-27 15:04:35+00:00
 layout: post
@@ -19,7 +18,7 @@ tags:
 - Wonosobo
 ---
 
-[caption id="attachment_2974" align="aligncenter" width="1024"][![Mt_Sindoro_view_from_Mt_Sikunir](http://martinusadyh.web.id/wp-content/uploads/2013/06/Mt_Sindoro_view_from_Mt_Sikunir-1024x768.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=633) Mt. Sindoro view from Mt. Sikunir. Image from [Wikipedia](http://id.wikipedia.org/wiki/Gunung_Sindara)[/caption]
+{% img center /images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/Mt_Sindoro_view_from_Mt_Sikunir.jpg 'Mt. Sindoro view from Mt. Sikunir' %}
 
 Setelah pendakian yang gagal ke **Cikuray** [kemarin](http://martinusadyh.web.id/2013/03/17/puncak-cikuray-yang-tertunda/) ditambah dengan racun foto-foto susasana **Semeru** ketika [Jimmy](https://www.facebook.com/jimmy.rengga) melakukan pendakian bulan Mei kemarin, akhirnya ada kesempatan juga untuk melakukan pendakian lagi di bulan Juni ini dan target yang dipilih adalah [Gunung Sindoro/Sindara](http://id.wikipedia.org/wiki/Gunung_Sindara) :)
 
@@ -27,46 +26,21 @@ Sedikit gambaran tentang **Gunung Sindoro** ini adalah sebuah gunung volkano akf
 
 Sedangkan untuk jalur pendakian, gunung Sindoro mempunyai 2 buah jalur pendakian yaitu melalui desa **Kledung** dan **Tambi**. Sedangkan untuk pendakian yang kita lakukan kali ini, kita memilih menggunakan jalur **Kledung** karena dari informasi yang terkumpul banyak yang menyarankan melalui jalur ini :) Seperti biasa sebelum mulai pendakian kita juga harus mengumpulkan berbagai macam informasi yang terkait dengan gunung Sindoro, baik mencari melalui [Google](http://google.com/), tulisan teman-teman pendaki di blog-nya masing-masing, catper teman-teman di forum OANC kaskus dan beberapa groups pendaki di FB saya rasa sangat cukup membantu untuk mengumpulkan informasi yang diperlukan tentang Gunung Sindoro ini. Dari hasil pencarian dan pengumpulan informasi tersebut, akhirnya kita dapat beberapa poin penting tentang gunung Sindoro yaitu :
 
-
-
-
-  1. Gunung Sindoro merupakan tipe gunung gersang, tidak ada mata air disepanjang jalur pendakian.
-
-
-  2. Kondisi jalur pendakian menuju puncak Sindoro berbatu-batu
-
-
-  3. Terdapat 5 pos pendakian dari basecamp
-
-
-  4. Jarak antar pos, basecamp ke pos 1 ~+ 1.5 jam
-
-
-  5. Pos 1 - Pos 2 ~+ 1.5 jam
-
-
-  6. Pos 2 - Pos 3 ~+ 2 jam
-
-
-  7. Pos 3 - Pos 4 ~+ 2 jam
-
-
-  8. Pos 4 - Pos 5 (puncak) ~+ 2 jam
-
-
-  9. Pos yang bisa di buat nge-camp ada di pos 3 yang tempatnya cukup luas
-
-
-  10. Pos 4 tidak bisa dibuat nge-camp, dikarenakan kondisi medan yang miring
-
-
-  11. Pos 5 adalah puncak Sindoro
-
-
-  12. Sebaiknya tidak meninggalkan barang bawaan di pos 3 baik baju, matras, sleeping bag atau carrier karena banyak kasus kehilangan barang yang terjadi di pos 3
-
+  * Gunung Sindoro merupakan tipe gunung gersang, tidak ada mata air disepanjang jalur pendakian.
+  * Kondisi jalur pendakian menuju puncak Sindoro berbatu-batu
+  * Terdapat 5 pos pendakian dari basecamp
+  * Jarak antar pos, basecamp ke pos 1 ~+ 1.5 jam
+  * Pos 1 - Pos 2 ~+ 1.5 jam
+  * Pos 2 - Pos 3 ~+ 2 jam
+  * Pos 3 - Pos 4 ~+ 2 jam
+  * Pos 4 - Pos 5 (puncak) ~+ 2 jam
+  * Pos yang bisa di buat nge-camp ada di pos 3 yang tempatnya cukup luas
+  * Pos 4 tidak bisa dibuat nge-camp, dikarenakan kondisi medan yang miring
+  * Pos 5 adalah puncak Sindoro
+  * Sebaiknya tidak meninggalkan barang bawaan di pos 3 baik baju, matras, sleeping bag atau carrier karena banyak kasus kehilangan barang yang terjadi di pos 3
 
 (Karena pengalaman di Cikuray yang buta tentang jarak antar pos, untuk pendakian kali ini patokan jarak antar pos harus dimasukkan ke **TODO List** :D )
+
 <!-- more -->
 Setelah semua poin penting tersebut terkumpul, akhirnya saatnya untuk mulai menerbakan racun kesemua teman dan kenalan baik melalui **FaceBook**, **Twitter** maupun secara langsung :D Dan akhir-nya korbanpun berjatuhan, untuk pendakian kali ini saya berhasil ditemani oleh [Jimmy Rengga](https://www.facebook.com/jimmy.rengga), [Dadang Iswanto](https://www.facebook.com/iswan.hellchilds), [Ikhsan Aulia](https://www.facebook.com/ikhsanaulia), [Rangga Rahmanda](https://www.facebook.com/ranggarahmanda.p) dan [Maulana Chandra](https://www.facebook.com/maulana.chandra.3). Sedikit gambaran tentang Gunung Sindoro sudah didapat, personel yang mau berangkat juga sudah siap sekarang tinggal kapan kita akan berangkat. Secara kebetulan, awal bulan Juni ini ada waktu libur yaitu hari Kamis tanggal 06/06/2013 dan jum'at-nya adalah **HARPITNAS (Hari Kecepit Nasional)**. Akhirnya racun-pun ditebar keseluruh personel pendakian yang semuanya sudah bekerja untuk mengambil cuti hari Jum'at, dan ternyata semua personel-pun setuju :D (kecuali [Jimmy Rengga](https://www.facebook.com/jimmy.rengga) dan [Dadang Iswanto](https://www.facebook.com/iswan.hellchilds) yang memang hari jum'atnya libur)
 
@@ -80,20 +54,17 @@ Rabu itu tanggal 05/06/2013 kira-kira jam 19:30 [Ikhsan Aulia](https://www.faceb
 
 Perjalanan dari Jakarta menuju ke Temanggung yang kita jalani ini benar-benar cukup lama :( karena kita baru sampai ke basecamp gunung Sindoro hari Kamis 06/06/2013 kira-kira jam 13:00, dan ini melebihi perkiraan kita yang kata agen travel bisa sampai ke Temanggung mungkin jam 08:00 pagi :( Ketika kita sampai di basecamp Sindoro cuaca saat itupun juga sedang diguyur oleh hujan yang menyebabkan udara jadi lumayan dingin :)
 
-[caption id="attachment_2996" align="alignnone" width="300"][![Basecamp Gunung Sindoro](http://martinusadyh.web.id/wp-content/uploads/2013/06/basecamp-300x134.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=634) Basecamp Gunung Sindoro. Image by [Google Images](http://google.com/)[/caption]
+{% img center /images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/basecamp.jpg 'Basecamp Gunung Sindoro' %}
 
 Setelah menurunkan semua barang bawaan dari travel, akhirnya kitapun melakukan registrasi di basecamp. Disini kita membayar biaya registrasi sebesar Rp. 3.000,- perorang, dan kita diharuskan meninggalkan sebuah KTP. Setelah menyelesaikan urusan registrasi, akhirnya kita diberi 2 buah kertas yang salah satu-nya adalah peta jalur pendakian dan kertas satunya lagi adalah aturan-aturan dasar tentang apa yang boleh dan tidak boleh dilakukan selama melakukan pendakian.
 
-[caption id="attachment_3002" align="alignnone" width="600"][![Rute Pendakian](http://martinusadyh.web.id/wp-content/uploads/2013/06/Rute-Pendakian.jpg)](martinusadyh.web.id/gallery/?album=15&gallery=13&pid=635) Rute Pendakian[/caption]
+{% img center /images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/Rute_Pendakian.jpg 'Rute Pendakian' %}
 
 Sewaktu kita melakukan registrasi, kita juga mendapat tawaran jika ingin naik sebaiknya diantar oleh ojek saja karena bisa menyingkat waktu pendakian dengan hanya membayara biaya sebesar Rp. 10.000,- per orang dan akan diantar sampai ke batas antara ladang penduduk dengan hutan. Tawaran ojek ini sempat kita diskusikan rame-rame, setelah menimbang waktu yang semakin sore akhirnya kita semua sepakat untuk menggunakan jasa tukang ojek untuk mengantar kita sampai menuju batas antara ladang penduduk dengan hutan. Dan akhirnya kita pun berangkat kira-kira jam 13:30 dengan kondisi masih hujan dengan intensitas sedang, setelah berkendara kurang lebih 15 menit akhirnya kita semua sampai di perbatasan antara ladang penduduk dengan hutan. Ketika semua anggota tim sudah berkumpul, kitapun menyelesaikan pembayaran ke tukang ojek baru kemudian kita berdoa bersama supaya kita semua diberi kemudahan dan kelancaran baik ketika naik maupun turun tanpa kekurangan suatu apapun. 
 
 Setelah berdoa bersama akhirnya kita benar-benar mulai melakukan pendakian (yiiiiiiiiiahhaaaiiii akhirnya) :) , kondisi perjalanan dari perbatasan ladang penduduk menuju ke pos 2 didominasi hutan yang tidak begitu rapat menurut saya, dan untuk jalur pendakiannya sendiri bisa dikatakan cukup landai dan menyenangkan karena dibeberapa titik kita mendapat jalur naik dan turun kemudian menyebrangi jembatan. Meskipun jalur pendakian-nya sendiri bisa dikatakan landai, tapi ternyata ketika sampai ditengah-tengah perjalanan kita terpaksa bertukar tas karena napas juga sudah ngos-ngosan :D Kira-kira jam 15:00 kitapun akhirnya sampai juga di pos 2, dan kita semua memutuskan untuk istirahat sejenak menghabiskan sebatang rokok disini :)
 
-[caption id="attachment_3009" align="alignnone" width="534"][![Ketika Masih Semangat](http://martinusadyh.web.id/wp-content/uploads/2013/06/Masih-Semangat.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=636) Ketika Masih Semangat  
-Dari kiri ke kanan [Ikhsan](https://www.facebook.com/ikhsanaulia), [Saya](https://www.facebook.com/martinusadyh), [Rangga](https://www.facebook.com/ranggarahmanda.p), [Chandra](https://www.facebook.com/maulana.chandra.3), [Dadang](https://www.facebook.com/iswan.hellchilds) dan [Jimmy](https://www.facebook.com/jimmy.rengga)  
-Pic by [Ikhsan](https://www.facebook.com/ikhsanaulia)[/caption]
-
+{% img center /images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/Masih_Semangat.JPG 'Ketika Masih Semangat. Dari kiri ke kanan Ikhsan, Saya, Rangga, Chandra, Dadang dan Jimmy' %}
 Puas foto-foto dan beristirahat, akhirnya kita pun melanjutkan perjalanan lagi untuk menuju ke pos 3 :) Dan ternyata saudara-saudara, perjalanan dari pos 2 menuju ke pos 3 ini tidak selandai dari pos 1 ke pos 2 (setidaknya bagi tim kita) :D kwkwkw dan ini terbukti dengan bertumbang-nya satu persatu anggota tim ini (kecuali Jimmy dan Dadang yang ternyata punya dengkul racing :( ) :D
 
 
@@ -154,12 +125,12 @@ Setelah beristirahat untuk sekedar mengambil nafas, akhirnya perjalanan kita lan
 
 
 Kita sampai di pos 3 kira-kira jam 17:10 dan akhirnya mulai mendirikan tenda di tempat bekas pendaki sebelum-nya. Selain mendapatkan tempat yang cukup luas untuk mendirikan tenda, kitapun juga mendapat bonus yaitu adanya api unggun yang sudah siap untuk digunakan :)
-[caption id="attachment_3025" align="alignnone" width="1024"][![Pos 3](http://martinusadyh.web.id/wp-content/uploads/2013/06/Pos-3-1024x768.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=648)Ngecamp di Pos 3[/caption]
+{% img /images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/Pos3.jpg 'Ngecamp di Pos 3' %}
 
 Akhirnya setelah tenda berdiri, satu persatu dari kita mulai ganti pakaian dengan yang kering baru kemudian mulai masak untuk makan malam dan menu makan malam kita kali ini terhitung cukup mewah yaitu nasi dengan lauk ayam dan telor goreng (kapan lagi kita makan enak :) ) :D Nah sembari makan ini kita juga berdiskusi tentang rencana kapan kita mau _summit attack_ dan barang-barang apa saja yang rencana-nya nanti akan dibawa, karena takut juga sih jika nanti kita ninggalin barang dan ternyata hilang seperti yang di informasikan di basecamp. Setelah makan-makan selesai dilanjutkan dengan ngobrol-ngobrol tanpa kopi :( (ternyata saya lupa bawa kopi :( ), akhirnya diputuskan untuk segera tidur saja dan nanti jam 11:30 kita semua bangun untuk melakukan _summit attack_ sedangkan untuk barang-barang kita akan bawa semua dan hanya meninggalkan tenda saja biar beban tidak terlalu berat.
 
 Tepat jam 20:00 kita semua mulai masuk ke tenda masing-masing, dan berusaha untuk memejamkan mata sembari tidak lupa memasang alarm tepat jam 11:30 agar tidak kesiangan :) Suasana yang sepi dan hanya ditemani dengan suara binatang malam akhirnya menjadi lagu penghantar tidur kita semua, rasa-rasanya saya juga baru saja memejamkan mata tapi sepertinya kondisi diluar tenda sudah ramai. Setelah membuka mata dan mengumpulkan kesadaran, ternyata teman-teman sudah bangun dan mulai masak air untuk membuat minuman hangat. Karena tidak ada kopi, minuman hangat kita kali ini adalah jahe dan susu (untungnya Jimmy sudah beli jahe dan Ikhsan membawa susu). Ditemani dengan segelas jahe panas, sepotong roti dan sebatang rokok, sayapun menikmati dingin-nya malam di Gunung Sindoro sembari samar-samar melihat gagah-nya gunung Sumbing di seberang sana. Tanpa diduga sebelumnya, tiba-tiba Ikhsan mengeluarkan sebuah _tripod_ dan mengabadikan suasana malam ini. Dan reaksi saya adalah sangat-sangat bahagia sekali, akhirnya momen-momen malam hari di alam bisa diabadikan juga  :malaikat:  (maklum selama ini cuma mengandalkan kamera HP :( )
-[caption id="attachment_3034" align="alignnone" width="1024"][![Suasana Malam Hari](http://martinusadyh.web.id/wp-content/uploads/2013/06/Suasana-Malam-Hari-1024x682.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=649)Menikmati Gagahnya Sumbing dengan Temaram Lampu Kota Temanggung, Ditemani dengan Segelas Jahe Panas dan Sebatang Rokok.[/caption]
+{% img /images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/Suasana_Malam_Hari.JPG 'Menikmati Gagahnya Sumbing dengan Temaram Lampu Kota Temanggung, Ditemani dengan Segelas Jahe Panas dan Sebatang Rokok' %}
 
 Puas menikmati gagah-nya Sumbing, akhirnya kita semua mulai packing dengan membawa semua barang-barang dan hanya meninggalkan tenda saja di pos 3 ini. Sebelum mulai perjalanan seperti biasanya kita mulai dengan berdoa dulu baru kemudian mulai _trekking_ kira-kira jam 02:30 pagi (estimasi perjalanan dari pos 3 sampai puncak adalah 4 jam, alamat ga dapat sunrise di puncak :D) dan inilah pengalaman pertama saya _trekking_ dimalam hari :D. Sebenarnya perjalanan dimalam hari ini cukup asyik, karena jarak pandang kita hanya sebatas kemampuan senter yang kita bawa saja. Dan ini cukup membuat saya nyaman, karena yang kita tahu hanya naik naik dan naik saja :D
 
@@ -248,7 +219,7 @@ Puas foto-foto dengan semangat 45 yang membara kita teruskan lagi perjalanan ini
 
 
 Dan akhirnya kira-kira jam 08:00 sayapun berhasil menginjakkan kaki di puncak Gunung Sindoro, baru kemudian teman-teman yang lain ikutan menyusul :) Ya Tuhan terima kasih, karena hamba-Mu ini masih diberikan kesempatan untuk menikmati indah-nya ciptaan-Mu. Pemandangan yang kita saksikan disini benar-benar cukup indah dan inilah puncak pertama bagi saya  :gembira: , pemandangan di sini saja sudah cukup indah bagi saya, bagaimana pemandangan yang tersaji jika ke gunung-gunung yang lebih terkenal lain-nya ya ? Wah pasti lebih indah dari ini sepertinya, kata saya dalam hati :)
-[caption id="attachment_3054" align="alignnone" width="855"][![Puncak Sindoro Akhirnya](http://martinusadyh.web.id/wp-content/uploads/2013/06/Puncak-Sindoro.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=660) Puncak Sindoro Akhirnya[/caption]
+{% img /images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/Puncak_Sindoro.JPG 'Puncak Sindoro Akhirnya' %}
 
 Dipuncak kita juga sempat berkenalan dengan rekan-rekan dari **NEPALA** yang berbaik hati berbagi kopi-nya dengan kita, karena kita ga bawa kopi sama sekali :( Begitu indah dan damai rasanya, karena sepanjang mata memandang hati ini tidak berhenti untuk bersyukur. Akhirnya sembari bersantai menikmati suguhan alam ini, ada beberapa teman yang menghabiskan waktunya dengan berfoto-foto. Sedangkan saya sendiri, mencoba menikmati suguhan alam ini dengan sebatang rokok dan segelas kopi dulu baru kemudian ikutan untuk foto-foto :D
 
@@ -296,8 +267,8 @@ Dipuncak kita juga sempat berkenalan dengan rekan-rekan dari **NEPALA** yang ber
 
 Tepat jam 09:00 akhirnya kita semua memutuskan untuk turun setelah melihat awan hitam yang mulai turun, dan yang kita takutkan adalah kabut yang nanti akan menghalangi pandangan kita jika tidak segera turun. Karena kita masih meninggalkan tenda di pos 3 yang rawan dengan kehilangan barang, akhirnya Jimmy dan Dadang memutuskan untuk turun duluan sembari mengecek apakah tenda kita masih berdiri ditempatnya atau tidak :D Setelah kepergian Jimmy dan Dadang, akhirnya kita berempat menyusul turun dengan berjalan pelan-pelan (karena yang didepan ternyata saya yang paling lemot, maklum dengkul masih standart :D)
 
-Tidak ada yang spesial ketika berjalan turun, yang terasa hanya capek dan jempol kaki saya yang rasanya makin lama makin sakit :( Akhirnya ditengah perjalanan, dengan terpaksa saya berganti alas kaki yang tadinya sepatu jadi menggunakan sendal. Rasa sakit sudah sedikit berkurang, tapi berganti dengan licin-nya jalur yang sempat membuat beberapa kali saya jatuh terpeleset :D Tapi untung-nya, akhirnya saya tiba juga di pos 3 kira-kira jam 12:00 siang dan merupakan peserta terakhir yang mencapai garis finish  :komunis: 
-[caption id="attachment_3067" align="alignnone" width="300"][![Oleh-oleh dari Sindoro](http://martinusadyh.web.id/wp-content/uploads/2013/06/Oleh-oleh-dari-Sindoro-300x225.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=667) Oleh-oleh dari Sindoro[/caption]
+Tidak ada yang spesial ketika berjalan turun, yang terasa hanya capek dan jempol kaki saya yang rasanya makin lama makin sakit :( Akhirnya ditengah perjalanan, dengan terpaksa saya berganti alas kaki yang tadinya sepatu jadi menggunakan sendal. Rasa sakit sudah sedikit berkurang, tapi berganti dengan licin-nya jalur yang sempat membuat beberapa kali saya jatuh terpeleset :D Tapi untung-nya, akhirnya saya tiba juga di pos 3 kira-kira jam 12:00 siang dan merupakan peserta terakhir yang mencapai garis finish.
+{% img /images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/Oleh-oleh-dari-Sindoro.jpg 'Oleh-oleh dari Sindoro' %}
 
 Sebelum memutuskan untuk turun, kita istirahat dahulu di pos 3 ini sembari masak untuk makan siang. Dan akhirnya kira-kira jam 14:30 setelah semua peralatan telah selesai di _packing_ akhirnya kita pun mulai turun. Dan seperti biasa, saya akhirnya tetap jadi peserta yang paling bontot :D disaat yang lain sudah sampai pos 2 saya masih tertatih-tatih menuju ke pos 2 dan akhirnya saya tiba dengan selamat di pos 2 kurang lebih jam 17:00. Karena waktu sudah mulai gelap, di pos 2 ini saya tidak beristirahat lama-lama. Cukup menenggak seteguk air dan kemudian melanjutkan perjalanan lagi untuk menuju ke perbatasan antara hutan dan ladang penduduk, dan akhirnya saya sampai di perbatasan hutan dan ladang penduduk kurang lebih jam 18:00 dengan selamat (fyuuuh benar-benar perjalanan yang panjang dan penuh perjuangan bagi saya pribadi) dan kemudian langsung menuju basecamp dengan diantar oleh abang-abang ojek yang baik hati :) (abang ojek, jasamu benar-benar sungguh berarti bagi saya  :nangis2: )
 
@@ -309,64 +280,28 @@ Perjalanan dari Wonosobo - Purwakarta saya lalui dengan tidur pulas, dan kurang 
 
 Perjalanan ini bagi saya benar-benar perjalanan yang sangat menakjubkan, karena semua keinginan dan impian saya akhirnya menjadi kenyataan :) , dan dari perjalanan ini ada beberapa pelajaran yang bisa saya petik yaitu :
 
-
-
-
   1. Perlu latihan fisik yang lebih keras dan rutin, biar tidak cepat capek terutama napas saya yang gampang sekali ngos-ngosan
-
-
   2. Benar kata Jimmy kalau pendakian sebaiknya membawa Pocari Sweat karena jadi tidak gampang haus dibanding minum air biasa
-
-
   3. Perlu belajar lagi pengaturan nafas dan ilmu berjalan di gunung (pernah dibahas di forum OANC)
-
-
   4. Kalau mau naik, siapkan todo list apa saja yang harus dibawa. Karena kemarin kopi yang harusnya jadi menu wajib tidak terbawa karena kelupaan :( 
 
-
-
 Dan rincian biaya pengeluaran selama perjalanan kita kali ini adalah sebagai berikut :
-[caption id="attachment_3066" align="alignnone" width="584"][![Rincian Biaya](http://martinusadyh.web.id/wp-content/uploads/2013/06/Rincian-Biaya.png)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=668) Rincian Biaya[/caption]
+{% img /images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/Rincian_Biaya.png 'Rincian Biaya' %}
 
 Dengan sukses-nya perjalanan ini, saya merasa perlu mengucap terima kasih kepada :
 
-
-
-
   1. Tuhan YME yang sudah memberikan kesempatan bagi hamba-Nya untuk mengagumi keagungan ciptaan-Nya
-
-
   2. [Ikhsan Aulia](https://www.facebook.com/ikhsanaulia), makasih ya gan sudah mau ***dipaksa*** jadi fotografer dadakan.
-
-
   3. [Jimmy Rengga](https://www.facebook.com/jimmy.rengga), yang sudah menemani perjalanan dari pos 2 sampai perbatasan ladang penduduk hingga kepleset-pleset
-
-
   4. [Jimmy Rengga](https://www.facebook.com/jimmy.rengga), [Dadang Iswanto](https://www.facebook.com/iswan.hellchilds), [Ikhsan Aulia](https://www.facebook.com/ikhsanaulia), [Rangga Rahmanda](https://www.facebook.com/ranggarahmanda.p) dan [Maulana Chandra](https://www.facebook.com/maulana.chandra.3), yang mau menerima racun saya dan menjadi partner dalam pendakian kali ini :)
-
-
   5. Teman-teman pendaki yang ditemui baik di groups FB, forum OANC kaskus maupun yang sudah menuliskan pengalaman-nya di blog, tulisan teman-teman jadi referensi utama kita
-
-
-
 
 **Referensi-referensi:**
 
-
-
-
   1. [Sindoro dan Sumbing, Gunung kembar yang menantang](http://www.temanggungkab.go.id/potensi.php?mnid=100)
-
-
   2. [Pendakian Gunung Sindoro](http://chk2489.blogspot.com/2013/03/jalur-pendakian-gunung-sindoro.html)
-
-
   3. [Puncak 7 Lapangan Gunung Sindoro](http://www.belantaraindonesia.org/2013/01/puncak-7-lapangan-gunung-sindoro.html)
-
-
   4. [Dendam dari Sindoro](http://www.kaskus.co.id/thread/50c0ac432775b4ae20000036/dendam-dari-sindoro/)
-
-
   5. [Pendakian Gunung Sindoro via Kledung](http://wisata.kompasiana.com/jalan-jalan/2012/12/15/pendakian-gunung-sindoro-via-kledung-516261.html)
 
 
