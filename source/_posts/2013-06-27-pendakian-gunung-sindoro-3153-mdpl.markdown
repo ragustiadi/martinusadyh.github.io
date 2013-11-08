@@ -89,83 +89,13 @@ Perjalanan menuju pos 4 ini benar-benar cukup berat bagi saya, karena rasa-rasan
 
 Ketika sedang menikmati hangatnya minuman jahe, akhirnya momen sunrise-pun datang. Indah banget euyy, warna merah jingga merona di langit dengan cuaca yang cerah dengan sedikit awan membuat betah berlama-lama menikmati momen ini. Tapi karena kita semua kedinginan, akhirnya momen itupun tidak sempat di abadikan karena kita harus segera melanjutkan perjalanan untuk melawan hawa dingin :( Perjalanan menuju ke pos 4 selanjutnya lumayan menyenangkan meskipun tetap terasa berat, dikarenakan sudah mulai pagi dan akhirnya kita pun bisa menikmati indahnya pemandangan yang terbentang. Jajaran Gunung Merbabu, Merapi dan Sumbing menjadi obat penambah semangat untuk segera mencapai puncak yang masih berapa jauh lagi kita juga tidak tahu :D
 
-
-
-
-
-
-
-    
-
-    [caption id="attachment_3044" align="alignnone" width="300"][![Pemandangan Setelah Sunrise](http://martinusadyh.web.id/wp-content/uploads/2013/06/Pemandangan-Setelah-Sunrise-300x225.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=652) Pemandangan Setelah Sunrise[/caption]
-    
-
-    
-
-    [caption id="attachment_3043" align="alignnone" width="300"][![Pemandangan yang Menambah Semangat](http://martinusadyh.web.id/wp-content/uploads/2013/06/Pemandangan-yang-Menambah-Semangat-300x225.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=653) Pemandangan yang Menambah Semangat[/caption]
-    
-
-
-
-
-
-    
-
-    [caption id="attachment_3041" align="alignnone" width="300"][![Tidak Lupa Foto Keluarga](http://martinusadyh.web.id/wp-content/uploads/2013/06/Foto-Keluarga-300x200.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=650) Tidak Lupa Foto Keluarga[/caption]
-    
-
-    
-
-    [caption id="attachment_3042" align="alignnone" width="300"][![Merbabu Merapi dan Sumbing](http://martinusadyh.web.id/wp-content/uploads/2013/06/Merbabu-Merapi-dan-Sumbing-300x200.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=651) Merbabu Merapi dan Sumbing[/caption]
-    
-
-
-
+{% img center /images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/PemandanganSetelahSunrise.jpg 300 225 Pemandangan Seteleah Sunrise %}
 
 Puas foto-foto dengan semangat 45 yang membara kita teruskan lagi perjalanan ini karena puncak sepertinya sudah cukup dekat, tapi ternyata titik yang kita anggap merupakan puncak itu  ternyata hanyalah sebuah tipuan belaka dan dibalik itu ternyata masih ada bukit lagi yang cukup jauh untuk kita lewati :( Dan akhirnya disini tim dipecah, untuk yang bawa _daypack_ jalan duluan hingga puncak, sedangkan yang lain menyusul dibelakang. Karena beban tas Ikhsan yang cukup berat yang membuat si empunya cukup kecapekan, akhirnya diputuskan untuk saling bertukar tas biar beban juga merata. Setelah beberapa saat berjalan akhirnya terdengar sebuah teriakan yang cukup membuat senang, **"Puncak....puncak..puncak...oeyy"** teriak Rangga. Maksud hati sih pingin berlari, tapi apa daya untuk kesekian kali-nya terkapar lagi saya :D wkwkwkw. Tetapi meskipun begitu, hati sudah mulai senang karena puncak sudah tidak jauh lagi :) dan perjalananpun kita lanjutkan kembali.
 
+{% img center /images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/BukitPHP.JPG 300 225 Bukit PHP %}
 
-
-
-
-
-
-    
-
-    [caption id="attachment_3048" align="alignnone" width="300"][![Bukit PHP](http://martinusadyh.web.id/wp-content/uploads/2013/06/Bukit-PHP-300x200.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=654) Bukit PHP[/caption]
-    
-
-    
-
-    [caption id="attachment_3046" align="alignnone" width="300"][![Ikhsan Tertidur Kecapekan](http://martinusadyh.web.id/wp-content/uploads/2013/06/Ikhsan-Tertidur-Kecapekan-300x200.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=656) Ikhsan Tertidur Kecapekan[/caption]
-    
-
-    
-
-    [caption id="attachment_3047" align="alignnone" width="300"][![Indahnya Pemandangan Ini](http://martinusadyh.web.id/wp-content/uploads/2013/06/Indahnya-Pemandangan-Ini-300x200.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=657) Indahnya Pemandangan Ini[/caption]
-    
-
-
-
-
-
-    
-
-    [caption id="attachment_3051" align="alignnone" width="300"][![Semangat Puncak Tinggal Dikit Lagi](http://martinusadyh.web.id/wp-content/uploads/2013/06/Semangat-Puncak-Tinggal-Dikit-Lagi-300x225.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=659) Semangat Puncak Tinggal Dikit Lagi[/caption]
-    
-
-    
-
-    [caption id="attachment_3049" align="alignnone" width="300"][![Ikhsan Setelah Bertukar Tas](http://martinusadyh.web.id/wp-content/uploads/2013/06/Ikhsan-Setelah-Bertukar-Tas-300x225.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=655) Ikhsan Setelah Bertukar Tas[/caption]
-    
-
-    
-
-    [caption id="attachment_3050" align="alignnone" width="300"][![Rute Menuju Puncak](http://martinusadyh.web.id/wp-content/uploads/2013/06/Rute-Menuju-Puncak-300x225.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=658) Rute Menuju Puncak[/caption]
-    
-
-
-
+{% img center /images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/IndahnyaPemandanganIni.JPG 300 225 Indahnya Pemandangan Ini %}
 
 Dan akhirnya kira-kira jam 08:00 sayapun berhasil menginjakkan kaki di puncak Gunung Sindoro, baru kemudian teman-teman yang lain ikutan menyusul :) Ya Tuhan terima kasih, karena hamba-Mu ini masih diberikan kesempatan untuk menikmati indah-nya ciptaan-Mu. Pemandangan yang kita saksikan disini benar-benar cukup indah dan inilah puncak pertama bagi saya  :gembira: , pemandangan di sini saja sudah cukup indah bagi saya, bagaimana pemandangan yang tersaji jika ke gunung-gunung yang lebih terkenal lain-nya ya ? Wah pasti lebih indah dari ini sepertinya, kata saya dalam hati :)
 {% img /images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/Puncak_Sindoro.JPG 'Puncak Sindoro Akhirnya' %}
@@ -173,46 +103,11 @@ Dan akhirnya kira-kira jam 08:00 sayapun berhasil menginjakkan kaki di puncak Gu
 Dipuncak kita juga sempat berkenalan dengan rekan-rekan dari **NEPALA** yang berbaik hati berbagi kopi-nya dengan kita, karena kita ga bawa kopi sama sekali :( Begitu indah dan damai rasanya, karena sepanjang mata memandang hati ini tidak berhenti untuk bersyukur. Akhirnya sembari bersantai menikmati suguhan alam ini, ada beberapa teman yang menghabiskan waktunya dengan berfoto-foto. Sedangkan saya sendiri, mencoba menikmati suguhan alam ini dengan sebatang rokok dan segelas kopi dulu baru kemudian ikutan untuk foto-foto :D
 
 
+{% img center /images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/KawahGunungSindoro.jpg Kawah Gunung Sindoro %}
 
+{% img center /images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/GunungSumbingdiSelimutiAwan.JPG Gunung Sumbing di Selimuti Awan %}
 
-
-
-    
-
-    [caption id="attachment_3060" align="alignnone" width="300"][![Kawah Gunung Sindoro](http://martinusadyh.web.id/wp-content/uploads/2013/06/Kawah-Gunung-Sindoro-300x225.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=665) Kawah Gunung Sindoro[/caption]
-    
-
-    
-
-    [caption id="attachment_3058" align="alignnone" width="300"][![Gunung Sumbing di Selimuti Awan](http://martinusadyh.web.id/wp-content/uploads/2013/06/Gunung-Sumbing-di-Selimuti-Awan--300x200.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=663) Gunung Sumbing di Selimuti Awan[/caption]
-    
-
-    
-
-    [caption id="attachment_3061" align="alignnone" width="300"][![Lautan Awan](http://martinusadyh.web.id/wp-content/uploads/2013/06/Lautan-Awan-300x225.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=666) Lautan Awan[/caption]
-    
-
-
-
-
-
-    
-
-    [caption id="attachment_3059" align="alignnone" width="300"][![Foto Bersama Temen-temen dari NEPALA](http://martinusadyh.web.id/wp-content/uploads/2013/06/Foto-Bersama-Temen-temen-dari-NEPALA-300x200.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=661) Foto Bersama Temen-temen dari NEPALA[/caption]
-    
-
-    
-
-    [caption id="attachment_3057" align="alignnone" width="300"][![Ikhsan di Puncak Sindoro 3153 mdpl](http://martinusadyh.web.id/wp-content/uploads/2013/06/Ikhsan-di-Puncak-Sindoro-3153-mdpl-300x200.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=664) Ikhsan di Puncak Sindoro 3153 mdpl[/caption]
-    
-
-    
-
-    [caption id="attachment_3056" align="alignnone" width="300"][![Foto Keluarga di Puncak Sindoro](http://martinusadyh.web.id/wp-content/uploads/2013/06/Foto-Keluarga-di-Puncak-Sindoro-300x200.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=662) Foto Keluarga di Puncak Sindoro[/caption]
-    
-
-
-
+{% img center /images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/FotoKeluargadiPuncakSindoro.JPG Foto Keluarga di Puncak Sindoro %}
 
 Tepat jam 09:00 akhirnya kita semua memutuskan untuk turun setelah melihat awan hitam yang mulai turun, dan yang kita takutkan adalah kabut yang nanti akan menghalangi pandangan kita jika tidak segera turun. Karena kita masih meninggalkan tenda di pos 3 yang rawan dengan kehilangan barang, akhirnya Jimmy dan Dadang memutuskan untuk turun duluan sembari mengecek apakah tenda kita masih berdiri ditempatnya atau tidak :D Setelah kepergian Jimmy dan Dadang, akhirnya kita berempat menyusul turun dengan berjalan pelan-pelan (karena yang didepan ternyata saya yang paling lemot, maklum dengkul masih standart :D)
 
@@ -252,5 +147,3 @@ Dengan sukses-nya perjalanan ini, saya merasa perlu mengucap terima kasih kepada
   3. [Puncak 7 Lapangan Gunung Sindoro](http://www.belantaraindonesia.org/2013/01/puncak-7-lapangan-gunung-sindoro.html)
   4. [Dendam dari Sindoro](http://www.kaskus.co.id/thread/50c0ac432775b4ae20000036/dendam-dari-sindoro/)
   5. [Pendakian Gunung Sindoro via Kledung](http://wisata.kompasiana.com/jalan-jalan/2012/12/15/pendakian-gunung-sindoro-via-kledung-516261.html)
-
-
