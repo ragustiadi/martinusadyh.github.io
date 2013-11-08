@@ -67,62 +67,11 @@ Setelah berdoa bersama akhirnya kita benar-benar mulai melakukan pendakian (yiii
 {% img center /images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/Masih_Semangat.JPG 'Ketika Masih Semangat. Dari kiri ke kanan Ikhsan, Saya, Rangga, Chandra, Dadang dan Jimmy' %}
 Puas foto-foto dan beristirahat, akhirnya kita pun melanjutkan perjalanan lagi untuk menuju ke pos 3 :) Dan ternyata saudara-saudara, perjalanan dari pos 2 menuju ke pos 3 ini tidak selandai dari pos 1 ke pos 2 (setidaknya bagi tim kita) :D kwkwkw dan ini terbukti dengan bertumbang-nya satu persatu anggota tim ini (kecuali Jimmy dan Dadang yang ternyata punya dengkul racing :( ) :D
 
-
-
-
-
-
-    
-
-    [caption id="attachment_3016" align="alignnone" width="300"][![Kondisi Jalur Pendakian Menuju Pos 3](http://martinusadyh.web.id/wp-content/uploads/2013/06/Kondisi-Jalur-Pendakian-Menuju-Pos-3-300x225.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=639) Kondisi Jalur Pendakian Menuju Pos 3[/caption]
-    
-
-    
-
-    [caption id="attachment_3017" align="alignnone" width="300"][![Rangga Terkapar](http://martinusadyh.web.id/wp-content/uploads/2013/06/Rangga-Tepar-300x225.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=640) Rangga Terkapar[/caption]
-    
-
-
-
-
-
-    
-
-    [caption id="attachment_3018" align="alignnone" width="300"][![Semua Kelelahan](http://martinusadyh.web.id/wp-content/uploads/2013/06/Semua-Kelelahan-300x225.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=641) Semua Kelelahan[/caption]
-    
-
-    
-
-    [caption id="attachment_3015" align="alignnone" width="300"][![Kondisi Jalur Masih Sama Saja](http://martinusadyh.web.id/wp-content/uploads/2013/06/Kondisi-Jalur-Masih-Sama-Saja-300x225.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=638) Kondisi Jalur Masih Sama Saja[/caption]
-    
-
-
-
+{% img left /images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/KondisiJalurPendakianMenujuPos3.jpg 300 225 Kondisi Jalur Pendakian Menuju Pos 3 %} {% img center /images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/SemuaKelelahan.jpg 300 225 Semua Kelelahan %}
 
 Setelah beristirahat untuk sekedar mengambil nafas, akhirnya perjalanan kita lanjutkan kembali dengan ditemani kabut yang mulai turun. Sedangkan kondisi jalur pendakian sekarang juga sudah mulai terbuka dan jalanan yang kita lewatipun ikut berubah dari yang tadinya berupa tanah menjadi kombinasi batu dan kerikil. Dari sini, jika kita menengok ke belakang kita akan melihat pemandangan yang sungguh indah yaitu gagah-nya Gunung Sumbing yang terlihat begitu megah. Tapi sayang-nya, karena kabut kita hanya bisa menikmati pemandangan gunung Sumbing secara penuh hanya sebentar saja. Karena tidak begitu lama, awan-pun mulai turun menutupi badan gunung Sumbing.
 
-
-
-
-
-
-    
-
-    [caption id="attachment_3022" align="alignnone" width="300"][![Terkapar Untuk Kesekian Kalinya](http://martinusadyh.web.id/wp-content/uploads/2013/06/Terkapar-Untuk-Kesekian-Kalinya-300x200.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=644) Terkapar Untuk Kesekian Kalinya[/caption]
-    
-
-    
-
-    [caption id="attachment_3023" align="alignnone" width="300"][![Jimmy Yang Masih Ketawa-tawa](http://martinusadyh.web.id/wp-content/uploads/2013/06/Jimmy-Yang-Masih-Ketawa-tawa-300x200.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=643) Jimmy Yang Masih Ketawa-tawa[/caption]
-    
-
-    
-
-    [caption id="attachment_3021" align="alignnone" width="300"][![Gunung Sumbing Tertutup Awan](http://martinusadyh.web.id/wp-content/uploads/2013/06/Gunung-Sumbing-Tertutup-Awan-300x200.jpg)](http://martinusadyh.web.id/gallery/?album=15&gallery=13&pid=642) Gunung Sumbing Tertutup Awan[/caption]
-    
-
-
-
+{% img left /images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/JimmyYangMasihKetawa-tawa.JPG 300 200 Jimmy yang Masih Ketawa tawa %} {% img center /images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/GunungSumbingTertutupAwan.JPG 300 200 Gunung Sumbing Tertutup Awan %}
 
 Kita sampai di pos 3 kira-kira jam 17:10 dan akhirnya mulai mendirikan tenda di tempat bekas pendaki sebelum-nya. Selain mendapatkan tempat yang cukup luas untuk mendirikan tenda, kitapun juga mendapat bonus yaitu adanya api unggun yang sudah siap untuk digunakan :)
 {% img /images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/Pos3.jpg 'Ngecamp di Pos 3' %}
