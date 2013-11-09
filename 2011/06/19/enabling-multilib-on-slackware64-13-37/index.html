@@ -103,9 +103,9 @@
   </header>
 
 
-<div class="entry-content"><p>Setelah webcam terdeteksi di Slackware melalui bantuan aplikasi Cheese, sekarang waktunya untuk mencoba menginstall googletalk-plugin dari google :) Kenapa tidak menggunakan Skype ? Karena menurut pendapat saya Skype itu lebih berat daripada Google Talk :D Nah minggu kemarin ketika menginstall googletalk-plugin di Slackware64, ternyata googletalk-plugin ini membutuhkan library untuk arsitektur 32 bit dan ini bisa kita lihat dengan perintah <code>file /opt/google/talkplugin/*</code> seperti dibawah ini :
-[plain]
-root@artivisi:/mnt/DATA/SLACKBUILDS/googletalk-plugin# file /opt/google/talkplugin/*
+<div class="entry-content"><p>Setelah webcam terdeteksi di Slackware melalui bantuan aplikasi Cheese, sekarang waktunya untuk mencoba menginstall googletalk-plugin dari google :) Kenapa tidak menggunakan Skype ? Karena menurut pendapat saya Skype itu lebih berat daripada Google Talk :D Nah minggu kemarin ketika menginstall googletalk-plugin di Slackware64, ternyata googletalk-plugin ini membutuhkan library untuk arsitektur 32 bit dan ini bisa kita lihat dengan perintah <code>file /opt/google/talkplugin/*</code> seperti dibawah ini :</p>
+
+<pre><code>root@artivisi:/mnt/DATA/SLACKBUILDS/googletalk-plugin# file /opt/google/talkplugin/*
 /opt/google/talkplugin/GoogleTalkPlugin:         ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked (uses shared libs), stripped
 /opt/google/talkplugin/cron:                     directory
 /opt/google/talkplugin/lib:                      directory
@@ -113,7 +113,7 @@ root@artivisi:/mnt/DATA/SLACKBUILDS/googletalk-plugin# file /opt/google/talkplug
 /opt/google/talkplugin/libnpgtpo3dautoplugin.so: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, stripped
 /opt/google/talkplugin/openssl.txt:              ASCII English text
 /opt/google/talkplugin/windowpicker.glade:       XML document text
-[/plain]</p>
+</code></pre>
 
 <p>Dari hasil perintah diatas, kita bisa melihat bahwa file <code>/opt/google/talkplugin/GoogleTalkPlugin</code> ternyata merupakan file executable untuk arsitektur 32bit, nah untung-nya di Slackware64 sudah mendukung penggunaan multilib yang maksudnya kita bisa menggunakan aplikasi berbasis 32bit di arsitektur 64bit :) Dengan mengaktifkan dukungan multilib pada Slackware64, maka kita akan dapat menggunakan aplikasi seperti Skype, Wine atau aplikasi 32bit lain-nya yang belum terdapat di arsitektur 64 bit :)</p>
 
@@ -122,178 +122,133 @@ root@artivisi:/mnt/DATA/SLACKBUILDS/googletalk-plugin# file /opt/google/talkplug
 <!-- more -->
 
 
-<p>Nah daripada melakukan kompilasi satu persatu, kita dapat menggunakan cara yang lebih mudah yaitu mendownload binary package yang sudah disediakan oleh Fred Emmott dan Eric Hameleers pada repository <a href="http://slackware.com/~alien/multilib/">http://slackware.com/~alien/multilib/</a>. Download semua binary package pada repository diatas yang sesuai dengan versi Slackware yang kita gunakan, karena saya menggunakan Slackware64 13.37 maka jalankan perintah <code>lftp -c 'open http://slackware.com/~alien/multilib/ ; mirror 13.37'</code> seperti dibawah ini :
-[plain]
-martinus@artivisi:[/mnt/DATA/SLACKBUILDS/multilib/]$ lftp -c &lsquo;open <a href="http://slackware.com/~alien/multilib/">http://slackware.com/~alien/multilib/</a> ; mirror 13.37&rsquo;
-cd: received redirection to `<a href="http://connie.slackware.com/~alien/multilib/">http://connie.slackware.com/~alien/multilib/</a>&lsquo;
+<p>Nah daripada melakukan kompilasi satu persatu, kita dapat menggunakan cara yang lebih mudah yaitu mendownload binary package yang sudah disediakan oleh Fred Emmott dan Eric Hameleers pada repository <a href="http://slackware.com/~alien/multilib/">http://slackware.com/~alien/multilib/</a>. Download semua binary package pada repository diatas yang sesuai dengan versi Slackware yang kita gunakan, karena saya menggunakan Slackware64 13.37 maka jalankan perintah <code>lftp -c 'open http://slackware.com/~alien/multilib/ ; mirror 13.37'</code> seperti dibawah ini :</p>
+
+<pre><code>martinus@artivisi:[/mnt/DATA/SLACKBUILDS/multilib/]$ lftp -c 'open http://slackware.com/~alien/multilib/ ; mirror 13.37'
+cd: received redirection to `http://connie.slackware.com/~alien/multilib/'
 martinus@artivisi:[/mnt/DATA/SLACKBUILDS/multilib/]$
-[/plain]</p>
+</code></pre>
 
-<p>Jika sudah, sekarang masuklah pada direktori yang sesuai dengan versi Slackware yang kita gunakan, dan jalankan perintah <code>upgradepkg --reinstall --install-new *.t?z</code> untuk melakukan proses upgrade package gcc dan glibc ke versi multilib seperti dibawah ini :
-[plain]
-root@artivisi:/mnt/DATA/SLACKBUILDS/multilib/13.37# upgradepkg &mdash;reinstall &mdash;install-new *.t?z</p>
+<p>Jika sudah, sekarang masuklah pada direktori yang sesuai dengan versi Slackware yang kita gunakan, dan jalankan perintah <code>upgradepkg --reinstall --install-new *.t?z</code> untuk melakukan proses upgrade package gcc dan glibc ke versi multilib seperti dibawah ini :</p>
 
-<p>+==============================================================================
+<pre><code>root@artivisi:/mnt/DATA/SLACKBUILDS/multilib/13.37# upgradepkg --reinstall --install-new *.t?z
+
++==============================================================================
 | Installing new package ./compat32-tools-2.1-noarch-9alien.tgz
-+==============================================================================</p>
++==============================================================================
 
-<p>Verifying package compat32-tools-2.1-noarch-9alien.tgz.
+Verifying package compat32-tools-2.1-noarch-9alien.tgz.
 Installing package compat32-tools-2.1-noarch-9alien.tgz:
-PACKAGE DESCRIPTION:</p>
-
-<h1>compat32-tools (32bit compatibility tools for 64bit Slackware)</h1>
-
-<p>#</p>
-
-<h1>The compat32-tools are a series of scripts that allow</h1>
-
-<h1>the user to add a 32bit compatibility layer (multilib)</h1>
-
-<h1>to 64bit Slackware.</h1>
-
-<p>#</p>
-
-<h1>Written by Fred Emmott and Eric Hameleers</h1>
-
-<p>#
+PACKAGE DESCRIPTION:
+# compat32-tools (32bit compatibility tools for 64bit Slackware)
+#
+# The compat32-tools are a series of scripts that allow
+# the user to add a 32bit compatibility layer (multilib)
+# to 64bit Slackware.
+#
+# Written by Fred Emmott and Eric Hameleers
+#
 Executing install script for compat32-tools-2.1-noarch-9alien.tgz.
-Package compat32-tools-2.1-noarch-9alien.tgz installed.</p>
+Package compat32-tools-2.1-noarch-9alien.tgz installed.
 
-<p>+==============================================================================
+
++==============================================================================
 | Upgrading gcc-4.5.2-x86_64-2 package using ./gcc-4.5.2_multilib-x86_64-2alien.txz
-+==============================================================================</p>
++==============================================================================
 
-<p>Pre-installing package gcc-4.5.2_multilib-x86_64-2alien&hellip;</p>
+Pre-installing package gcc-4.5.2_multilib-x86_64-2alien...
 
-<p>Removing package /var/log/packages/gcc-4.5.2-x86_64-2-upgraded-2011-06-19,15:04:58&hellip;</p>
+Removing package /var/log/packages/gcc-4.5.2-x86_64-2-upgraded-2011-06-19,15:04:58...
 
-<p>Verifying package gcc-4.5.2_multilib-x86_64-2alien.txz.
+Verifying package gcc-4.5.2_multilib-x86_64-2alien.txz.
 Installing package gcc-4.5.2_multilib-x86_64-2alien.txz:
-PACKAGE DESCRIPTION:</p>
-
-<h1>gcc (Base GCC package with C support)</h1>
-
-<p>#</p>
-
-<h1>GCC is the GNU Compiler Collection.</h1>
-
-<p>#</p>
-
-<h1>This package contains those parts of the compiler collection needed to</h1>
-
-<h1>compile C code.  Other packages add C++, Fortran, Objective-C, and</h1>
-
-<h1>Java support to the compiler core.</h1>
-
-<p>#
+PACKAGE DESCRIPTION:
+# gcc (Base GCC package with C support)
+#
+# GCC is the GNU Compiler Collection.
+#
+# This package contains those parts of the compiler collection needed to
+# compile C code.  Other packages add C++, Fortran, Objective-C, and
+# Java support to the compiler core.
+#
 Executing install script for gcc-4.5.2_multilib-x86_64-2alien.txz.
-Package gcc-4.5.2_multilib-x86_64-2alien.txz installed.</p>
+Package gcc-4.5.2_multilib-x86_64-2alien.txz installed.
 
-<p>Package gcc-4.5.2-x86_64-2 upgraded with new package ./gcc-4.5.2_multilib-x86_64-2alien.txz.</p>
+Package gcc-4.5.2-x86_64-2 upgraded with new package ./gcc-4.5.2_multilib-x86_64-2alien.txz.
 
-<p>&hellip;.
-&hellip;.
-&hellip;.
+....
+....
+....
 Verifying package glibc-zoneinfo-2.13_multilib-noarch-4alien.txz.
 Installing package glibc-zoneinfo-2.13_multilib-noarch-4alien.txz:
-PACKAGE DESCRIPTION:</p>
-
-<h1>glibc-zoneinfo (timezone database)</h1>
-
-<p>#</p>
-
-<h1>This package allows you to configure your time zone.</h1>
-
-<p>#</p>
-
-<h1>This timezone database comes from the tzdata and tzcode packages by</h1>
-
-<h1>Arthur David Olson et.al.  The latest version and more information</h1>
-
-<h1>may be found at <a href="ftp://elsie.nci.nih.gov/pub/">ftp://elsie.nci.nih.gov/pub/</a></h1>
-
-<p>#</p>
-
-<h1>Use the timeconfig utility to set your local time zone.</h1>
-
-<p>#
+PACKAGE DESCRIPTION:
+# glibc-zoneinfo (timezone database)
+#
+# This package allows you to configure your time zone.
+#
+# This timezone database comes from the tzdata and tzcode packages by
+# Arthur David Olson et.al.  The latest version and more information
+# may be found at ftp://elsie.nci.nih.gov/pub/
+#
+# Use the timeconfig utility to set your local time zone.
+#
 Executing install script for glibc-zoneinfo-2.13_multilib-noarch-4alien.txz.
-Package glibc-zoneinfo-2.13_multilib-noarch-4alien.txz installed.</p>
+Package glibc-zoneinfo-2.13_multilib-noarch-4alien.txz installed.
 
-<p>Package glibc-zoneinfo-2.13-noarch-4 upgraded with new package ./glibc-zoneinfo-2.13_multilib-noarch-4alien.txz.</p>
+Package glibc-zoneinfo-2.13-noarch-4 upgraded with new package ./glibc-zoneinfo-2.13_multilib-noarch-4alien.txz.
 
-<p>root@artivisi:/mnt/DATA/SLACKBUILDS/multilib/13.37#
-[/plain]</p>
+root@artivisi:/mnt/DATA/SLACKBUILDS/multilib/13.37# 
+</code></pre>
 
-<p>Setelah selesai, sekarang install-lah package compatibility agar kita bisa menjalankan aplikasi berbasis 32-bit dengan cara masuk pada direktori <code>slackware64-compat32</code> dan jalankan perintah <code>upgradepkg --install-new *-compat32/*.t?z</code> seperti dibawah ini :
-[plain]
-root@artivisi:/mnt/DATA/SLACKBUILDS/multilib/13.37# cd slackware64-compat32/
-root@artivisi:/mnt/DATA/SLACKBUILDS/multilib/13.37/slackware64-compat32# upgradepkg &mdash;install-new <em>-compat32/</em>.t?z</p>
+<p>Setelah selesai, sekarang install-lah package compatibility agar kita bisa menjalankan aplikasi berbasis 32-bit dengan cara masuk pada direktori <code>slackware64-compat32</code> dan jalankan perintah <code>upgradepkg --install-new *-compat32/*.t?z</code> seperti dibawah ini :</p>
 
-<p>+==============================================================================
+<pre><code>root@artivisi:/mnt/DATA/SLACKBUILDS/multilib/13.37# cd slackware64-compat32/
+root@artivisi:/mnt/DATA/SLACKBUILDS/multilib/13.37/slackware64-compat32# upgradepkg --install-new *-compat32/*.t?z
+
++==============================================================================
 | Installing new package a-compat32/aaa_elflibs-compat32-13.37-x86_64-7.txz
-+==============================================================================</p>
++==============================================================================
 
-<p>Verifying package aaa_elflibs-compat32-13.37-x86_64-7.txz.
+Verifying package aaa_elflibs-compat32-13.37-x86_64-7.txz.
 Installing package aaa_elflibs-compat32-13.37-x86_64-7.txz:
-PACKAGE DESCRIPTION:</p>
+PACKAGE DESCRIPTION:
+# aaa_elflibs-compat32 (shared libraries needed by many programs)
+#
+# This is a collection of shared libraries needed to run Linux programs.
+# ELF (Executable and Linking Format) is the standard Linux binary 
+# format.  These libraries are gathered from other Slackware packages
+# and are intended to give a fairly complete initial set of libraries.
+# This package should be not upgraded or reinstalled (it could copy
+# over newer library versions).
+#
+# This package contains 32-bit compatibility binaries.
+Executing install script for aaa_elflibs-compat32-13.37-x86_64-7.txz.
+Package aaa_elflibs-compat32-13.37-x86_64-7.txz installed.
 
-<h1>aaa_elflibs-compat32 (shared libraries needed by many programs)</h1>
+...
+...
+...
 
-<p>#</p>
-
-<h1>This is a collection of shared libraries needed to run Linux programs.</h1>
-
-<h1>ELF (Executable and Linking Format) is the standard Linux binary</h1>
-
-<h1>format.  These libraries are gathered from other Slackware packages</h1>
-
-<h1>and are intended to give a fairly complete initial set of libraries.</h1>
-
-<h1>This package should be not upgraded or reinstalled (it could copy</h1>
-
-<h1>over newer library versions).</h1>
-
-<p>#</p>
-
-<h1>This package contains 32-bit compatibility binaries.</h1>
-
-<p>Executing install script for aaa_elflibs-compat32-13.37-x86_64-7.txz.
-Package aaa_elflibs-compat32-13.37-x86_64-7.txz installed.</p>
-
-<p>&hellip;
-&hellip;
-&hellip;</p>
-
-<p>+==============================================================================
++==============================================================================
 | Installing new package xap-compat32/sane-compat32-1.0.22-x86_64-2.txz
-+==============================================================================</p>
++==============================================================================
 
-<p>Verifying package sane-compat32-1.0.22-x86_64-2.txz.
+Verifying package sane-compat32-1.0.22-x86_64-2.txz.
 Installing package sane-compat32-1.0.22-x86_64-2.txz:
-PACKAGE DESCRIPTION:</p>
+PACKAGE DESCRIPTION:
+# sane-compat32 (Scanner Access Now Easy)
+#
+# SANE is a universal scanner interface that provides standardized
+# access to any raster image scanner hardware, such as flatbed scanners,
+# hand-held scanners, video and still cameras, frame-grabbers, and other
+# similar devices.
+#
+# This package contains 32-bit compatibility binaries.
+Executing install script for sane-compat32-1.0.22-x86_64-2.txz.
+Package sane-compat32-1.0.22-x86_64-2.txz installed.
 
-<h1>sane-compat32 (Scanner Access Now Easy)</h1>
-
-<p>#</p>
-
-<h1>SANE is a universal scanner interface that provides standardized</h1>
-
-<h1>access to any raster image scanner hardware, such as flatbed scanners,</h1>
-
-<h1>hand-held scanners, video and still cameras, frame-grabbers, and other</h1>
-
-<h1>similar devices.</h1>
-
-<p>#</p>
-
-<h1>This package contains 32-bit compatibility binaries.</h1>
-
-<p>Executing install script for sane-compat32-1.0.22-x86_64-2.txz.
-Package sane-compat32-1.0.22-x86_64-2.txz installed.</p>
-
-<p>root@artivisi:/mnt/DATA/SLACKBUILDS/multilib/13.37/slackware64-compat32#
-[/plain]</p>
+root@artivisi:/mnt/DATA/SLACKBUILDS/multilib/13.37/slackware64-compat32# 
+</code></pre>
 
 <p>Nah sampai disini kita sudah dapat menggunakan / menginstall aplikasi berbasis 32-bit pada Slackware64 kita dengan aman dan nyaman :)
 <strong>Catatan:</strong></p>
@@ -312,14 +267,15 @@ Jika kita ingin melakukan kompilasi untuk aplikasi 32-bit pada Slackware64, sebe
 </ol>
 
 
-<p>Nah hasil dari seluruh proses diatas adalah akhirnya saya bisa menggunakan webcam saya di googletalk seperti terlihat pada gambar dibawah ini :
-[caption id=&ldquo;attachment_1374&rdquo; align=&ldquo;alignleft&rdquo; width=&ldquo;150&rdquo; caption=&ldquo;GoogleTalk Plugin Slackware64&rdquo;]<a href="http://martinusadyh.web.id/wp-content/uploads/2011/06/Screenshot-1.png"><img src="http://martinusadyh.web.id/wp-content/uploads/2011/06/Screenshot-1-150x150.png" alt="GoogleTalk Plugin Slackware64" /></a>[/caption]</p>
+<p>Nah hasil dari seluruh proses diatas adalah akhirnya saya bisa menggunakan webcam saya di googletalk seperti terlihat pada gambar dibawah ini :</p>
+
+<p><img class="center" src="/images/blog-images/linux/EnablingMultilibOnSlackware64_1337/Screenshot-1.png" title="GoogleTalk Plugin Slackware64" ></p>
 
 <p>Referensi-referensi :</p>
 
 <ol>
-<li><p> <a href="http://connie.slackware.com/~alien/multilib/">Halaman README Multilib Slackware64</a></p></li>
-<li><p> <a href="http://slackbuilds.org/repository/13.37/multimedia/google-talkplugin/">Google TalkPlugin SlackBuild Script</a></p></li>
+<li> <a href="http://connie.slackware.com/~alien/multilib/">Halaman README Multilib Slackware64</a></li>
+<li> <a href="http://slackbuilds.org/repository/13.37/multimedia/google-talkplugin/">Google TalkPlugin SlackBuild Script</a></li>
 </ol>
 
 </div>
@@ -330,7 +286,7 @@ Jika kita ingin melakukan kompilasi untuk aplikasi 32-bit pada Slackware64, sebe
       
   
 
-<span class="byline author vcard">Posted by <span class="fn">admin</span></span>
+<span class="byline author vcard">Posted by <span class="fn">Martinus Ady H</span></span>
 
       
 

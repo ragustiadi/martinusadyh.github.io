@@ -106,9 +106,9 @@
 <div class="entry-content"><p>Ingin membuat sebuah aplikasi untuk Android ? Jika iya, maka langkah pertama yang harus kita lakukan yaitu mempersiapkan lingkungan pengembangan pada komputer kita. Sebelum mulai menginstall Android SDK dan teman-teman-nya, pastikan dahulu bahwa SUN JDK 1.6 sudah terinstall pada komputer kita dan pastikan juga variabel <strong>$JAVA_HOME</strong> mengarah pada direktori SUN JDK yang sebenarnya. Jika sudah, sekarang mari kita bahas satu persatu mempersiapkan lingkungan pengembangan Android yang kurang lebih seperti dibawah ini :</p>
 
 <ol>
-<li><p> Installasi Android SDK</p></li>
-<li><p> Installasi Plugin Android Development Tools (ADT) Pada Eclipse 3.5.2 (Galileo) Classic</p></li>
-<li><p> Konfigurasi Plugin ADT Pada Eclipse 3.5.2 (Galileo)</p></li>
+<li> Installasi Android SDK</li>
+<li> Installasi Plugin Android Development Tools (ADT) Pada Eclipse 3.5.2 (Galileo) Classic</li>
+<li> Konfigurasi Plugin ADT Pada Eclipse 3.5.2 (Galileo)</li>
 </ol>
 
 
@@ -122,40 +122,40 @@
 </ol>
 
 
-<p>Untuk menginstall Android SDK, silahkan mengunjungi alamat <a href="http://developer.android.com/sdk/index.html">http://developer.android.com/sdk/index.html</a> dan download-lah yang sesuai dengan sistem operasi yang digunakan. Jika menggunakan GNU/Linux, caranya adalah sebagai berikut :
-[plain]
-martinus@martinusadyh:[~]$ wget -c <a href="http://dl.google.com/android/android-sdk_r06-linux_86.tgz">http://dl.google.com/android/android-sdk_r06-linux_86.tgz</a>
-&mdash;2010-08-29 05:23:06&mdash;  <a href="http://dl.google.com/android/android-sdk_r06-linux_86.tgz">http://dl.google.com/android/android-sdk_r06-linux_86.tgz</a>
-Resolving dl.google.com&hellip; 64.233.181.190, 64.233.181.91, 64.233.181.93, &hellip;
-Connecting to dl.google.com|64.233.181.190|:80&hellip; connected.
-HTTP request sent, awaiting response&hellip; 200 OK
+<p>Untuk menginstall Android SDK, silahkan mengunjungi alamat <a href="http://developer.android.com/sdk/index.html">http://developer.android.com/sdk/index.html</a> dan download-lah yang sesuai dengan sistem operasi yang digunakan. Jika menggunakan GNU/Linux, caranya adalah sebagai berikut :</p>
+
+<pre><code>martinus@martinusadyh:[~]$ wget -c http://dl.google.com/android/android-sdk_r06-linux_86.tgz
+--2010-08-29 05:23:06--  http://dl.google.com/android/android-sdk_r06-linux_86.tgz
+Resolving dl.google.com... 64.233.181.190, 64.233.181.91, 64.233.181.93, ...
+Connecting to dl.google.com|64.233.181.190|:80... connected.
+HTTP request sent, awaiting response... 200 OK
 Length: 16971139 (16M) [application/x-tar]
-Saving to: `android-sdk_r06-linux_86.tgz&#8217;</p>
+Saving to: `android-sdk_r06-linux_86.tgz'
 
-<p>100%[================================================================================================================================>] 16,971,139  73.5K/s   in 4m 16s</p>
+100%[================================================================================================================================&gt;] 16,971,139  73.5K/s   in 4m 16s  
 
-<p>2010-08-29 05:27:23 (64.8 KB/s) &ndash; `android-sdk_r06-linux_86.tgz&#8217; saved [16971139/16971139]</p>
+2010-08-29 05:27:23 (64.8 KB/s) - `android-sdk_r06-linux_86.tgz' saved [16971139/16971139]
 
-<p>martinus@martinusadyh:[~]$
-[/plain]</p>
+martinus@martinusadyh:[~]$
+</code></pre>
 
-<p>Proses download sudah selesai, sekarang ekstrak pada direktori yang diinginkan (jika menggunakan windows bisa diekstrak pada <strong>C:></strong> atau <strong>/home/[nama-user]</strong> jika menggunakan GNU/Linux) yang nantinya akan membuat sebuah direktori seperti <strong>C:\android-sdk-windows_86</strong> di Windows atau <strong>/home/[nama-user]/android-sdk-linux_86</strong> jika menggunakan GNU/Linux.</p>
+<p>Proses download sudah selesai, sekarang ekstrak pada direktori yang diinginkan (jika menggunakan windows bisa diekstrak pada <code>C:\&gt;</code> atau <code>/home/[nama-user]</code> jika menggunakan GNU/Linux) yang nantinya akan membuat sebuah direktori seperti <code>C:\android-sdk-windows_86</code> di Windows atau <code>/home/[nama-user]/android-sdk-linux_86</code> jika menggunakan GNU/Linux.</p>
 
-<p>Jika proses ekstrak sudah selesai, sekarang downloadlah Android Component dengan cara masuklah pada direktori <strong>>/home/[nama-user]/android-sdk-linux_86/tools</strong> melalui terminal dan jalankan perintah <strong>android</strong> seperti dibawah ini :
-[plain]
-martinus@martinusadyh:[~]$ cd android-sdk-linux_86/tools/
-martinus@martinusadyh:[~/android-sdk-linux_86/tools]$ android
+<p>Jika proses ekstrak sudah selesai, sekarang downloadlah Android Component dengan cara masuklah pada direktori <code>/home/[nama-user]/android-sdk-linux_86/tools</code> melalui terminal dan jalankan perintah <code>android</code> seperti dibawah ini :</p>
+
+<pre><code>martinus@martinusadyh:[~]$ cd android-sdk-linux_86/tools/
+martinus@martinusadyh:[~/android-sdk-linux_86/tools]$ android 
 Starting Android SDK and AVD Manager
 No command line parameters provided, launching UI.
-See &lsquo;android &mdash;help&rsquo; for operations from the command line.
-[/plain]</p>
+See 'android --help' for operations from the command line.
+</code></pre>
 
-<p>Setelah kita mengetikkan <strong>android</strong> pada terminal, maka tidak lama akan muncul <strong>Android SDK and AVD Manager</strong>. Untuk menginstall dan menambahkan komponen, sekarang pilihlah menu <strong>Available Packages</strong> dan pilihlah semua opsi yang terdapat pada menu sebelah kanan seperti gambar dibawah ini :
-<a href="http://martinusadyh.web.id/gallery/?album=4&amp;gallery=3&amp;pid=107"><img src="http://martinusadyh.web.id/wp-content/gallery/tutorial/androidcomponent.png" alt="AndroidComponent" /></a><br/>
+<p>Setelah kita mengetikkan <code>android</code> pada terminal, maka tidak lama akan muncul <strong>Android SDK and AVD Manager</strong>. Untuk menginstall dan menambahkan komponen, sekarang pilihlah menu <strong>Available Packages</strong> dan pilihlah semua opsi yang terdapat pada menu sebelah kanan seperti gambar dibawah ini :
+<img src="/images/blog-images/Java_NetBeans/InstallasiAndroidSDKUntukPengembanganAplikasiAndroid/AndroidComponent.png" title="Menambahkan Android Component" >
 <strong>Menambahkan Android Component</strong></p>
 
 <p>Kemudian tekanlah tombol <strong>Install Selected</strong> dan pilihlah opsi <strong>Accept All</strong> pada dialog <strong>Choose Packages to Install</strong> setelah itu baru tekan tombol <strong>Install</strong> seperti dibawah ini :
-<a href="http://martinusadyh.web.id/gallery/?album=4&amp;gallery=3&amp;pid=110"><img src="http://martinusadyh.web.id/wp-content/gallery/tutorial/choosepackagestoinstall.png" alt="ChoosePackagesToInstall" /></a><br/>
+<img src="/images/blog-images/Java_NetBeans/InstallasiAndroidSDKUntukPengembanganAplikasiAndroid/ChoosePackagesToInstall.png" title="ChoosePackagesToInstall" >
 <strong>Menambahkan Android Component</strong></p>
 
 <p>Tunggu sampai proses download selesai dan jika sudah proses installasi Android SDK ini bisa dikatakan sudah selesai. Sekarang mari kita lanjut ke tahapan selanjut-nya ;)</p>
@@ -166,7 +166,7 @@ See &lsquo;android &mdash;help&rsquo; for operations from the command line.
 
 
 <p>Karena ADT ini merupakan sebuah plugin pada Eclipse, maka pastikan dahulu anda menginstall Eclipse yang sesuai yaitu <strong>Eclipse 3.5.2 (Galileo) Classic</strong> yang bisa kita download dari <a href="http://www.eclipse.org/downloads/">http://www.eclipse.org/downloads/</a>. (Aneh kenapa plugin ADT ini tidak jalan ya di Eclipse Helios versi EE ??? Ada yang sudah pernah mencoba di Helios ???) Jika proses installasi Eclipse sudah selesai, sekarang installah plugin ADT ini dengan cara pilihlah menu <strong>Help > Install New Software</strong> dan masukkanlah alamat <a href="https://dl-ssl.google.com/android/eclipse/">https://dl-ssl.google.com/android/eclipse/</a> pada field <strong>Work with</strong> kemudian tekan <strong>ENTER</strong> dan tunggulah beberapa saat sampai muncul plugin <strong>Developer Tools</strong> dan berilah tanda centang seperti dibawah ini :
-<a href="http://martinusadyh.web.id/gallery/?album=4&amp;gallery=3&amp;pid=108"><img src="http://martinusadyh.web.id/wp-content/gallery/tutorial/androiddevelopmenttools.png" alt="AndroidDevelopmentTools" /></a><br/>
+<img src="/images/blog-images/Java_NetBeans/InstallasiAndroidSDKUntukPengembanganAplikasiAndroid/AndroidDevelopmentTools.png" title="Installasi Plugin ADT Pada Eclipse" >
 <strong>Installasi Plugin ADT Pada Eclipse</strong></p>
 
 <p>Tekanlah tombol <strong>Next</strong> hingga plugin <strong>Android Development Tools</strong> ter-install pada Eclipse kemudian restartlah Eclipse agar plugin <strong>Android Development Tools</strong> dapat segera digunakan :)</p>
@@ -178,7 +178,7 @@ Software being installed: Android Development Tools 0.9.7.v201005071157-36220 (c
 Missing requirement: Android Development Tools 0.9.7.v201005071157-36220 (com.android.ide.eclipse.adt.feature.group 0.9.7.v201005071157-36220) requires &lsquo;org.eclipse.gef 0.0.0&rsquo; but it could not be found</p></blockquote></blockquote>
 
 <p>Maka cara pemecahan-nya yaitu install-lah dahulu plugin <strong>WST Server Adapters</strong> dengan cara pilihlah menu <strong>Help > Install New Software</strong> dan masukkanlah alamat <a href="http://download.eclipse.org/releases/galileo/">http://download.eclipse.org/releases/galileo/</a> pada field <strong>Work with</strong> kemudian tekan <strong>ENTER</strong> tunggu sampai menampilkan daftar plugin lalu ketikkan <strong>WST Server Adapters</strong> pada field <strong>Type Filter Text</strong> seperti dibawah ini :
-<a href="http://martinusadyh.web.id/gallery/?album=4&amp;gallery=3&amp;pid=112"><img src="http://martinusadyh.web.id/wp-content/gallery/tutorial/installwst.png" alt="InstallWST" /></a><br/>
+<img src="/images/blog-images/Java_NetBeans/InstallasiAndroidSDKUntukPengembanganAplikasiAndroid/InstallWST.png" title="Installasi Plugin WST Server Adapters Pada Eclipse" >
 <strong>Installasi Plugin WST Server Adapters Pada Eclipse</strong></p>
 
 <p>Jika sudah selesai, restartlah Eclipse-nya dan lanjutkan untuk menginstall plugin ADT :)</p>
@@ -191,23 +191,23 @@ Missing requirement: Android Development Tools 0.9.7.v201005071157-36220 (com.an
 
 
 <p>Jika proses installasi plugin ADT berjalan dengan lancar, maka langkah selanjutnya yaitu menentukan lokasi <strong>Android SDK</strong> dengan cara pilihlah menu <strong>Window > Preferences</strong> dan pilihlah menu <strong>Android</strong> pada panel sebelah kiri seperti gambar dibawah ini :
-<a href="http://martinusadyh.web.id/gallery/?album=4&amp;gallery=3&amp;pid=114"><img src="http://martinusadyh.web.id/wp-content/gallery/tutorial/preferencesandroid.png" alt="PreferencesAndroid" /></a><br/>
+<img src="/images/blog-images/Java_NetBeans/InstallasiAndroidSDKUntukPengembanganAplikasiAndroid/PreferencesAndroid.png" title="Konfigurasi Plugin ADT" >
 <strong>Konfigurasi Plugin ADT</strong></p>
 
 <p>Pada jendela <strong>Preferences</strong> diatas, tekanlah tombol <strong>Browse</strong> dan arahkan pada tempat dimana kita menginstall <strong>Android SDK</strong> kemudian tekanlah tombol <strong>Apply</strong> hingga tampilannya seperti gambar dibawah ini :
-<a href="http://martinusadyh.web.id/gallery/?album=4&amp;gallery=3&amp;pid=111"><img src="http://martinusadyh.web.id/wp-content/gallery/tutorial/gambar_preferences_android2.png" alt="gambar_preferences_android2" /></a><br/>
+<img src="/images/blog-images/Java_NetBeans/InstallasiAndroidSDKUntukPengembanganAplikasiAndroid/gambar_preferences_android2.png" title="gambar_preferences_android2" ><br/>
 <strong>Tampilan Android SDK Yang Sudah Dikenali</strong></p>
 
 <p>Jika sudah sekarang mari kita konfigurasi <strong>Android Virtual Device (ADV)</strong> melalui menu <strong>Window > Android SDK and ADV Manager</strong> seperti gambar dibawah ini :
-<a href="http://martinusadyh.web.id/gallery/?album=4&amp;gallery=3&amp;pid=113"><img src="http://martinusadyh.web.id/wp-content/gallery/tutorial/jendelaadv.png" alt="JendelaADV" /></a><br/>
+<img src="/images/blog-images/Java_NetBeans/InstallasiAndroidSDKUntukPengembanganAplikasiAndroid/JendelaADV.png" title="Dialog Konfigurasi Android Virtual Device" >
 <strong>Dialog Konfigurasi Android Virtual Device</strong></p>
 
 <p>Pada dialog <strong>Android SDK and ADV Manager</strong> tekanlah tombol <strong>New</strong> pada panel sebelah kanan dan isikan Nama Virtual Device serta pilihlah versi Android yang ingin di simulasikan pada field Target seperti dibawah ini setelah itu tekanlah tombol <strong>Create AVD</strong> :
-<a href="http://martinusadyh.web.id/gallery/?album=4&amp;gallery=3&amp;pid=109"><img src="http://martinusadyh.web.id/wp-content/gallery/tutorial/androidvd.png" alt="AndroidVD" /></a><br/>
+<img src="/images/blog-images/Java_NetBeans/InstallasiAndroidSDKUntukPengembanganAplikasiAndroid/AndroidVD.png" title="Konfigurasi Android Virtual Device" >
 <strong>Konfigurasi Android Virtual Device</strong></p>
 
 <p>Proses installasi Android SDK dan konfigurasi plugin ADT pada Eclipse sudah selesai, nah sekarang untuk mengetest apakah hasil installasi ini berjalan dengan sukses atau tidak. Cobalah untuk membuat sebuah project baru yang berbasis pada direktori <strong>[android-sdk-home]/samples/</strong>, dan jika tidak ada masalah maka kita akan dapat menjalankan salah satu project samples seperti dibawah ini :
-<a href="http://martinusadyh.web.id/gallery/?album=4&amp;gallery=3&amp;pid=115"><img src="http://martinusadyh.web.id/wp-content/gallery/tutorial/snakeandroidsampleproject.png" alt="SnakeAndroidSampleProject" /></a><br/>
+<img src="/images/blog-images/Java_NetBeans/InstallasiAndroidSDKUntukPengembanganAplikasiAndroid/SnakeAndroidSampleProject.png" title="Android Emulator Menjalankan Sample Project Snake" >
 <strong>Android Emulator Menjalankan Sample Project Snake</strong></p>
 
 <p>Nah setelah perlengkapan perang kita sudah siap, sekarang waktu-nya untuk mempelajari lebih dalam lagi bagaimana membuat sebuah aplikasi untuk Android :D Sekarang, waktu-nya untuk belajar dahulu ya teman-teman  :senyum:</p>
@@ -215,8 +215,8 @@ Missing requirement: Android Development Tools 0.9.7.v201005071157-36220 (com.an
 <p><strong>Referensi-referensi terkait :</strong></p>
 
 <ol>
-<li><p> <a href="http://blog.tobsen.de/2009/12/android-sdk-installationsprobleme.html">Android Installation Problem</a></p></li>
-<li><p> [<a href="http://developer.android.com/">http://developer.android.com/</a></p></li>
+<li> <a href="http://blog.tobsen.de/2009/12/android-sdk-installationsprobleme.html">Android Installation Problem</a></li>
+<li> <a href="http://developer.android.com/">http://developer.android.com/</a></li>
 </ol>
 
 </div>
