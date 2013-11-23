@@ -126,10 +126,10 @@
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-<div class="entry-content"><p>Sore tadi waktu ngelihat milis tanya-jawab@linux.or.id, ada pertanyaan dari om <a href="http://ffaradyc.blogsome.com/">Dewa Ehem</a> tentang bagaimana sih cara membuat database, user dan password sekaligus berbasis pada user yang terdaftar pada mesin linux kita.  Nah dibawah ini pertanyaan yang dikirim oleh om <a href="http://ffaradyc.blogsome.com/">Dewa Ehem</a> ke milis <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x74;&#97;&#x6e;&#121;&#x61;&#45;&#x6a;&#x61;&#119;&#x61;&#98;&#64;&#108;&#x69;&#110;&#117;&#x78;&#46;&#x6f;&#x72;&#46;&#x69;&#x64;">&#116;&#x61;&#110;&#121;&#97;&#45;&#x6a;&#97;&#x77;&#x61;&#x62;&#64;&#x6c;&#x69;&#x6e;&#117;&#x78;&#46;&#x6f;&#114;&#46;&#105;&#100;</a></p>
+<div class="entry-content"><p>Sore tadi waktu ngelihat milis tanya-jawab@linux.or.id, ada pertanyaan dari om <a href="http://ffaradyc.blogsome.com/">Dewa Ehem</a> tentang bagaimana sih cara membuat database, user dan password sekaligus berbasis pada user yang terdaftar pada mesin linux kita.  Nah dibawah ini pertanyaan yang dikirim oleh om <a href="http://ffaradyc.blogsome.com/">Dewa Ehem</a> ke milis <a href="&#109;&#97;&#x69;&#108;&#x74;&#111;&#58;&#116;&#97;&#x6e;&#x79;&#x61;&#45;&#x6a;&#97;&#119;&#97;&#98;&#64;&#x6c;&#x69;&#x6e;&#x75;&#120;&#46;&#x6f;&#x72;&#46;&#105;&#100;">&#116;&#x61;&#110;&#x79;&#x61;&#45;&#x6a;&#x61;&#119;&#97;&#98;&#x40;&#x6c;&#105;&#110;&#x75;&#120;&#46;&#111;&#x72;&#x2e;&#x69;&#100;</a></p>
 
 <blockquote><p>From: &ldquo;Funny Farady Coastera&rdquo;
-To: <a href="&#x6d;&#x61;&#105;&#108;&#116;&#111;&#x3a;&#x74;&#97;&#110;&#x79;&#97;&#45;&#x6a;&#97;&#119;&#x61;&#x62;&#x40;&#x6c;&#105;&#110;&#117;&#x78;&#x2e;&#111;&#114;&#x2e;&#x69;&#100;">&#x74;&#97;&#x6e;&#121;&#97;&#x2d;&#106;&#x61;&#119;&#x61;&#x62;&#x40;&#x6c;&#x69;&#110;&#x75;&#x78;&#x2e;&#x6f;&#114;&#46;&#x69;&#100;</a>
+To: <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#111;&#58;&#x74;&#97;&#x6e;&#x79;&#97;&#45;&#x6a;&#x61;&#x77;&#x61;&#x62;&#64;&#108;&#105;&#110;&#x75;&#120;&#x2e;&#x6f;&#114;&#46;&#x69;&#x64;">&#116;&#97;&#x6e;&#x79;&#97;&#45;&#x6a;&#97;&#x77;&#97;&#98;&#64;&#108;&#105;&#110;&#x75;&#120;&#x2e;&#x6f;&#114;&#46;&#x69;&#100;</a>
 Date: Thu, 9 Apr 2009 16:35:55 +0700
 Subject: [tanya-jawab] mengatur privilege user mysql secara masal</p></blockquote>
 
@@ -153,43 +153,80 @@ BTW, kalau thread ini masuk kategori programming mohon di pindah</p>
 
 <p>Nah gara-gara pertanyaan tersebut, akhirnya jadi iseng-iseng deh ngebuat shell scriptnya :D Dan hasil dari pertanyaan yang diajukan dari om <a href="http://ffaradyc.blogsome.com/">Dewa Ehem</a> adalah sebagai berikut :</p>
 
-<pre><code>#!/bin/sh
+<figure class='code'><figcaption><span>mysql_gen_by_user.sh</span><a href='https://gist.github.com/martinusadyh/7617845.js'>link</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="c">#!/bin/sh</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># Variable declaration</span>
+</span><span class='line'><span class="nv">MYSQL_ROOT_USER</span><span class="o">=</span>root
+</span><span class='line'><span class="nv">MYSQL_ROOT_PASSWD</span><span class="o">=</span>admin
+</span><span class='line'><span class="nv">HOME_DIR</span><span class="o">=</span>/export/home
+</span><span class='line'><span class="nv">TMP_FILE</span><span class="o">=</span>/tmp/LIST_OF_USER.txt
+</span><span class='line'><span class="nv">SQL_FILE</span><span class="o">=</span>/tmp/SQL_FILE.sql
+</span><span class='line'>
+</span><span class='line'><span class="c"># Function declaration</span>
+</span><span class='line'>getListOfUser<span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>  cut -d <span class="s2">&quot; &quot;</span> -f2 <span class="nv">$TMP_FILE</span> | sort | cut -d <span class="s2">&quot; &quot;</span> -f1
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># List available user in home dir</span>
+</span><span class='line'>ls <span class="nv">$HOME_DIR</span> &gt; <span class="nv">$TMP_FILE</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">for </span>user in <span class="k">$(</span>getListOfUser<span class="k">)</span> ; <span class="k">do</span>
+</span><span class='line'><span class="k">  </span><span class="nb">echo</span> <span class="s2">&quot;Creating database and db user base on &quot;</span> <span class="nv">$user</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c"># Creating database with $user</span>
+</span><span class='line'>  <span class="nb">echo</span> <span class="s2">&quot;create database $user;&quot;</span> &gt;&gt; <span class="nv">$SQL_FILE</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c"># Create user first</span>
+</span><span class='line'>  <span class="nb">echo</span> <span class="s2">&quot;CREATE USER &#39;$user&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;$user&#39;;&quot;</span> &gt;&gt; <span class="nv">$SQL_FILE</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c"># Give permission to this $user</span>
+</span><span class='line'>  <span class="nb">echo</span> <span class="s2">&quot;GRANT SELECT, INSERT, UPDATE, DELETE ON $user.* TO &#39;$user&#39;@&#39;localhost&#39;;&quot;</span> &gt;&gt; <span class="nv">$SQL_FILE</span>
+</span><span class='line'><span class="k">done</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># Connecting to MySQL then insert to database</span>
+</span><span class='line'>mysql -u <span class="nv">$MYSQL_ROOT_USER</span> -p<span class="nv">$MYSQL_ROOT_PASSWD</span> &lt; <span class="nv">$SQL_FILE</span>
+</span><span class='line'><span class="nb">echo</span> <span class="s2">&quot;Deleting temporary file&quot;</span>
+</span><span class='line'>rm -rf <span class="nv">$TMP_FILE</span>
+</span><span class='line'>rm -rf <span class="nv">$SQL_FILE</span>
+</span><span class='line'><span class="nb">echo</span> <span class="s2">&quot;Creating MySQL User based on user home done. &quot;</span>
+</span></code></pre></td></tr></table></div></figure>
 
-# Variable declaration
-MYSQL_ROOT_USER=root
-MYSQL_ROOT_PASSWD=admin
-HOME_DIR=/export/home
-TMP_FILE=/tmp/LIST_OF_USER.txt
-SQL_FILE=/tmp/SQL_FILE.sql
-
-# Function declaration
-getListOfUser() {
-  cut -d " " -f2 $TMP_FILE | sort | cut -d " " -f1
-}
-
-# List available user in home dir
-ls $HOME_DIR &gt; $TMP_FILE
-
-for user in $(getListOfUser) ; do
-  echo "Creating database and db user base on " $user
-
-  # Creating database with $user
-  echo "create database $user;" &gt;&gt; $SQL_FILE
-
-  # Create user first
-  echo "CREATE USER '$user'@'localhost' IDENTIFIED BY '$user';" &gt;&gt; $SQL_FILE
-
-  # Give permission to this $user
-  echo "GRANT SELECT, INSERT, UPDATE, DELETE ON $user.* TO '$user'@'localhost';" &gt;&gt; $SQL_FILE
-done
-
-# Connecting to MySQL then insert to database
-mysql -u $MYSQL_ROOT_USER -p$MYSQL_ROOT_PASSWD &lt; $SQL_FILE
-echo "Deleting temporary file"
-rm -rf $TMP_FILE
-rm -rf $SQL_FILE
-echo "Creating MySQL User based on user home done. "
-</code></pre>
 
 <p>Penjelasan kode diatas adalah sebagai berikut :</p>
 
