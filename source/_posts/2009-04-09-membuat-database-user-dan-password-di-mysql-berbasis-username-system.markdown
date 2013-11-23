@@ -45,46 +45,46 @@ Wassalamu'alaikum Wr. Wb
 <!-- more -->
 Nah gara-gara pertanyaan tersebut, akhirnya jadi iseng-iseng deh ngebuat shell scriptnya :D Dan hasil dari pertanyaan yang diajukan dari om [Dewa Ehem](http://ffaradyc.blogsome.com/) adalah sebagai berikut :
 
-    
-    
-    #!/bin/sh
-    
-    # Variable declaration
-    MYSQL_ROOT_USER=root
-    MYSQL_ROOT_PASSWD=admin
-    HOME_DIR=/export/home
-    TMP_FILE=/tmp/LIST_OF_USER.txt
-    SQL_FILE=/tmp/SQL_FILE.sql
-    
-    # Function declaration
-    getListOfUser() {
-      cut -d " " -f2 $TMP_FILE | sort | cut -d " " -f1
-    }
-    
-    # List available user in home dir
-    ls $HOME_DIR > $TMP_FILE
-    
-    for user in $(getListOfUser) ; do
-      echo "Creating database and db user base on " $user
-    
-      # Creating database with $user
-      echo "create database $user;" >> $SQL_FILE
-    
-      # Create user first
-      echo "CREATE USER '$user'@'localhost' IDENTIFIED BY '$user';" >> $SQL_FILE
-    
-      # Give permission to this $user
-      echo "GRANT SELECT, INSERT, UPDATE, DELETE ON $user.* TO '$user'@'localhost';" >> $SQL_FILE
-    done
-    
-    # Connecting to MySQL then insert to database
-    mysql -u $MYSQL_ROOT_USER -p$MYSQL_ROOT_PASSWD < $SQL_FILE
-    echo "Deleting temporary file"
-    rm -rf $TMP_FILE
-    rm -rf $SQL_FILE
-    echo "Creating MySQL User based on user home done. "
-    
+``` sh mysql_gen_by_user.sh https://gist.github.com/martinusadyh/7617845.js
 
+#!/bin/sh
+
+# Variable declaration
+MYSQL_ROOT_USER=root
+MYSQL_ROOT_PASSWD=admin
+HOME_DIR=/export/home
+TMP_FILE=/tmp/LIST_OF_USER.txt
+SQL_FILE=/tmp/SQL_FILE.sql
+
+# Function declaration
+getListOfUser() {
+  cut -d " " -f2 $TMP_FILE | sort | cut -d " " -f1
+}
+
+# List available user in home dir
+ls $HOME_DIR > $TMP_FILE
+
+for user in $(getListOfUser) ; do
+  echo "Creating database and db user base on " $user
+
+  # Creating database with $user
+  echo "create database $user;" >> $SQL_FILE
+
+  # Create user first
+  echo "CREATE USER '$user'@'localhost' IDENTIFIED BY '$user';" >> $SQL_FILE
+
+  # Give permission to this $user
+  echo "GRANT SELECT, INSERT, UPDATE, DELETE ON $user.* TO '$user'@'localhost';" >> $SQL_FILE
+done
+
+# Connecting to MySQL then insert to database
+mysql -u $MYSQL_ROOT_USER -p$MYSQL_ROOT_PASSWD < $SQL_FILE
+echo "Deleting temporary file"
+rm -rf $TMP_FILE
+rm -rf $SQL_FILE
+echo "Creating MySQL User based on user home done. "
+
+```
 
 Penjelasan kode diatas adalah sebagai berikut :
 
