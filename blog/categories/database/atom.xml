@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: DataBase | Martinus Ady H. BloG]]></title>
-  <link href="http://martinusadyh.github.io/blog/categories/database/atom.xml" rel="self"/>
-  <link href="http://martinusadyh.github.io/"/>
-  <updated>2013-11-23T21:45:02+07:00</updated>
-  <id>http://martinusadyh.github.io/</id>
+  <link href="http://martinusadyh.web.id/blog/categories/database/atom.xml" rel="self"/>
+  <link href="http://martinusadyh.web.id/"/>
+  <updated>2013-11-23T22:02:29+07:00</updated>
+  <id>http://martinusadyh.web.id/</id>
   <author>
     <name><![CDATA[Martinus Ady H]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Howto Change Default Editor Font in MySQL Workbench]]></title>
-    <link href="http://martinusadyh.github.io/2013/03/16/howto-change-default-editor-font-in-mysql-workbench/"/>
+    <link href="http://martinusadyh.web.id/2013/03/16/howto-change-default-editor-font-in-mysql-workbench/"/>
     <updated>2013-03-16T20:57:54+07:00</updated>
-    <id>http://martinusadyh.github.io/2013/03/16/howto-change-default-editor-font-in-mysql-workbench</id>
+    <id>http://martinusadyh.web.id/2013/03/16/howto-change-default-editor-font-in-mysql-workbench</id>
     <content type="html"><![CDATA[<p>Pernah merasa bahwa font yang digunakan oleh aplikasi <a href="http://dev.mysql.com/downloads/workbench/">MySQL Workbench</a> kurang nikmat dipandang mata ? Pernah merasa ingin mengganti font yang digunakan oleh <strong>MySQL Workbench</strong> melalui menu <strong>Edit > Preferences</strong> tapi masih saja tidak berubah  ? Jika iya, berarti kita mempunyai masalah yang sama :D Setelah kemarin iseng-iseng bertanya ke paman <a href="http://google.com">Google</a>, akhirnya saya menemukan juga bagaimana mengganti font untuk SQL Editor di <strong>MySQL Workbench</strong> :) Jika kita menggunakan linux, maka carilah file dengan nama <code>/home/namauser/.mysql/workbench</code> (catatan: <strong>namauser</strong> diganti dengan nama user anda) dan jika di Windows maka carilah file <code>C:\Users\User\AppData\Roaming\MySQL\Workbench\wb_options.xml</code> Jika sudah, sekarang carilah entri seperti dibawah ini :</p>
 
 <pre><code>&lt;value type="string" key="workbench.general.Editor:Font"&gt;Bitstream Vera Sans Mono 11&lt;/value&gt;
@@ -39,9 +39,9 @@
   
   <entry>
     <title type="html"><![CDATA[Create Auto Increment In JavaDB]]></title>
-    <link href="http://martinusadyh.github.io/2012/10/27/create-auto-increment-in-javadb/"/>
+    <link href="http://martinusadyh.web.id/2012/10/27/create-auto-increment-in-javadb/"/>
     <updated>2012-10-27T21:33:42+07:00</updated>
-    <id>http://martinusadyh.github.io/2012/10/27/create-auto-increment-in-javadb</id>
+    <id>http://martinusadyh.web.id/2012/10/27/create-auto-increment-in-javadb</id>
     <content type="html"><![CDATA[<p>[caption id=&ldquo;attachment_1883&rdquo; align=&ldquo;alignleft&rdquo; width=&ldquo;110&rdquo;]<a href="http://martinusadyh.web.id/wp-content/uploads/2012/08/JavaDB.png"><img src="http://martinusadyh.web.id/wp-content/uploads/2012/08/JavaDB.png" alt="JavaDB" /></a>JavaDB[/caption]Kemarin sempat bermain-main sebentar dengan <a href="http://www.oracle.com/technetwork/java/javadb/index.html">JavaDB</a> dan ternyata baru tahu, kalau editor SQL di NetBeans ternyata tidak (belum) ada fitur untuk membuat kolom <strong>auto increment</strong> untuk <strong>JavaDB</strong> :( Nah untuk teman-teman yang ingin membuat kolom <strong>auto increment</strong> di <strong>JavaDB</strong> mungkin bisa menambahkan perintah <code>ID INTEGER NOT NULL PRIMARY KEY GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1)</code> pada script <code>create table</code> di JavaDB seperti terlihat pada script dibawah ini :</p>
 
 <pre><code>create table M_BARANG
@@ -79,9 +79,9 @@ from    M_BARANG;
   
   <entry>
     <title type="html"><![CDATA[LiquiBase XML Generator]]></title>
-    <link href="http://martinusadyh.github.io/2011/12/14/liquibase-xml-generator/"/>
+    <link href="http://martinusadyh.web.id/2011/12/14/liquibase-xml-generator/"/>
     <updated>2011-12-14T01:17:35+07:00</updated>
-    <id>http://martinusadyh.github.io/2011/12/14/liquibase-xml-generator</id>
+    <id>http://martinusadyh.web.id/2011/12/14/liquibase-xml-generator</id>
     <content type="html"><![CDATA[<p>Beberapa terakhir ini, di project yang sedang saya kerjakan ada beberapa mainan yang baru buat saya. Nah yang pertama yaitu <a href="http://www.liquibase.org/">Liquibase</a>. Untuk yang belum tahu, <strong>Liquibase</strong> ini adalah sebuah database independent library open source (lisensi yang digunakan adalah Apache 2.0) yang dapat digunakan untuk tracking, managing dan applying perubahan terhadap database. Dan semua konfigurasi di <strong>Liquibase</strong> ini tersimpan pada sebuah file <strong>XML</strong> yang nantinya dapat disimpan kedalam <strong>version control</strong>.</p>
 
 <p>Beberapa fitur dari <strong>Liquibase</strong> ini adalah :</p>
@@ -254,9 +254,9 @@ Query OK, 1 row affected (0.03 sec)</p>
   
   <entry>
     <title type="html"><![CDATA[Installing Tora On Slackware 13.37]]></title>
-    <link href="http://martinusadyh.github.io/2011/08/22/installing-tora-on-slackware-13-37/"/>
+    <link href="http://martinusadyh.web.id/2011/08/22/installing-tora-on-slackware-13-37/"/>
     <updated>2011-08-22T23:37:45+07:00</updated>
-    <id>http://martinusadyh.github.io/2011/08/22/installing-tora-on-slackware-13-37</id>
+    <id>http://martinusadyh.web.id/2011/08/22/installing-tora-on-slackware-13-37</id>
     <content type="html"><![CDATA[<p>Ingin mencari database tool yang mempunyai fitur yang mirip dengan <a href="http://www.questsoftware.com.sg/toad/">Toad</a> di GNU/Linux ? Jika iya, silahkan mencoba <a href="http://torasql.com/about">TOra</a> :) Nah yang lebih bagus lagi yaitu, <strong>TOra</strong> mendukung database <strong>MySQL</strong>, <strong>PostgreSQL</strong> dan <strong>Oracle</strong> sekaligus. (Tapi kalau untuk <strong>PostgreSQL</strong> saya lebih senang menggunakan <a href="http://martinusadyh.web.id/2010/03/04/installing-pgadmin3-1-10-1-on-slackware-13-0/">PgAdmin</a> :) )</p>
 
 <p>Beberapa fitur yang terdapat pada <strong>TOra</strong> kurang lebih yaitu :</p>
@@ -310,9 +310,9 @@ Query OK, 1 row affected (0.03 sec)</p>
   
   <entry>
     <title type="html"><![CDATA[Paging On JTable]]></title>
-    <link href="http://martinusadyh.github.io/2011/01/31/paging-on-jtable/"/>
+    <link href="http://martinusadyh.web.id/2011/01/31/paging-on-jtable/"/>
     <updated>2011-01-31T02:43:45+07:00</updated>
-    <id>http://martinusadyh.github.io/2011/01/31/paging-on-jtable</id>
+    <id>http://martinusadyh.web.id/2011/01/31/paging-on-jtable</id>
     <content type="html"><![CDATA[<p>Sedang mencari solusi <strong>Paging di JTable</strong> ? Jika iya, pada posting kali ini kita akan mencoba membuat supaya <strong>JTable</strong> pada aplikasi kita mendukung <strong>pagination</strong> :D Niat awal sih sebenarnya ingin menjadikan <strong>Table Paging</strong> ini menjadi sebuah komponen yang tinggal <strong>&ldquo;drag and drop&rdquo;</strong> saja untuk menggunakan-nya, tapi apa daya sampai sekarang juga belum jadi-jadi komponen-nya :D</p>
 
 <p>Pembuatan <strong>Table Paging</strong> ini semuanya terinspirasi dari komponen javascript untuk jQuery bernama <a href="http://www.flexigrid.info/">Flexigrid</a> yang tampilan-nya kurang lebih seperti gambar dibawah ini :

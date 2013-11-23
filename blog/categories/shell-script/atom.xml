@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Shell Script | Martinus Ady H. BloG]]></title>
-  <link href="http://martinusadyh.github.io/blog/categories/shell-script/atom.xml" rel="self"/>
-  <link href="http://martinusadyh.github.io/"/>
-  <updated>2013-11-23T21:45:02+07:00</updated>
-  <id>http://martinusadyh.github.io/</id>
+  <link href="http://martinusadyh.web.id/blog/categories/shell-script/atom.xml" rel="self"/>
+  <link href="http://martinusadyh.web.id/"/>
+  <updated>2013-11-23T22:02:29+07:00</updated>
+  <id>http://martinusadyh.web.id/</id>
   <author>
     <name><![CDATA[Martinus Ady H]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[How To Embedding Your Binary Files into Shell Script]]></title>
-    <link href="http://martinusadyh.github.io/2012/08/04/how-to-embedding-your-binary-files-into-shell-script/"/>
+    <link href="http://martinusadyh.web.id/2012/08/04/how-to-embedding-your-binary-files-into-shell-script/"/>
     <updated>2012-08-04T14:47:56+07:00</updated>
-    <id>http://martinusadyh.github.io/2012/08/04/how-to-embedding-your-binary-files-into-shell-script</id>
+    <id>http://martinusadyh.web.id/2012/08/04/how-to-embedding-your-binary-files-into-shell-script</id>
     <content type="html"><![CDATA[<p>Pada tulisan kali ini, kita akan membahas bagaimana membuat sebuah shell script yang berisi sebuah <strong><em>binary file</em></strong>. Apa sih sebenarnya yang bisa kita lakukan dengan sebuah shell script yang berisi file binary ? Hm.. sebenarnya banyak sih, dan salah satunya adalah membuat installer untuk sistem operasi GNU/Linux seperti installer milik <strong>NetBeans IDE</strong> yang mempunyai ekstensi <strong>*.sh</strong> :)</p>
 
 <p>Nah untuk membantu tujuan kita diatas, kita membutuhkan bantuan sebuah shell script yaitu <a href="http://megastep.org/makeself/">makeself</a>. Untuk yang belum tahu apa itu script makeself, dibawah ini adalah deskripsi singkat tentang  script makeself :</p>
@@ -236,9 +236,9 @@ martinus@artivisi:[/tmp/test-makeself/makeself-2.1.5/result]$
   
   <entry>
     <title type="html"><![CDATA[Batch Rename with Shell Script]]></title>
-    <link href="http://martinusadyh.github.io/2011/09/09/batch-rename-with-shell-script/"/>
+    <link href="http://martinusadyh.web.id/2011/09/09/batch-rename-with-shell-script/"/>
     <updated>2011-09-09T19:50:09+07:00</updated>
-    <id>http://martinusadyh.github.io/2011/09/09/batch-rename-with-shell-script</id>
+    <id>http://martinusadyh.web.id/2011/09/09/batch-rename-with-shell-script</id>
     <content type="html"><![CDATA[<p>Kemarin di tempat saya bekerja ada kejadian bagaimana caranya me-rename nama file yang mempunyai akhiran <strong>&ldquo;S&rdquo;</strong> menjadi <strong>&ldquo;R&rdquo;</strong>, masalahnya adalah semua file tersebut tidak mempunyai pattern yang sama kecuali 3 huruf di depan dan 1 huruf dibelakang yaitu huruf <strong>&ldquo;S&rdquo;</strong> yang harus dirubah menjadi <strong>&ldquo;R&rdquo;</strong> :D Contoh nama file yang akan direname kurang lebih seperti terlihat dibawah ini :
 [plain]
 martinus@artivisi:[~]$ ls
@@ -283,9 +283,9 @@ martinus@artivisi:[~]$
   
   <entry>
     <title type="html"><![CDATA[Call For Paper Programming Tutorial on SlackID Ezine]]></title>
-    <link href="http://martinusadyh.github.io/2010/05/25/call-for-paper-programming-tutorial-on-slackid-ezine/"/>
+    <link href="http://martinusadyh.web.id/2010/05/25/call-for-paper-programming-tutorial-on-slackid-ezine/"/>
     <updated>2010-05-25T00:36:47+07:00</updated>
-    <id>http://martinusadyh.github.io/2010/05/25/call-for-paper-programming-tutorial-on-slackid-ezine</id>
+    <id>http://martinusadyh.web.id/2010/05/25/call-for-paper-programming-tutorial-on-slackid-ezine</id>
     <content type="html"><![CDATA[<p>Hii slacker&rsquo;s, suka menulis tentang bahasa pemrograman ? Berprofesi sebagai programmer dan kebetulan menggunakan Slackware sebagai sistem operasi utama-nya ? Jika iya, apakah teman-teman mau berbagi pengalaman dengan pengguna Slackware yang lain bagaimana menyiapkan segala keperluan yang dibutuhkan agar kegiatan koding kita menjadi nyaman menggunakan Slackware ? Tidak dapat dipungkiri, menyiapkan <strong>&ldquo;alat perang untuk koding&rdquo;</strong> di Slackware benar-benar merupakan sebuah tantangan tersendiri :) Terutama jika ketergantungan <strong>&ldquo;library&rdquo;</strong> yang digunakan oleh IDE atau bahasa pemrograman-nya sendiri banyak sekali, bisa-bisa kita tidak <strong>&ldquo;produktif&rdquo;</strong> karena terlalu sibuk untuk menyiapkan <strong>&ldquo;alat perang&rdquo;</strong> dahulu :) Dan kalau sudah begini biasanya pindah ke distro yang lebih mudah :D</p>
 
 <p>Untuk teman-teman ketahui, SlackID edisi ke 2 yang akan terbit mendatang akan memasukkan kategori <strong>Programming</strong> dalam rubriknya :) Nah kira-kira menurut teman-teman slacker&rsquo;s sendiri, topik apa yang ingin dibahas pada Edisi ke 2 ini ?? Beberapa ide yang muncul pada rapat kemarin adalah membahas bahasa pemrograman dibawah ini :</p>
@@ -316,9 +316,9 @@ martinus@artivisi:[~]$
   
   <entry>
     <title type="html"><![CDATA[Diskusi Manajemen Proyek]]></title>
-    <link href="http://martinusadyh.github.io/2010/03/31/diskusi-manajemen-proyek/"/>
+    <link href="http://martinusadyh.web.id/2010/03/31/diskusi-manajemen-proyek/"/>
     <updated>2010-03-31T22:25:24+07:00</updated>
-    <id>http://martinusadyh.github.io/2010/03/31/diskusi-manajemen-proyek</id>
+    <id>http://martinusadyh.web.id/2010/03/31/diskusi-manajemen-proyek</id>
     <content type="html"><![CDATA[<p>Pingin tahu bagaimana tips dan trik mengelola proyek IT ? Atau mungkin, pingin tahu bagaimana sih dapur-nya sebuah <em><strong>Software House</strong></em> itu ? Atau ingin tahu bagaimana sih penerapan <a href="http://en.wikipedia.org/wiki/Extreme_Programming">Extreme Programming</a>, <a href="http://en.wikipedia.org/wiki/Agile_software_development">Agile Metodologi</a>, dan berbagai macam metodologi keren yang lain. Kalau iya dan teman-teman ingin tahu, mungkin teman-teman bisa bergabung ke milis <a href="http://groups.google.com/group/it-project-indonesia">Manajemen Proyek IT</a> yang terdapat di <a href="http://groups.google.com/">GoogleGroups</a> :) Untuk teman-teman yang bertanya-tanya, apa sih isi dan yang dibahas di komunitas <a href="http://groups.google.com/group/it-project-indonesia">Manajemen Proyek IT</a> ini ? Hm.. ini yang ada dihalaman depan groups-nya :</p>
 
 <blockquote><p>Di komunitas ini, kita membahas :</p></blockquote>
@@ -372,9 +372,9 @@ martinus@artivisi:[~]$
   
   <entry>
     <title type="html"><![CDATA[Installasi File tar.gz dan tar.bz2]]></title>
-    <link href="http://martinusadyh.github.io/2010/03/27/installasi-file-tar-gz-dan-tar-bz2/"/>
+    <link href="http://martinusadyh.web.id/2010/03/27/installasi-file-tar-gz-dan-tar-bz2/"/>
     <updated>2010-03-27T05:42:06+07:00</updated>
-    <id>http://martinusadyh.github.io/2010/03/27/installasi-file-tar-gz-dan-tar-bz2</id>
+    <id>http://martinusadyh.web.id/2010/03/27/installasi-file-tar-gz-dan-tar-bz2</id>
     <content type="html"><![CDATA[<p>Bingung bagaimana caranya menginstall file yang mempunya ekstensi <strong>tar.gz</strong> atau <strong>tar.bz2</strong> ? Apasih sebenarnya file <strong>tar.gz</strong> atau <strong>tar.bz2</strong> ini ? Buat teman-teman yang belum tahu, file dengan ekstensi <strong>tar.gz</strong> atau <strong>tar.bz2</strong> ini biasanya adalah sebuah <strong>source code</strong> dari sebuah aplikasi. Masih bingung juga dengan penjelasan barusan ? Kalau iya, sebenarnya distribusi GNU/Linux itu terdapat 2 macam model distribusi packages ? 2 macam model distribusi ? Yups.. 2 macam model distribusi tersebut yaitu :</p>
 
 <ol>

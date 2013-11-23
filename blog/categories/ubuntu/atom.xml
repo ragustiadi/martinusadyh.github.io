@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Ubuntu | Martinus Ady H. BloG]]></title>
-  <link href="http://martinusadyh.github.io/blog/categories/ubuntu/atom.xml" rel="self"/>
-  <link href="http://martinusadyh.github.io/"/>
-  <updated>2013-11-23T21:45:02+07:00</updated>
-  <id>http://martinusadyh.github.io/</id>
+  <link href="http://martinusadyh.web.id/blog/categories/ubuntu/atom.xml" rel="self"/>
+  <link href="http://martinusadyh.web.id/"/>
+  <updated>2013-11-23T22:02:29+07:00</updated>
+  <id>http://martinusadyh.web.id/</id>
   <author>
     <name><![CDATA[Martinus Ady H]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Finding Duplicate File in Linux]]></title>
-    <link href="http://martinusadyh.github.io/2012/09/01/finding-duplicate-file-in-linux/"/>
+    <link href="http://martinusadyh.web.id/2012/09/01/finding-duplicate-file-in-linux/"/>
     <updated>2012-09-01T21:12:48+07:00</updated>
-    <id>http://martinusadyh.github.io/2012/09/01/finding-duplicate-file-in-linux</id>
+    <id>http://martinusadyh.web.id/2012/09/01/finding-duplicate-file-in-linux</id>
     <content type="html"><![CDATA[<p>Kemarin ada yang tanya, gimana sih caranya mencari file duplicate di <strong>GNU/Linux</strong> ? Setelah beberapa kali mencari bantuan di <a href="http://google.com">Google</a> akhirnya ketemu juga caranya yaitu dengan menjalankan perintah seperti dibawah ini :
 [plain]
 $ find /tmp -type f | rev | sort | sed -nr &lsquo;:a N;/^([^/]<em>\/).</em>\n\1/p;D;ba&rsquo; | uniq | rev
@@ -30,9 +30,9 @@ Catatan: Direktori <code>/tmp</code> bisa kita ganti ke direktori yang di ingink
   
   <entry>
     <title type="html"><![CDATA[Ubuntu Global Menu Support In NetBeans]]></title>
-    <link href="http://martinusadyh.github.io/2012/08/18/ubuntu-global-menu-support-in-netbeans/"/>
+    <link href="http://martinusadyh.web.id/2012/08/18/ubuntu-global-menu-support-in-netbeans/"/>
     <updated>2012-08-18T01:12:28+07:00</updated>
-    <id>http://martinusadyh.github.io/2012/08/18/ubuntu-global-menu-support-in-netbeans</id>
+    <id>http://martinusadyh.web.id/2012/08/18/ubuntu-global-menu-support-in-netbeans</id>
     <content type="html"><![CDATA[<p>Untuk pengguna distribusi GNU/Linux Ubuntu pastinya sudah tidak asing lagi bukan dengan yang namanya <strong>Global Menu</strong>, nah yang jadi masalah disini adalah dengan adanya <strong>Global Menu</strong> semua aplikasi yang berbasis pada Java Swing terutama NetBeans jadi kelihatan <em>&ldquo;aneh&rdquo;</em> seperti terlihat pada screenshot dibawah ini :(</p>
 
 <p>[caption id=&ldquo;attachment_1844&rdquo; align=&ldquo;alignnone&rdquo; width=&ldquo;300&rdquo;]<a href="http://martinusadyh.web.id/gallery/?album=4&amp;gallery=3&amp;pid=182"><img src="http://martinusadyh.web.id/wp-content/uploads/2012/08/NetBeans-Default-300x168.png" alt="NetBeans Default" /></a> NetBeans Default[/caption]</p>
@@ -61,9 +61,9 @@ Catatan: Direktori <code>/tmp</code> bisa kita ganti ke direktori yang di ingink
   
   <entry>
     <title type="html"><![CDATA[Remove Guest Session in Ubuntu 12.04]]></title>
-    <link href="http://martinusadyh.github.io/2012/08/16/remove-guest-session-in-ubuntu-12-04/"/>
+    <link href="http://martinusadyh.web.id/2012/08/16/remove-guest-session-in-ubuntu-12-04/"/>
     <updated>2012-08-16T03:00:50+07:00</updated>
-    <id>http://martinusadyh.github.io/2012/08/16/remove-guest-session-in-ubuntu-12-04</id>
+    <id>http://martinusadyh.web.id/2012/08/16/remove-guest-session-in-ubuntu-12-04</id>
     <content type="html"><![CDATA[<p>Ingin menghilangkan guest session di Ubuntu 12.04 ? Jika iya, silahkan edit file <code>/etc/lightdm/lightdm.conf</code> dan tambahkan baris <code>allow-guest=false</code> menjadi seperti dibawah ini :</p>
 
 <pre><code>[SeatDefaults]
@@ -78,9 +78,9 @@ allow-guest=false
   
   <entry>
     <title type="html"><![CDATA[How To Embedding Your Binary Files into Shell Script]]></title>
-    <link href="http://martinusadyh.github.io/2012/08/04/how-to-embedding-your-binary-files-into-shell-script/"/>
+    <link href="http://martinusadyh.web.id/2012/08/04/how-to-embedding-your-binary-files-into-shell-script/"/>
     <updated>2012-08-04T14:47:56+07:00</updated>
-    <id>http://martinusadyh.github.io/2012/08/04/how-to-embedding-your-binary-files-into-shell-script</id>
+    <id>http://martinusadyh.web.id/2012/08/04/how-to-embedding-your-binary-files-into-shell-script</id>
     <content type="html"><![CDATA[<p>Pada tulisan kali ini, kita akan membahas bagaimana membuat sebuah shell script yang berisi sebuah <strong><em>binary file</em></strong>. Apa sih sebenarnya yang bisa kita lakukan dengan sebuah shell script yang berisi file binary ? Hm.. sebenarnya banyak sih, dan salah satunya adalah membuat installer untuk sistem operasi GNU/Linux seperti installer milik <strong>NetBeans IDE</strong> yang mempunyai ekstensi <strong>*.sh</strong> :)</p>
 
 <p>Nah untuk membantu tujuan kita diatas, kita membutuhkan bantuan sebuah shell script yaitu <a href="http://megastep.org/makeself/">makeself</a>. Untuk yang belum tahu apa itu script makeself, dibawah ini adalah deskripsi singkat tentang  script makeself :</p>
@@ -299,9 +299,9 @@ martinus@artivisi:[/tmp/test-makeself/makeself-2.1.5/result]$
   
   <entry>
     <title type="html"><![CDATA[Konfigurasi User Home Direktori Apache di Ubuntu 12.04]]></title>
-    <link href="http://martinusadyh.github.io/2012/07/07/konfigurasi-user-home-direktori-apache-di-ubuntu-12-04/"/>
+    <link href="http://martinusadyh.web.id/2012/07/07/konfigurasi-user-home-direktori-apache-di-ubuntu-12-04/"/>
     <updated>2012-07-07T18:58:40+07:00</updated>
-    <id>http://martinusadyh.github.io/2012/07/07/konfigurasi-user-home-direktori-apache-di-ubuntu-12-04</id>
+    <id>http://martinusadyh.web.id/2012/07/07/konfigurasi-user-home-direktori-apache-di-ubuntu-12-04</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>

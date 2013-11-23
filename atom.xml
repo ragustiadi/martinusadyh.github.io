@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Martinus Ady H. BloG]]></title>
-  <link href="http://martinusadyh.github.io/atom.xml" rel="self"/>
-  <link href="http://martinusadyh.github.io/"/>
-  <updated>2013-11-23T21:45:02+07:00</updated>
-  <id>http://martinusadyh.github.io/</id>
+  <link href="http://martinusadyh.web.id/atom.xml" rel="self"/>
+  <link href="http://martinusadyh.web.id/"/>
+  <updated>2013-11-23T22:02:02+07:00</updated>
+  <id>http://martinusadyh.web.id/</id>
   <author>
     <name><![CDATA[Martinus Ady H]]></name>
     
@@ -15,24 +15,24 @@
   
   <entry>
     <title type="html"><![CDATA[Cara Mudah Mendebug Widget di Dojo]]></title>
-    <link href="http://martinusadyh.github.io/2013/07/27/cara-mudah-mendebug-widget-di-dojo/"/>
+    <link href="http://martinusadyh.web.id/2013/07/27/cara-mudah-mendebug-widget-di-dojo/"/>
     <updated>2013-07-27T20:50:51+07:00</updated>
-    <id>http://martinusadyh.github.io/2013/07/27/cara-mudah-mendebug-widget-di-dojo</id>
+    <id>http://martinusadyh.web.id/2013/07/27/cara-mudah-mendebug-widget-di-dojo</id>
     <content type="html"><![CDATA[<p>Pernah menggunakan <a href="http://dojotoolkit.org/">Dojo Toolkit</a> sebagai UI <em>layer</em>? Pernah merasa kalau dokumentasi di Dojo itu sangat sedikit sekali ? Bingung tentang <em>function</em> apa saja yang terdapat di komponen tersebut ? Jika iya berarti sama dengan saya ketika dulu baru pertama kali baru mulai menggunakan Dojo sebagai pilihan untuk sisi UI. Sebenar-nya Dojo merupakan pilihan yang cukup <strong>&ldquo;mumpuni&rdquo;</strong> dibandingkan dengan <a href="http://www.sencha.com/products/extjs">ExtJS</a> dari sisi kelengkapan widget-widget yang disediakan, tetapi sayang-nya kelengkapan widget ini tidak didukung dengan dokumentasi yang sepadan jika dibandingkan dengan <a href="http://www.sencha.com/products/extjs">ExtJS</a> yang dokumentasi-nya cukup lengkap dari tutorial sampai ke sisi API <em>(Application Programming Interface)</em>-nya.</p>
 
 <p>Meskipun <a href="http://dojotoolkit.org/">Dojo Toolkit</a> juga mempunyai sebuah halaman <a href="http://dojotoolkit.org/api/">API Documentation</a>, tapi rasanya masih kurang lengkap menurut saya. Nah untuk mendebug sebuah widget Dojo untuk menampilkan seluruh function yang terdapat didalam-nya, maka kita memerlukan sebuah browser dan <a href="http://getfirebug.com/">Firebug</a> sebagai alat bantu kita (jika menggunakan Chrome, tidak perlu firebug lagi karena kita bisa membuka <strong>Developer Tools</strong> dengan menekan kombinasi tombol <strong>CTRL+SHIFT+J</strong>)</p>
 
 <p>Sebagai contoh misalkan kita mempunyai sebuah widget grid dengan id <code>tblSettingSegment</code> seperti gambar dibawah ini :
-<img src="http://martinusadyh.github.io/images/blog-images/javascript/cara-mudah-mendebug-widget-di-dojo/Contoh_Grid.png" title="'Contoh Grid'" ></p>
+<img src="http://martinusadyh.web.id/images/blog-images/javascript/cara-mudah-mendebug-widget-di-dojo/Contoh_Grid.png" title="'Contoh Grid'" ></p>
 
 <!-- more -->
 
 
 <p>jika grid tersebut sudah tampil di browser, maka bukalah firebug atau tekan kombinasi tombol <strong>CTRL+SHIFT+J</strong> kemudian di console ketikkan perintah <code>dijit.byId('tblSettingSegment')</code> kemudian tekan <strong>ENTER</strong> hingga Firebug tampilan-nya menjadi seperti dibawah ini :
-<img src="http://martinusadyh.github.io/images/blog-images/javascript/cara-mudah-mendebug-widget-di-dojo/Debug_Grid_Widget.png" title="'Debug Grid Widget'" ></p>
+<img src="http://martinusadyh.web.id/images/blog-images/javascript/cara-mudah-mendebug-widget-di-dojo/Debug_Grid_Widget.png" title="'Debug Grid Widget'" ></p>
 
 <p>Setelah hasilnya seperti diatas, maka kita bisa melihat seluruh fungsi yang terdapat di dojo grid tersebut dengan mengklik hasil output tersebut hingga tampilan-nya seperti gambar dibawah ini :
-<img src="http://martinusadyh.github.io/images/blog-images/javascript/cara-mudah-mendebug-widget-di-dojo/Daftar_Function.png" title="'Daftar Function'" ></p>
+<img src="http://martinusadyh.web.id/images/blog-images/javascript/cara-mudah-mendebug-widget-di-dojo/Daftar_Function.png" title="'Daftar Function'" ></p>
 
 <p>Nah disini kita bisa melihat seluruh function yang digunakan oleh Dojo grid baik yang terdapat di halaman API Documentation maupun tidak :) Mudah bukan ?</p>
 ]]></content>
@@ -40,9 +40,9 @@
   
   <entry>
     <title type="html"><![CDATA[Persiapan Sebelum Melakukan Pendakian]]></title>
-    <link href="http://martinusadyh.github.io/2013/07/21/persiapan-sebelum-melakukan-pendakian/"/>
+    <link href="http://martinusadyh.web.id/2013/07/21/persiapan-sebelum-melakukan-pendakian/"/>
     <updated>2013-07-21T04:46:30+07:00</updated>
-    <id>http://martinusadyh.github.io/2013/07/21/persiapan-sebelum-melakukan-pendakian</id>
+    <id>http://martinusadyh.web.id/2013/07/21/persiapan-sebelum-melakukan-pendakian</id>
     <content type="html"><![CDATA[<p>Setelah mengalami pertimbangan yang cukup lama, akhirnya saya putuskan juga untuk mem-publish tulisan ini :D Tulisan ini ditujukan untuk teman-teman yang masih baru mulai menyukai dunia pendakian gunung dan juga bukan bertujuan untuk menggurui, karena saya sendiri juga termasuk <strong>&ldquo;anak kemarin sore&rdquo;</strong> dalam dunia pendakian gunung. Sedangkan isi tulisan ini merupakan rangkuman dari saran-saran yang saya baca di forum (khususnya <a href="http://www.kaskus.co.id/forum/98/outdoor-adventure--nature-clubs">forum OANC kaskus</a>), groups pendakian gunung di FaceBook dan beberapa tambahan pengalaman pribadi sebelum melakukan pendakian :D Tulisan ini sebenarnya berdasarkan kejadian kemarin ketika saya melakukan <a href="martinusadyh.web.id/2013/06/27/pendakian-gunung-sindoro-3153-mdpl/">pendakian ke gunung sindoro</a> yang ternyata lupa membawa kopi :( yang mana merupakan menu wajib menurut saya. Karena kejadian tersebut, akhirnya muncul-lah ide untuk menuliskan hal-hal yang harus dilakukan sebelum melakukan pendakian :D</p>
 
 <p>Karena kegiatan pendakian gunung ini bisa dikatakan kegiatan yang &ldquo;cukup berbahaya&rdquo;, maka persiapan yang matang sebelum memulai pendakian sangat perlu dilakukan sebelum-nya. Beberapa persiapan yang perlu dilakukan menurut saya bisa dibagi menjadi 3 hal besar (tidak termasuk dana loh ya, asumsinya dana yang dibutuhkan mencukupi :D ) yang kurang lebih adalah :</p>
@@ -164,10 +164,10 @@ Sedangkan beberapa peralatan yang bisa di <em>sharing</em> dengan teman 1 team a
   
   <entry>
     <title type="html"><![CDATA[Pendakian Gunung Sindoro 3153 mdpl]]></title>
-    <link href="http://martinusadyh.github.io/2013/06/27/pendakian-gunung-sindoro-3153-mdpl/"/>
+    <link href="http://martinusadyh.web.id/2013/06/27/pendakian-gunung-sindoro-3153-mdpl/"/>
     <updated>2013-06-27T22:04:35+07:00</updated>
-    <id>http://martinusadyh.github.io/2013/06/27/pendakian-gunung-sindoro-3153-mdpl</id>
-    <content type="html"><![CDATA[<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/Mt_Sindoro_view_from_Mt_Sikunir.jpg" title="'Mt. Sindoro view from Mt. Sikunir'" ></p>
+    <id>http://martinusadyh.web.id/2013/06/27/pendakian-gunung-sindoro-3153-mdpl</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/Mt_Sindoro_view_from_Mt_Sikunir.jpg" title="'Mt. Sindoro view from Mt. Sikunir'" ></p>
 
 <p>Setelah pendakian yang gagal ke <strong>Cikuray</strong> <a href="http://martinusadyh.web.id/2013/03/17/puncak-cikuray-yang-tertunda/">kemarin</a> ditambah dengan racun foto-foto susasana <strong>Semeru</strong> ketika <a href="https://www.facebook.com/jimmy.rengga">Jimmy</a> melakukan pendakian bulan Mei kemarin, akhirnya ada kesempatan juga untuk melakukan pendakian lagi di bulan Juni ini dan target yang dipilih adalah <a href="http://id.wikipedia.org/wiki/Gunung_Sindara">Gunung Sindoro/Sindara</a> :)</p>
 
@@ -208,32 +208,32 @@ Sedangkan beberapa peralatan yang bisa di <em>sharing</em> dengan teman 1 team a
 
 <p>Perjalanan dari Jakarta menuju ke Temanggung yang kita jalani ini benar-benar cukup lama :( karena kita baru sampai ke basecamp gunung Sindoro hari Kamis 06/06/2013 kira-kira jam 13:00, dan ini melebihi perkiraan kita yang kata agen travel bisa sampai ke Temanggung mungkin jam 08:00 pagi :( Ketika kita sampai di basecamp Sindoro cuaca saat itupun juga sedang diguyur oleh hujan yang menyebabkan udara jadi lumayan dingin :)</p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/basecamp.jpg" title="'Basecamp Gunung Sindoro'" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/basecamp.jpg" title="'Basecamp Gunung Sindoro'" ></p>
 
 <p>Setelah menurunkan semua barang bawaan dari travel, akhirnya kitapun melakukan registrasi di basecamp. Disini kita membayar biaya registrasi sebesar Rp. 3.000,&ndash; perorang, dan kita diharuskan meninggalkan sebuah KTP. Setelah menyelesaikan urusan registrasi, akhirnya kita diberi 2 buah kertas yang salah satu-nya adalah peta jalur pendakian dan kertas satunya lagi adalah aturan-aturan dasar tentang apa yang boleh dan tidak boleh dilakukan selama melakukan pendakian.</p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/Rute_Pendakian.jpg" title="'Rute Pendakian'" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/Rute_Pendakian.jpg" title="'Rute Pendakian'" ></p>
 
 <p>Sewaktu kita melakukan registrasi, kita juga mendapat tawaran jika ingin naik sebaiknya diantar oleh ojek saja karena bisa menyingkat waktu pendakian dengan hanya membayara biaya sebesar Rp. 10.000,&ndash; per orang dan akan diantar sampai ke batas antara ladang penduduk dengan hutan. Tawaran ojek ini sempat kita diskusikan rame-rame, setelah menimbang waktu yang semakin sore akhirnya kita semua sepakat untuk menggunakan jasa tukang ojek untuk mengantar kita sampai menuju batas antara ladang penduduk dengan hutan. Dan akhirnya kita pun berangkat kira-kira jam 13:30 dengan kondisi masih hujan dengan intensitas sedang, setelah berkendara kurang lebih 15 menit akhirnya kita semua sampai di perbatasan antara ladang penduduk dengan hutan. Ketika semua anggota tim sudah berkumpul, kitapun menyelesaikan pembayaran ke tukang ojek baru kemudian kita berdoa bersama supaya kita semua diberi kemudahan dan kelancaran baik ketika naik maupun turun tanpa kekurangan suatu apapun.</p>
 
 <p>Setelah berdoa bersama akhirnya kita benar-benar mulai melakukan pendakian (yiiiiiiiiiahhaaaiiii akhirnya) :) , kondisi perjalanan dari perbatasan ladang penduduk menuju ke pos 2 didominasi hutan yang tidak begitu rapat menurut saya, dan untuk jalur pendakiannya sendiri bisa dikatakan cukup landai dan menyenangkan karena dibeberapa titik kita mendapat jalur naik dan turun kemudian menyebrangi jembatan. Meskipun jalur pendakian-nya sendiri bisa dikatakan landai, tapi ternyata ketika sampai ditengah-tengah perjalanan kita terpaksa bertukar tas karena napas juga sudah ngos-ngosan :D Kira-kira jam 15:00 kitapun akhirnya sampai juga di pos 2, dan kita semua memutuskan untuk istirahat sejenak menghabiskan sebatang rokok disini :)</p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/Masih_Semangat.JPG" title="'Ketika Masih Semangat. Dari kiri ke kanan Ikhsan, Saya, Rangga, Chandra, Dadang dan Jimmy'" >
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/Masih_Semangat.JPG" title="'Ketika Masih Semangat. Dari kiri ke kanan Ikhsan, Saya, Rangga, Chandra, Dadang dan Jimmy'" >
 Puas foto-foto dan beristirahat, akhirnya kita pun melanjutkan perjalanan lagi untuk menuju ke pos 3 :) Dan ternyata saudara-saudara, perjalanan dari pos 2 menuju ke pos 3 ini tidak selandai dari pos 1 ke pos 2 (setidaknya bagi tim kita) :D kwkwkw dan ini terbukti dengan bertumbang-nya satu persatu anggota tim ini (kecuali Jimmy dan Dadang yang ternyata punya dengkul racing :( ) :D</p>
 
-<p><img class="left" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/KondisiJalurPendakianMenujuPos3.jpg" width="300" height="225" title="Kondisi Jalur Pendakian Menuju Pos 3" > <img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/SemuaKelelahan.jpg" width="300" height="225" title="Semua Kelelahan" ></p>
+<p><img class="left" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/KondisiJalurPendakianMenujuPos3.jpg" width="300" height="225" title="Kondisi Jalur Pendakian Menuju Pos 3" > <img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/SemuaKelelahan.jpg" width="300" height="225" title="Semua Kelelahan" ></p>
 
 <p>Setelah beristirahat untuk sekedar mengambil nafas, akhirnya perjalanan kita lanjutkan kembali dengan ditemani kabut yang mulai turun. Sedangkan kondisi jalur pendakian sekarang juga sudah mulai terbuka dan jalanan yang kita lewatipun ikut berubah dari yang tadinya berupa tanah menjadi kombinasi batu dan kerikil. Dari sini, jika kita menengok ke belakang kita akan melihat pemandangan yang sungguh indah yaitu gagah-nya Gunung Sumbing yang terlihat begitu megah. Tapi sayang-nya, karena kabut kita hanya bisa menikmati pemandangan gunung Sumbing secara penuh hanya sebentar saja. Karena tidak begitu lama, awan-pun mulai turun menutupi badan gunung Sumbing.</p>
 
-<p><img class="left" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/JimmyYangMasihKetawa-tawa.JPG" width="300" height="200" title="Jimmy yang Masih Ketawa tawa" > <img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/GunungSumbingTertutupAwan.JPG" width="300" height="200" title="Gunung Sumbing Tertutup Awan" ></p>
+<p><img class="left" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/JimmyYangMasihKetawa-tawa.JPG" width="300" height="200" title="Jimmy yang Masih Ketawa tawa" > <img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/GunungSumbingTertutupAwan.JPG" width="300" height="200" title="Gunung Sumbing Tertutup Awan" ></p>
 
 <p>Kita sampai di pos 3 kira-kira jam 17:10 dan akhirnya mulai mendirikan tenda di tempat bekas pendaki sebelum-nya. Selain mendapatkan tempat yang cukup luas untuk mendirikan tenda, kitapun juga mendapat bonus yaitu adanya api unggun yang sudah siap untuk digunakan :)
-<img src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/Pos3.jpg" title="'Ngecamp di Pos 3'" ></p>
+<img src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/Pos3.jpg" title="'Ngecamp di Pos 3'" ></p>
 
 <p>Akhirnya setelah tenda berdiri, satu persatu dari kita mulai ganti pakaian dengan yang kering baru kemudian mulai masak untuk makan malam dan menu makan malam kita kali ini terhitung cukup mewah yaitu nasi dengan lauk ayam dan telor goreng (kapan lagi kita makan enak :) ) :D Nah sembari makan ini kita juga berdiskusi tentang rencana kapan kita mau <em>summit attack</em> dan barang-barang apa saja yang rencana-nya nanti akan dibawa, karena takut juga sih jika nanti kita ninggalin barang dan ternyata hilang seperti yang di informasikan di basecamp. Setelah makan-makan selesai dilanjutkan dengan ngobrol-ngobrol tanpa kopi :( (ternyata saya lupa bawa kopi :( ), akhirnya diputuskan untuk segera tidur saja dan nanti jam 11:30 kita semua bangun untuk melakukan <em>summit attack</em> sedangkan untuk barang-barang kita akan bawa semua dan hanya meninggalkan tenda saja biar beban tidak terlalu berat.</p>
 
 <p>Tepat jam 20:00 kita semua mulai masuk ke tenda masing-masing, dan berusaha untuk memejamkan mata sembari tidak lupa memasang alarm tepat jam 11:30 agar tidak kesiangan :) Suasana yang sepi dan hanya ditemani dengan suara binatang malam akhirnya menjadi lagu penghantar tidur kita semua, rasa-rasanya saya juga baru saja memejamkan mata tapi sepertinya kondisi diluar tenda sudah ramai. Setelah membuka mata dan mengumpulkan kesadaran, ternyata teman-teman sudah bangun dan mulai masak air untuk membuat minuman hangat. Karena tidak ada kopi, minuman hangat kita kali ini adalah jahe dan susu (untungnya Jimmy sudah beli jahe dan Ikhsan membawa susu). Ditemani dengan segelas jahe panas, sepotong roti dan sebatang rokok, sayapun menikmati dingin-nya malam di Gunung Sindoro sembari samar-samar melihat gagah-nya gunung Sumbing di seberang sana. Tanpa diduga sebelumnya, tiba-tiba Ikhsan mengeluarkan sebuah <em>tripod</em> dan mengabadikan suasana malam ini. Dan reaksi saya adalah sangat-sangat bahagia sekali, akhirnya momen-momen malam hari di alam bisa diabadikan juga  :malaikat:  (maklum selama ini cuma mengandalkan kamera HP :( )
-<img src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/Suasana_Malam_Hari.JPG" title="'Menikmati Gagahnya Sumbing dengan Temaram Lampu Kota Temanggung, Ditemani dengan Segelas Jahe Panas dan Sebatang Rokok'" ></p>
+<img src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/Suasana_Malam_Hari.JPG" title="'Menikmati Gagahnya Sumbing dengan Temaram Lampu Kota Temanggung, Ditemani dengan Segelas Jahe Panas dan Sebatang Rokok'" ></p>
 
 <p>Puas menikmati gagah-nya Sumbing, akhirnya kita semua mulai packing dengan membawa semua barang-barang dan hanya meninggalkan tenda saja di pos 3 ini. Sebelum mulai perjalanan seperti biasanya kita mulai dengan berdoa dulu baru kemudian mulai <em>trekking</em> kira-kira jam 02:30 pagi (estimasi perjalanan dari pos 3 sampai puncak adalah 4 jam, alamat ga dapat sunrise di puncak :D) dan inilah pengalaman pertama saya <em>trekking</em> dimalam hari :D. Sebenarnya perjalanan dimalam hari ini cukup asyik, karena jarak pandang kita hanya sebatas kemampuan senter yang kita bawa saja. Dan ini cukup membuat saya nyaman, karena yang kita tahu hanya naik naik dan naik saja :D</p>
 
@@ -243,29 +243,29 @@ Puas foto-foto dan beristirahat, akhirnya kita pun melanjutkan perjalanan lagi u
 
 <p>Ketika sedang menikmati hangatnya minuman jahe, akhirnya momen sunrise-pun datang. Indah banget euyy, warna merah jingga merona di langit dengan cuaca yang cerah dengan sedikit awan membuat betah berlama-lama menikmati momen ini. Tapi karena kita semua kedinginan, akhirnya momen itupun tidak sempat di abadikan karena kita harus segera melanjutkan perjalanan untuk melawan hawa dingin :( Perjalanan menuju ke pos 4 selanjutnya lumayan menyenangkan meskipun tetap terasa berat, dikarenakan sudah mulai pagi dan akhirnya kita pun bisa menikmati indahnya pemandangan yang terbentang. Jajaran Gunung Merbabu, Merapi dan Sumbing menjadi obat penambah semangat untuk segera mencapai puncak yang masih berapa jauh lagi kita juga tidak tahu :D</p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/PemandanganSetelahSunrise.jpg" width="300" height="225" title="Pemandangan Seteleah Sunrise" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/PemandanganSetelahSunrise.jpg" width="300" height="225" title="Pemandangan Seteleah Sunrise" ></p>
 
 <p>Puas foto-foto dengan semangat 45 yang membara kita teruskan lagi perjalanan ini karena puncak sepertinya sudah cukup dekat, tapi ternyata titik yang kita anggap merupakan puncak itu  ternyata hanyalah sebuah tipuan belaka dan dibalik itu ternyata masih ada bukit lagi yang cukup jauh untuk kita lewati :( Dan akhirnya disini tim dipecah, untuk yang bawa <em>daypack</em> jalan duluan hingga puncak, sedangkan yang lain menyusul dibelakang. Karena beban tas Ikhsan yang cukup berat yang membuat si empunya cukup kecapekan, akhirnya diputuskan untuk saling bertukar tas biar beban juga merata. Setelah beberapa saat berjalan akhirnya terdengar sebuah teriakan yang cukup membuat senang, <strong>&ldquo;Puncak&hellip;.puncak..puncak&hellip;oeyy&rdquo;</strong> teriak Rangga. Maksud hati sih pingin berlari, tapi apa daya untuk kesekian kali-nya terkapar lagi saya :D wkwkwkw. Tetapi meskipun begitu, hati sudah mulai senang karena puncak sudah tidak jauh lagi :) dan perjalananpun kita lanjutkan kembali.</p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/BukitPHP.JPG" width="300" height="225" title="Bukit PHP" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/BukitPHP.JPG" width="300" height="225" title="Bukit PHP" ></p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/IndahnyaPemandanganIni.JPG" width="300" height="225" title="Indahnya Pemandangan Ini" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/IndahnyaPemandanganIni.JPG" width="300" height="225" title="Indahnya Pemandangan Ini" ></p>
 
 <p>Dan akhirnya kira-kira jam 08:00 sayapun berhasil menginjakkan kaki di puncak Gunung Sindoro, baru kemudian teman-teman yang lain ikutan menyusul :) Ya Tuhan terima kasih, karena hamba-Mu ini masih diberikan kesempatan untuk menikmati indah-nya ciptaan-Mu. Pemandangan yang kita saksikan disini benar-benar cukup indah dan inilah puncak pertama bagi saya  :gembira: , pemandangan di sini saja sudah cukup indah bagi saya, bagaimana pemandangan yang tersaji jika ke gunung-gunung yang lebih terkenal lain-nya ya ? Wah pasti lebih indah dari ini sepertinya, kata saya dalam hati :)
-<img src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/Puncak_Sindoro.JPG" title="'Puncak Sindoro Akhirnya'" ></p>
+<img src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/Puncak_Sindoro.JPG" title="'Puncak Sindoro Akhirnya'" ></p>
 
 <p>Dipuncak kita juga sempat berkenalan dengan rekan-rekan dari <strong>NEPALA</strong> yang berbaik hati berbagi kopi-nya dengan kita, karena kita ga bawa kopi sama sekali :( Begitu indah dan damai rasanya, karena sepanjang mata memandang hati ini tidak berhenti untuk bersyukur. Akhirnya sembari bersantai menikmati suguhan alam ini, ada beberapa teman yang menghabiskan waktunya dengan berfoto-foto. Sedangkan saya sendiri, mencoba menikmati suguhan alam ini dengan sebatang rokok dan segelas kopi dulu baru kemudian ikutan untuk foto-foto :D</p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/KawahGunungSindoro.jpg" title="Kawah Gunung Sindoro" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/KawahGunungSindoro.jpg" title="Kawah Gunung Sindoro" ></p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/GunungSumbingdiSelimutiAwan.JPG" title="Gunung Sumbing di Selimuti Awan" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/GunungSumbingdiSelimutiAwan.JPG" title="Gunung Sumbing di Selimuti Awan" ></p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/FotoKeluargadiPuncakSindoro.JPG" title="Foto Keluarga di Puncak Sindoro" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/FotoKeluargadiPuncakSindoro.JPG" title="Foto Keluarga di Puncak Sindoro" ></p>
 
 <p>Tepat jam 09:00 akhirnya kita semua memutuskan untuk turun setelah melihat awan hitam yang mulai turun, dan yang kita takutkan adalah kabut yang nanti akan menghalangi pandangan kita jika tidak segera turun. Karena kita masih meninggalkan tenda di pos 3 yang rawan dengan kehilangan barang, akhirnya Jimmy dan Dadang memutuskan untuk turun duluan sembari mengecek apakah tenda kita masih berdiri ditempatnya atau tidak :D Setelah kepergian Jimmy dan Dadang, akhirnya kita berempat menyusul turun dengan berjalan pelan-pelan (karena yang didepan ternyata saya yang paling lemot, maklum dengkul masih standart :D)</p>
 
 <p>Tidak ada yang spesial ketika berjalan turun, yang terasa hanya capek dan jempol kaki saya yang rasanya makin lama makin sakit :( Akhirnya ditengah perjalanan, dengan terpaksa saya berganti alas kaki yang tadinya sepatu jadi menggunakan sendal. Rasa sakit sudah sedikit berkurang, tapi berganti dengan licin-nya jalur yang sempat membuat beberapa kali saya jatuh terpeleset :D Tapi untung-nya, akhirnya saya tiba juga di pos 3 kira-kira jam 12:00 siang dan merupakan peserta terakhir yang mencapai garis finish.
-<img src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/Oleh-oleh-dari-Sindoro.jpg" title="'Oleh-oleh dari Sindoro'" ></p>
+<img src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/Oleh-oleh-dari-Sindoro.jpg" title="'Oleh-oleh dari Sindoro'" ></p>
 
 <p>Sebelum memutuskan untuk turun, kita istirahat dahulu di pos 3 ini sembari masak untuk makan siang. Dan akhirnya kira-kira jam 14:30 setelah semua peralatan telah selesai di <em>packing</em> akhirnya kita pun mulai turun. Dan seperti biasa, saya akhirnya tetap jadi peserta yang paling bontot :D disaat yang lain sudah sampai pos 2 saya masih tertatih-tatih menuju ke pos 2 dan akhirnya saya tiba dengan selamat di pos 2 kurang lebih jam 17:00. Karena waktu sudah mulai gelap, di pos 2 ini saya tidak beristirahat lama-lama. Cukup menenggak seteguk air dan kemudian melanjutkan perjalanan lagi untuk menuju ke perbatasan antara hutan dan ladang penduduk, dan akhirnya saya sampai di perbatasan hutan dan ladang penduduk kurang lebih jam 18:00 dengan selamat (fyuuuh benar-benar perjalanan yang panjang dan penuh perjuangan bagi saya pribadi) dan kemudian langsung menuju basecamp dengan diantar oleh abang-abang ojek yang baik hati :) (abang ojek, jasamu benar-benar sungguh berarti bagi saya  :nangis2: )</p>
 
@@ -286,7 +286,7 @@ Puas foto-foto dan beristirahat, akhirnya kita pun melanjutkan perjalanan lagi u
 
 
 <p>Dan rincian biaya pengeluaran selama perjalanan kita kali ini adalah sebagai berikut :
-<img src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/Rincian_Biaya.png" title="'Rincian Biaya'" ></p>
+<img src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/pendakian-gunung-sindoro-3153-mdpl/Rincian_Biaya.png" title="'Rincian Biaya'" ></p>
 
 <p>Dengan sukses-nya perjalanan ini, saya merasa perlu mengucap terima kasih kepada :</p>
 
@@ -314,20 +314,20 @@ Puas foto-foto dan beristirahat, akhirnya kita pun melanjutkan perjalanan lagi u
   
   <entry>
     <title type="html"><![CDATA[Howto Disable Individual Jetpack Module]]></title>
-    <link href="http://martinusadyh.github.io/2013/06/22/howto-disable-individual-jetpack-module/"/>
+    <link href="http://martinusadyh.web.id/2013/06/22/howto-disable-individual-jetpack-module/"/>
     <updated>2013-06-22T15:21:07+07:00</updated>
-    <id>http://martinusadyh.github.io/2013/06/22/howto-disable-individual-jetpack-module</id>
+    <id>http://martinusadyh.web.id/2013/06/22/howto-disable-individual-jetpack-module</id>
     <content type="html"><![CDATA[<p>Gara-gara sering kelupaan bagaimana cara-nya men-disable sebuah modul di <a href="http://wordpress.org/plugins/jetpack/">Jetpack</a>, akhirnya saya buatkan posting sekalian biar besok-besok tidak lupa lagi :D Postingan ini ditulis gara-gara saya tidak puas dengan module <strong>Likes</strong> di Jetpack. Karena sudah terlanjur di aktifkan dan tidak puas, jadi beginilah step by step untuk mendisable-nya :)</p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/blogging/HowtoDisableIndividualJetpackModule/TampilanModuleLikesyangAktif.png" width="300" height="183" title="Tampilan Module Likes yang Aktif" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/blogging/HowtoDisableIndividualJetpackModule/TampilanModuleLikesyangAktif.png" width="300" height="183" title="Tampilan Module Likes yang Aktif" ></p>
 
 <p>Jika sudah, sekarang tekanlah tombol <strong>Learn More</strong> di module yang ingin di disable untuk menampilkan tombol <strong>Deactive</strong> seperti gambar dibawah ini (lihat tombol yang dibulatin) :</p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/blogging/HowtoDisableIndividualJetpackModule/KlikTombolDeactive.png" width="300" height="196" title="Klik Tombol Deactive" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/blogging/HowtoDisableIndividualJetpackModule/KlikTombolDeactive.png" width="300" height="196" title="Klik Tombol Deactive" ></p>
 
 <p>Kalau tampilan sudah seperti gambar diatas, maka sekarang tekanlah tombol <strong>Deactive</strong> untuk mendisable module yang dimaksud. Dan harusnya jika tidak ada masalah, maka kita akan melihat tampilan seperti gambar dibawah ini :</p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/blogging/HowtoDisableIndividualJetpackModule/ProsesDeactiveBerhasil.png" width="300" height="181" title="Proses Deactive Berhasil" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/blogging/HowtoDisableIndividualJetpackModule/ProsesDeactiveBerhasil.png" width="300" height="181" title="Proses Deactive Berhasil" ></p>
 
 <p>Sebenarnya gampang bukan ? Mungkin memang karena faktor <strong>&ldquo;U&rdquo;</strong> nih yang bikin jadi sering lupa :(</p>
 ]]></content>
@@ -335,67 +335,67 @@ Puas foto-foto dan beristirahat, akhirnya kita pun melanjutkan perjalanan lagi u
   
   <entry>
     <title type="html"><![CDATA[Bercengkrama dengan Nusantarider di Event Ride n Roast]]></title>
-    <link href="http://martinusadyh.github.io/2013/06/14/bercengkrama-dengan-nusantarider-di-event-ride-n-roast/"/>
+    <link href="http://martinusadyh.web.id/2013/06/14/bercengkrama-dengan-nusantarider-di-event-ride-n-roast/"/>
     <updated>2013-06-14T11:16:10+07:00</updated>
-    <id>http://martinusadyh.github.io/2013/06/14/bercengkrama-dengan-nusantarider-di-event-ride-n-roast</id>
+    <id>http://martinusadyh.web.id/2013/06/14/bercengkrama-dengan-nusantarider-di-event-ride-n-roast</id>
     <content type="html"><![CDATA[<p><a href="http://martinusadyh.web.id/2013/04/09/nusantaride-event-ride-and-roast/"><strong>&ldquo;Ride and Roast&rdquo;</strong></a> itulah tema kumpul-kumpul teman-teman <a href="http://www.nusantaride.com/Forums/">Nusantaride</a> yang diselenggarakan pada tanggal 20 April 2013 kemarin dan bertempat di koordinat <strong>-6.73921, 107.00591</strong> yang ternyata lokasi-nya adalah di daerah Cibodas (tepatnya sih di <strong>Camping Ground</strong> Cibodas &ndash; depan kantor Taman Nasional Gede Pangrango &ndash; TNGP) :D Rencana awal perjalanan ini sebenarnya adalah <strong>&ldquo;solo riding&rdquo;</strong> dikarenakan navigator yang saya ajak di event <a href="http://martinusadyh.web.id/2013/04/14/serunya-perjalanan-ke-waduk-jatiluhur/">Ride, Lunch and Laugh</a> kemarin tidak bisa ikut, tanpa disangka-sangka <a href="https://www.facebook.com/herri.herrie">Om Herri</a> dan <a href="https://www.facebook.com/ar.farid.79">Om Farid</a> mengajak untuk riding bareng. Tapi sayang-nya om Herri mengusulkan tikum di daerah pancoran sedangkan om Farid tikum di cibinong, setelah berdiskusi akhirnya di putuskan saya akan tikum dulu dengan om Herri di daerah pancoran tepat jam 08:00 baru kemudian menuju ke Cibinong untuk ketemu dengan om Farid tepat jam 09:00 lalu meluncur bareng-bareng menuju lokasi acara :)</p>
 
 <p>Hari Sabtu itu tanggal 20/04/2013 tepat jam 07:30 saya mulai meluncur ke daerah pancoran untuk bertemu dengan om Herri, kondisi jalanan menuju ke pancoran sangat lenggang waktu itu  tidak seperti hari-hari biasanya dan setengah jam kemudian akhirnya saya bertemu dengan om Herri :) Tanpa banyak bicara, akhirnya kita berdua mulai perjalanan menuju ke Cibodas dengan sebelum-nya melipir kesuatu tempat yang kata om Herri terdapat sebuah setu yang katanya ada pemandangan bagus dan cocok buat foto-foto :D (meskipun pada akhir cerita setu-nya juga masih belum ketemu :( ).</p>
 
 <p>Ternyata kondisi jalanan yang lenggang hanya saya nikmati dari kalimalang sampai pancoran saja, sebaliknya perjalanan dari pancoran &ndash; pasar minggu &ndash; depok &ndash; cibinong di beberapa titik cukup padat :( Dan entah bagaimana ceritanya, saya juga lupa ngasih tahu ke om Herri lokasi om Farid menunggu kita :( yang menyebabkan kita tetap melanjutkan perjalanan menuju ke citeureup. Setelah melewati sebuah pasar di daerah pintu tol Citeureup, akhirnya kita bisa menjumpai hijau-nya pemandangan alam pedesaan setelah beberapa jam <em>riding</em> hanya melihat rumah-rumah saja.</p>
 
-<p><img class="left" src="http://martinusadyh.github.io/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/AkhirnyaMeilhatIndahnyaAlam.jpg" width="300" height="225" title="Akhirnya Meilhat Indahnya Alam" ></p>
+<p><img class="left" src="http://martinusadyh.web.id/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/AkhirnyaMeilhatIndahnyaAlam.jpg" width="300" height="225" title="Akhirnya Meilhat Indahnya Alam" ></p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/KondisiJalananSetelahCiteureup.jpg" width="300" height="225" title="Kondisi Jalanan Setelah Citeureup" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/KondisiJalananSetelahCiteureup.jpg" width="300" height="225" title="Kondisi Jalanan Setelah Citeureup" ></p>
 
 <!-- more -->
 
 
 <p>Setelah puas foto-foto, akhirnya perjalanan kita lanjutkan kembali dengan kecepatan kurang lebih 40-50 km/jam dikarenakan ingin menikmati pemandangan yang cukup membuat mata ini jadi segar (sekalian cari spot buat foto-foto tentunya) :D :) Karena sebelum berangkat saya juga belum sarapan, akhirnya kitapun mampir disebuah warung di pinggir jalan untuk segera mengisi perut yang sedang keroncongan ini sekaligus beristirahat dan menu saya pagi ini adalah kopi hitam, mie goreng, telor bulet dan nasi putih :D Ketika sedang menunggu hidangan datang, tiba-tiba sebuah motor pulsar merah melintas dan berhenti di warung tempat kita sedang beristirahat. Dan ternyata pengendara pulsar merah tersebut adalah om Farid yang mengatakan melihat sticker <strong>nusantaride</strong> ketika saya tanya koq tau kita disini. Akhirnya obrolan kita pun menjadi semakin ramai dikarenakan penghuni warung jadi bertambah :) setelah prosesi salam-salaman selesai akhirnya kita-pun ngobrol-ngobrol dengan tema pengalaman riding om Farid dan om Herri ketika melakukan perjalanan ke Dieng dan Halimun. Dan sayapun menjadi pendengar setia sembari menuntaskan sarapan yang kesiangan :D</p>
 
-<p><img class="left" src="http://martinusadyh.github.io/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/SharingPengalamanRiding.jpg" width="300" height="225" title="Sharing Pengalaman Riding" ></p>
+<p><img class="left" src="http://martinusadyh.web.id/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/SharingPengalamanRiding.jpg" width="300" height="225" title="Sharing Pengalaman Riding" ></p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/PemandangandiSekitarWarung.jpg" width="300" height="225" title="Pemandangan di Sekitar Warung" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/PemandangandiSekitarWarung.jpg" width="300" height="225" title="Pemandangan di Sekitar Warung" ></p>
 
 <p>Sesudah sarapan, ngopi dan curhat-curhat&#8217;an, akhirnya perjalanan-pun kita lanjutkan dengan om Herri tetap sebagai RC rombongan mini ini :) Suasana jalan yang kita tempuh kali ini masih didaerah pedesaan dengan pemandangan sawah, gunung dan hamparan awan siang itu masih mendominasi perjalanan kita bertiga. Kadang-kadang disebuah tempat yang menurut kita bagus, kita berhenti sekedar untuk bernarsis ria dengan berlatarkan pemandangan alam (dalam hatipun saya sempat berkata, ternyata di dekat Jakarta ada juga pemandangan seperti ini). Semakin lama kita <em>riding</em>, perjalanan yang tadinya di dominasi tanjakan-tanjakan yang cukup landai berganti menjadi tanjakan-tanjakan yang cukup membuat motor saya ngos-ngos-an :D . Tapi pemandangan yang disuguhkan juga tidak kalah indahnya, karena kita sempat melewati hutan pinus yang cukup lebat (selebat hutan pinus yang ada di gunung bunder), ada 2 curug yang kita ga mampir karena sudah terlalu siang dan ada beberapa kondisi jalan <em>semi-offroad</em> yang membuat kita sedikit berbasah-basah ria dengan lumpur :D</p>
 
-<p><img class="left" src="http://martinusadyh.github.io/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/ApapunMotornyaYangPentingAtpentur.jpg" width="300" height="225" title="Apapun Motornya Yang Penting Atpentur" ></p>
+<p><img class="left" src="http://martinusadyh.web.id/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/ApapunMotornyaYangPentingAtpentur.jpg" width="300" height="225" title="Apapun Motornya Yang Penting Atpentur" ></p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/MelewatiHutanPinus.jpg" width="300" height="225" title="Melewati Hutan Pinus" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/MelewatiHutanPinus.jpg" width="300" height="225" title="Melewati Hutan Pinus" ></p>
 
-<p><img class="left" src="http://martinusadyh.github.io/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/JalananSemiOffroad.jpg" width="300" height="225" title="Jalan Semi Offroad" ></p>
+<p><img class="left" src="http://martinusadyh.web.id/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/JalananSemiOffroad.jpg" width="300" height="225" title="Jalan Semi Offroad" ></p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/JalanSemiOffroad2.jpg" width="300" height="225" title="Jalan Semi Offroad 2" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/JalanSemiOffroad2.jpg" width="300" height="225" title="Jalan Semi Offroad 2" ></p>
 
 <p>Akhirnya setelah beberapa jam <em>riding</em> didalam hutan, akhirnya kita bertiga-pun kembali ke jalan raya utama Bogor dengan kondisi tanpa ada masalah sedikitpun :) Karena saya juga baru pertama kali melewati rute ini, iseng-iseng akhirnya saya melihat ke aplikasi <strong>&ldquo;MyTrack&rdquo;</strong> yang sejak berangkat sudah saya nyalakan, dan inilah hasil perjalanan kita kali ini hingga menuju ke pintu masuk <strong>&ldquo;Taman Nasional Gede Pangrango&rdquo;</strong> nanti :)</p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/Map.png" title="Rute Perjalanan" ><br/>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/Map.png" title="Rute Perjalanan" ><br/>
 <a href="https://maps.google.com/maps?f=d&amp;source=embed&amp;saddr=-6.249435,106.907415&amp;daddr=-6.307109,106.836433+to:-6.551723,106.945667+to:-6.73921,+107.00591&amp;hl=en&amp;geocode=FSWkoP8dF0dfBg%3BFdvCn_8d0TFeBg%3BFVUHnP8dg9xfBg%3BFfYqmf8d1sdgBg&amp;aq=&amp;sll=-6.723257,107.009583&amp;sspn=1.513827,2.705383&amp;dirflg=ht&amp;mra=ls&amp;ie=UTF8&amp;t=m&amp;ll=-6.489245,106.934736&amp;spn=0.49997,0.205106">View Larger Map</a></p>
 
 <p>Dan akhirnya tepat jam 01:30 kita bertiga sampai di pintu masuk <strong>&ldquo;Taman Nasional Gede &ndash; Pangrango&rdquo;</strong>, dan bagi saya ini adalah momen pertama saya menginjakkan kaki di daerah <strong>TNGP</strong>. Kesan pertama yang saya tangkap ketika pertama kali memasuki kawasan ini adalah, nuansana-nya kental banget dengan <strong>suasana pendakian</strong> ya pastilah :D karena di sini merupakan salah satu jalur resmi pendakian ke Gunung Gede &ndash; Pangrango selain pintu Gunung Putri dan Selabintana. Selain itu dengan bertebaran beberapa toko yang menjual alat-alat pendakian menjadikan suasana di Cibodas ini lebih dari sekedar tempat wisata keluarga :)</p>
 
 <p>Pada awalnya kita bertiga sempat kebingungan, dimana lokasi event &ldquo;Ride and Roast&rdquo; akan di gelar. Tapi berdasarkan ingatan &ldquo;nanti kalau di Cibodas, melipir saja ke markas Green Ranger&rdquo; maka akhirnya saya beranikan diri bertanya ke penjual makanan di dalam dimanakah markas <strong>&ldquo;Green Ranger&rdquo;</strong> ? Dan akhirnya, setelah mengikuti petunjuk yang sudah diberikan, kitapun meluncur menuju markas <strong>&ldquo;Green Ranger&rdquo;</strong>. Sembari mencari-cari tempat parkir yang pas, akhirnya kita menemukan beberapa motor dengan sticker <a href="http://www.nusantaride.com/Forums/">Nusantaride</a>. Dengan hati yang mantap, akhirnya kitapun memarkir kendaraan kita masing-masing di dekat motor dengan sticker <a href="http://www.nusantaride.com/Forums/">Nusantaride</a> tersebut. Cuma karena kita bertiga tidak ada yang kenal satu orangpun di markas <strong>&ldquo;Green Ranger&rdquo;</strong>, akhirnya saya-pun memesan kopi di warung yang lokasinya dekat dengan parkiran motor :)</p>
 
-<p><img class="left" src="http://martinusadyh.github.io/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/ParkirdekatMarkasGreenRanger.jpg" width="300" height="225" title="Parkir Dekat Markas Green Ranger" ></p>
+<p><img class="left" src="http://martinusadyh.web.id/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/ParkirdekatMarkasGreenRanger.jpg" width="300" height="225" title="Parkir Dekat Markas Green Ranger" ></p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/NgopiLagi.jpg" width="300" height="225" title="Ngopi Lagi" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/NgopiLagi.jpg" width="300" height="225" title="Ngopi Lagi" ></p>
 
 <p>Semakin sore, akhirnya kawan-kawan lain-nya pun mulai berdatangan secara bergantian dan ini membuat suasana jadi semakin hangat dengan candaan konyol yang sering terlontar. Dan kadang kita juga mendengarkan cerita dari pakde Ija tentang ekspedisi Sap7aranu-nya :) Karena semakin sore udara jadi semakin dingin, akhirnya kitapun menyepakati untuk ngobrol di dalam warung saja sembari makan dan ngopi buat kawan-kawan yang mau makan ;)</p>
 
-<p><img class="left" src="http://martinusadyh.github.io/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/Kawan-kawanmulaiberdatangan_PicByOmNaufal.jpg" width="300" height="225" title="Kawan-kawan mulai berdatangan" ></p>
+<p><img class="left" src="http://martinusadyh.web.id/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/Kawan-kawanmulaiberdatangan_PicByOmNaufal.jpg" width="300" height="225" title="Kawan-kawan mulai berdatangan" ></p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/Sharingsembariseruputkopi.jpg" width="300" height="225" title="Sharing sembari seruput kopi" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/Sharingsembariseruputkopi.jpg" width="300" height="225" title="Sharing sembari seruput kopi" ></p>
 
 <p>Malam minggu itu di kaki Gunung Gede udara rasanya jadi semakin dingin, tapi dinginnya udara malam tidak mempengaruhi keceriaan teman-teman Nusantaride. Semakin malam, obrolan jadi semakin hangat dan menjurus panas karena ada cerita kocak berseri tentang si <strong>&ldquo;Usman&rdquo;</strong> :D Obrolan teman-teman malam itu lebih banyak tentang seputar cerita mistis, pengalaman berkendara ke ujung barat Indonesia (titik 0 KM) oleh om Ijul yang membuat saya tetap antusias dan tidak mengantuk mendengarkan cerita-cerita seru dari para penjelajah motor ini :) Dan ketika dirasa sudah teman-teman yang berkumpul sudah banyak, akhirnya acara <strong>&ldquo;Roast&rdquo;</strong> kita laksanakan dengan mengambil lokasi di Camping Ground yang tempatnya berada sebelum Curug Cibeureum :)</p>
 
-<p><img class="left" src="http://martinusadyh.github.io/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/MencariLokasiBakarbakarPicByOmNaufal.jpg" width="300" height="225" title="Mencari Lokasi Bakar-bakar Pic By Om Naufal" ></p>
+<p><img class="left" src="http://martinusadyh.web.id/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/MencariLokasiBakarbakarPicByOmNaufal.jpg" width="300" height="225" title="Mencari Lokasi Bakar-bakar Pic By Om Naufal" ></p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/MasihBerusahaMenyalakanApiPicByOmNaufal.jpg" width="300" height="225" title="Masih Berusaha Menyalakan Api Pic By Om Naufal" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/MasihBerusahaMenyalakanApiPicByOmNaufal.jpg" width="300" height="225" title="Masih Berusaha Menyalakan Api Pic By Om Naufal" ></p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/HoreAkhirnyaNyalaPicByOmReza.jpg" width="300" height="225" title="Hore Akhirnya Nyala Pic By Om Reza" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/HoreAkhirnyaNyalaPicByOmReza.jpg" width="300" height="225" title="Hore Akhirnya Nyala Pic By Om Reza" ></p>
 
 <p>Dan akhirnya, mari kita foto keluarga dulu <strong>1&hellip;.2&hellip;.3&hellip;.Cheeerss&hellip;..</strong> :)
-<img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/Roast.jpg" title="Foto Keluarga Dulu" ></p>
+<img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/TOURING/BercengkramadenganNusantariderdiEventRidenRoast/Roast.jpg" title="Foto Keluarga Dulu" ></p>
 
 <p>Setelah semua sate habis :D akhirnya kita pun kembali ke warung yang lokasi-nya dekat dengan tempat parkir motor kita, sembari melanjutkan cerita si &ldquo;Usman&rdquo; yang terpaksa kepotong waktu acara bakar-bakar tadi :D Akhirnya entah bagaimana ceritanya, teman-teman semua memutuskan pulang malam itu juga. Tepat jam 01:30, akhirnya kita semua turun dan kembali ke Jakarta :) Dan akhir-nya saya-pun sampai di kos-kosan tepat hari Minggu jam 03:00 dini hari dengan selamat sentosa dan tidak lupa saya ucapkan terima kasih yang sebesar-besar-nya untuk :</p>
 
@@ -410,9 +410,9 @@ Puas foto-foto dan beristirahat, akhirnya kita pun melanjutkan perjalanan lagi u
   
   <entry>
     <title type="html"><![CDATA[Bermain Air Minggu Pagi di Sungai Citarik]]></title>
-    <link href="http://martinusadyh.github.io/2013/05/13/bermain-air-minggu-pagi-di-sungai-citarik/"/>
+    <link href="http://martinusadyh.web.id/2013/05/13/bermain-air-minggu-pagi-di-sungai-citarik/"/>
     <updated>2013-05-13T01:05:00+07:00</updated>
-    <id>http://martinusadyh.github.io/2013/05/13/bermain-air-minggu-pagi-di-sungai-citarik</id>
+    <id>http://martinusadyh.web.id/2013/05/13/bermain-air-minggu-pagi-di-sungai-citarik</id>
     <content type="html"><![CDATA[<p>Perjalanan kali ini sebenarnya merupakan perjalanan balas dendam gara-gara rencana tahun kemarin batal :( , karena tidak ingin gagal untuk kedua kali-nya akhirnya untuk perjalanan kali ini kita mengajak teman-teman kantor dari divisi lain selain divisi IT tempat dimana saya bersemayam :D Dan akhirnya kita putuskan untuk <strong>&ldquo;Rafting di Citarik&rdquo;</strong> awal bulan April tepatnya tanggal 07/04/2013 :)</p>
 
 <p>Rafting kita kali ini menggunakan jasa dari pihak <a href="http://www.kakilangitcamp.com/">Kaki Langit Adventure</a> yang menurut kita tidak terlalu mahal, sedangkan semua urusan booking membooking di urus langsung oleh <a href="https://www.facebook.com/idhi.baee">Mas Idhi</a>. Setelah berdiskusi dengan teman-teman yang lain, akhirnya kita putuskan untuk mengambil paket arung jeram yang 9 KM supaya bisa lebih lama bermain-main airnya :) Setelah semua urusan dengan pihak <a href="http://www.kakilangitcamp.com/">Kaki Langit Adventure</a> selesai, akhirnya kitapun sepakat untuk berkumpul di kantor hari Sabtu 06/04/2013 jam 22:00.</p>
@@ -596,9 +596,9 @@ Puas foto-foto dan beristirahat, akhirnya kita pun melanjutkan perjalanan lagi u
   
   <entry>
     <title type="html"><![CDATA[Berburu Sunset di Pantai Ranca Buaya dan Pantai Santolo]]></title>
-    <link href="http://martinusadyh.github.io/2013/04/29/berburu-sunset-di-pantai-ranca-buaya-dan-pantai-santolo/"/>
+    <link href="http://martinusadyh.web.id/2013/04/29/berburu-sunset-di-pantai-ranca-buaya-dan-pantai-santolo/"/>
     <updated>2013-04-29T17:08:58+07:00</updated>
-    <id>http://martinusadyh.github.io/2013/04/29/berburu-sunset-di-pantai-ranca-buaya-dan-pantai-santolo</id>
+    <id>http://martinusadyh.web.id/2013/04/29/berburu-sunset-di-pantai-ranca-buaya-dan-pantai-santolo</id>
     <content type="html"><![CDATA[<p>[caption id=&ldquo;attachment_2777&rdquo; align=&ldquo;aligncenter&rdquo; width=&ldquo;648&rdquo;]<a href="http://martinusadyh.web.id/gallery/?album=12&amp;gallery=10&amp;pid=530"><img src="http://martinusadyh.web.id/wp-content/uploads/2013/04/Sunset-yang-terhalang-awan-di-Pantai-Santolo.jpg" alt="Sunset yang terhalang awan di Pantai Santolo" /></a> Sunset yang terhalang awan di Pantai Santolo[/caption]
 Sebenarnya perjalanan kali ini terinspirasi dari <strong>Ride Report</strong> om Debian di forum <strong>Nusantaride</strong> dengan judul <a href="http://www.nusantaride.com/Forums/showthread.php?t=544">Ekspedisi Menyingkap Keindahan 8 Pantai Tersembuyi di Garut</a>, nah karena tergiur dengan pemandangan yang terdapat pada tulisan om Debian akhirnya sayapun berusaha meracuni beberapa teman untuk ikutan jalan menuju ke Pantai Ranca Buaya di akhir maret nanti tepatnya waktu <em>long weekend</em> di tanggal 29-31 Maret 2013 :) Dan ternyata, respon teman-teman cukup baik juga dengan menyatakan bahwa mereka tertarik untuk ikutan <em>riding</em> bareng menuju ke Pantai Ranca Buaya :)</p>
 
@@ -966,9 +966,9 @@ Sebenarnya perjalanan kali ini terinspirasi dari <strong>Ride Report</strong> om
   
   <entry>
     <title type="html"><![CDATA[Step by step Apache Tomcat SSL Configuration]]></title>
-    <link href="http://martinusadyh.github.io/2013/04/23/step-by-step-apache-tomcat-ssl-configuration/"/>
+    <link href="http://martinusadyh.web.id/2013/04/23/step-by-step-apache-tomcat-ssl-configuration/"/>
     <updated>2013-04-23T12:22:15+07:00</updated>
-    <id>http://martinusadyh.github.io/2013/04/23/step-by-step-apache-tomcat-ssl-configuration</id>
+    <id>http://martinusadyh.web.id/2013/04/23/step-by-step-apache-tomcat-ssl-configuration</id>
     <content type="html"><![CDATA[<p>Sedang bingung bagaimana mengaktifkan fitur <strong>SSL <em>(Secure Sockets Layer)</em></strong> pada <a href="http://tomcat.apache.org/">Apache Tomcat</a> ? Jika iya, pada tulisan kali ini mari kita bahas bagaimana mengkonfigurasi <strong>Apache Tomcat</strong> yang kita gunakan agar bisa mendukung fitur <strong>SSL</strong> ini. Pada tulisan kali ini sistem operasi yang digunakan adalah <strong>GNU/Linux Ubuntu 12.04</strong> sehingga semua proses konfigurasi dan installasi aplikasi akan mengikuti cara kerja dan struktur direktori milik Ubuntu :) Supaya lebih memudahkan, maka tulisan kali ini akan dibagi menjadi beberapa tahapan yang kurang lebih sebagai berikut :</p>
 
 <ol>
@@ -1118,9 +1118,9 @@ INFO: Server startup in 1040 ms
   
   <entry>
     <title type="html"><![CDATA[Serunya Perjalanan ke Waduk Jatiluhur]]></title>
-    <link href="http://martinusadyh.github.io/2013/04/14/serunya-perjalanan-ke-waduk-jatiluhur/"/>
+    <link href="http://martinusadyh.web.id/2013/04/14/serunya-perjalanan-ke-waduk-jatiluhur/"/>
     <updated>2013-04-14T22:25:37+07:00</updated>
-    <id>http://martinusadyh.github.io/2013/04/14/serunya-perjalanan-ke-waduk-jatiluhur</id>
+    <id>http://martinusadyh.web.id/2013/04/14/serunya-perjalanan-ke-waduk-jatiluhur</id>
     <content type="html"><![CDATA[<p><strong>&ldquo;Ride, Lunch and Laugh @ Waduk Jatiluhur&rdquo;</strong> ini adalah sebuah event yang diselenggarakan oleh komunitas <a href="http://www.nusantaride.com/Forums">Nusantaride</a> yang bertujuan untuk saling mengakrabkan diri diantara para pecinta <strong>petualang menggunakan roda dua</strong>, dan event ini merupakan pengalaman pertama saya bertemu, berkenalan dan bercanda mesra dengan para rider yang mempunyai jam terbang tinggi dalam dunia petualangan menggunakan roda dua :)</p>
 
 <p>Ciri khas dari komunitas <a href="http://www.nusantaride.com/Forums">Nusantaride</a> ini jika mengadakan sebuah event adalah hanya memberikan koordinat GPS <em>(Global Positioning System)</em> saja sebagai tikum-nya, dan tidak ada informasi lain seperti jam berapa acara akan dimulai. Pokoknya datang saja ke lokasi dimana koordinat diberikan, jika kita sampai di lokasi yang sudah diberikan dan ternyata sudah tidak ada orang berarti ada 2 kemungkinan yaitu <strong>&ldquo;acara sudah selesai&rdquo;</strong> atau <strong>&ldquo;kita kesasar&rdquo;.</strong> Nah kalau sudah begini, semuanya terserah kepada kita mau jalan kemana :D</p>
@@ -1459,12 +1459,12 @@ INFO: Server startup in 1040 ms
   
   <entry>
     <title type="html"><![CDATA[Nusantaride Event RIDE and ROAST]]></title>
-    <link href="http://martinusadyh.github.io/2013/04/09/nusantaride-event-ride-and-roast/"/>
+    <link href="http://martinusadyh.web.id/2013/04/09/nusantaride-event-ride-and-roast/"/>
     <updated>2013-04-09T22:07:41+07:00</updated>
-    <id>http://martinusadyh.github.io/2013/04/09/nusantaride-event-ride-and-roast</id>
+    <id>http://martinusadyh.web.id/2013/04/09/nusantaride-event-ride-and-roast</id>
     <content type="html"><![CDATA[<p>Woaaaaa&hellip;.. <strong>RR (Ride Report)</strong> event <a href="http://martinusadyh.web.id/2013/03/17/nusantaride-event-ride-launch-and-laugh/">Ride, Lunch and Laugh</a> masih ditulis, temen-temen <a href="http://www.nusantaride.com/Forums">Nusantaride</a> sudah mengadakan event lagi di bulan April ini sodara-sodara. Dan kali ini, seperti biasanya titik kumpul hanya merupakan sebuah koordinat saja  :) Oh iya, event kali ini saya teruskan ulang dari forum <strong>Nusantaride</strong> yang bisa dilihat <a href="http://www.nusantaride.com/Forums/showthread.php?t=967&amp;page=1">disini</a>.</p>
 
-<p><img src="http://martinusadyh.github.io/images/blog-images/Adventure/TOURING/NusantarideEventRIDEandROAST/RideandRoast-300x211.jpg" width="300" height="211" title="Ride and Roast @ Cibodas" ></p>
+<p><img src="http://martinusadyh.web.id/images/blog-images/Adventure/TOURING/NusantarideEventRIDEandROAST/RideandRoast-300x211.jpg" width="300" height="211" title="Ride and Roast @ Cibodas" ></p>
 
 <p>Bagaimana teman-teman ? Apakah kalian akan ikut ??</p>
 
@@ -1474,15 +1474,15 @@ INFO: Server startup in 1040 ms
   
   <entry>
     <title type="html"><![CDATA[Cedera Otot Yang Umum Terjadi Selama Pendakian]]></title>
-    <link href="http://martinusadyh.github.io/2013/03/23/cedera-otot-yang-umum-terjadi-selama-pendakian/"/>
+    <link href="http://martinusadyh.web.id/2013/03/23/cedera-otot-yang-umum-terjadi-selama-pendakian/"/>
     <updated>2013-03-23T23:09:13+07:00</updated>
-    <id>http://martinusadyh.github.io/2013/03/23/cedera-otot-yang-umum-terjadi-selama-pendakian</id>
+    <id>http://martinusadyh.web.id/2013/03/23/cedera-otot-yang-umum-terjadi-selama-pendakian</id>
     <content type="html"><![CDATA[<p>Informasi dibawah ini saya ambil dari forum kaskus dengan judul thread yang sama yaitu <a href="http://www.kaskus.co.id/thread/513aaab5552acf0667000003/cedera-otot-yang-umum-terjadi-selama-pendakian/">Cedera Otot yang Umum Terjadi Selama Pendakian</a>, semoga informasi ini berguna buat para pendaki yang lain termasuk saya yang juga sering mengalami beberapa cedera yang dibahas dibawah ini :D :)</p>
 
 <h2>Kram Betis</h2>
 
 <p>Kram Betis (strained calves) dirasakan seperti terbakar, tidak ada tenaga dan kram pada otot betis. Hal ini diakibatkan saat mendaki tanjakan berbatu yang mengharuskan kita memanjat dengan menaikkan kaki satu2 sehingga beban tertumpu hanya pada betis , bukannya pada otot paha dan bokong (Ini pernah ane alami waktu di tanjakan kesel di Gunung Ungaran). Jika mengalaminya saat mendaki, kita harus istirahat, letakkan kaki yang sakit lebih tinggi dari jantung, dan pijat untuk melemaskannya. Untuk mencegah, sebelum mendaki kita harus melatih otot paha dan otot bokong kita sehingga otot tersebut bisa jadi tumpuan saat menanjak manjat.
-<img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/TipsdanTrik/CederaOtotYangUmumTerjadiSelamaPendakian/KramBetis.JPG" title="Kram Betis" ></p>
+<img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/TipsdanTrik/CederaOtotYangUmumTerjadiSelamaPendakian/KramBetis.JPG" title="Kram Betis" ></p>
 
 <!-- more -->
 
@@ -1490,35 +1490,35 @@ INFO: Server startup in 1040 ms
 <h2>Cedera Pergelangan Kaki</h2>
 
 <p>Cedera pergelangan kaki (Rolled ankle) ini berupa rasa sakit dan bengkak pada pergelangan kaki, meski kita tidak menyadari kalau kita keseleo selama perjalanan. Cedera ini disebabkan jika otot betis ke bawah kurang kuat sehingga tidak memberikan kestabilan pada pergelangan kaki saat berjalan di tempat yang tidak rata seperti berbatu atau tanah bergelombang (seperti jalan di awal pendakian Gunung Papandayan euy). Untuk pencegahannya latih keseimbangan satu kaki dengan membawa beban untuk memperkuat otot kaki bawah kita termasuk pergelangan kaki. Jika bolak balik mengalami cedera, gunakan boot potongan tinggi!!
-<img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/TipsdanTrik/CederaOtotYangUmumTerjadiSelamaPendakian/CederaPergelanganKaki.JPG" title="Cedera Pergelangan Kaki" ></p>
+<img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/TipsdanTrik/CederaOtotYangUmumTerjadiSelamaPendakian/CederaPergelanganKaki.JPG" title="Cedera Pergelangan Kaki" ></p>
 
 <h2>Lutut Gemetar</h2>
 
 <p>Sakit di otot paha dan lutut gemetar ( sore on quads and/or knee). Penyebabnya adalah saat turun dengan bawaan masih berat, posisi kesejajaran antara pinggul, lutut dan pergelangan kaki yang tidak tepat, dan terakhir akibat kaki panjang sebelah ( ane banget). Untuk mecegah, latih otot torso kita yaitu mulai dari bahu sampai pinggul sehingga tubuh kita stabil dalam membawa beban berat saat turun pendakian. Gunakan juga trekking poles kalau turun ( G Semeru ma Merapi turun tanpa trekking poles?alamat lutut gemetar ria…)
-<img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/TipsdanTrik/CederaOtotYangUmumTerjadiSelamaPendakian/LututGemetar.JPG" title="Lutut Gemetar" ></p>
+<img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/TipsdanTrik/CederaOtotYangUmumTerjadiSelamaPendakian/LututGemetar.JPG" title="Lutut Gemetar" ></p>
 
 <h2>Sakit Otot Pinggul</h2>
 
 <p>Radang sendi Pinggul (Hip bursitis) dirasakan sakit luar biasa setiap langkah kita akibat kerusakan jaringan lunak di daerah pinggul.Alhasil, cara jalan kita pasti jadi aneh, seperti malas ngangkat paha kita. Ini yang paling sering kita alami sebenarnya bagi yang suka mendadak mendaki di akhir weekend tanpa persiapan olahraga beberapa minggu sebelumnya. Banyak duduk di kantor, langsung mau nanjak aje, otot pinggul kita lah yang jadi sasaran kram dan sakit selama pendakian. Latihan hip abductor sangat membantu menguatkan otot2 pinggul kita.
-<img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/TipsdanTrik/CederaOtotYangUmumTerjadiSelamaPendakian/SakitOtotPinggul.JPG" title="Sakit Otot Pinggul" ></p>
+<img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/TipsdanTrik/CederaOtotYangUmumTerjadiSelamaPendakian/SakitOtotPinggul.JPG" title="Sakit Otot Pinggul" ></p>
 
 <h2>Metatarsalgia</h2>
 
 <p>Metatarsalgia (nyeri pada tulang jari tepat sebelum jari2 kaki) dirasakan seperti ada batu tajam di dalam sepatu kita. Hal ini terjadi jika kita menggunakan sepatu yang memiliki ujung sempit atau terlalu lekuk ke atas, selain kebiasaan menapak dengan ujung sepatu terlalu berlebihan saat pendakian. Ubah kebiasaan menapak. Tekanan saat menapak harus didistribusikan sampai ke tumit. Bantalan tambahan pada sole dalam dapat mengurangi tekanan di pangkal jari saat menapak.
-<img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/TipsdanTrik/CederaOtotYangUmumTerjadiSelamaPendakian/Metatarsalgia.JPG" title="Metatarsalgia" ></p>
+<img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/TipsdanTrik/CederaOtotYangUmumTerjadiSelamaPendakian/Metatarsalgia.JPG" title="Metatarsalgia" ></p>
 
 <h2>Plantar Fasciitis</h2>
 
 <p>Plantar fasciitis (nyeri pada telapak kaki) dirasakan tidak hanya berupa rasa sakit pada lengkukan telapak kaki tetapi juga pada tumit kita. Fascia plantaris merupakan jaringan ikat yang memghubungkan jari – jari kaki dengan tumit dan menyokong lengkungan telapak kaki. Untuk mengobati, gunakan botol plastik dan pijakkan telapak kaki yang sakit sambil menggulungkan botol plastic tetsebut. Untuk pencegahan latihan berjalan dalam jarak jauh secara bertahap.
-<img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/TipsdanTrik/CederaOtotYangUmumTerjadiSelamaPendakian/PlantarFasciitis.JPG" title="Plantar Fasciitis" ></p>
+<img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/TipsdanTrik/CederaOtotYangUmumTerjadiSelamaPendakian/PlantarFasciitis.JPG" title="Plantar Fasciitis" ></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Lowongan Supervisor IT]]></title>
-    <link href="http://martinusadyh.github.io/2013/03/20/lowongan-supervisor-it/"/>
+    <link href="http://martinusadyh.web.id/2013/03/20/lowongan-supervisor-it/"/>
     <updated>2013-03-20T10:05:11+07:00</updated>
-    <id>http://martinusadyh.github.io/2013/03/20/lowongan-supervisor-it</id>
+    <id>http://martinusadyh.web.id/2013/03/20/lowongan-supervisor-it</id>
     <content type="html"><![CDATA[<p>Hii all, cuma ingin sekedar menyebarkan info lowongan dari rekan saya di Jawa Timur :)</p>
 
 <p><strong>PT. Asia Heroshima</strong> adalah perusahaan yang bergerak dibidang ePayment saat ini membutuhkan kandidat sebagai <strong>Supervisor IT</strong> dengan kebutuhan :</p>
@@ -1559,9 +1559,9 @@ Bojonegoro
   
   <entry>
     <title type="html"><![CDATA[Lowongan Senior Java Web Developer]]></title>
-    <link href="http://martinusadyh.github.io/2013/03/20/lowongan-senior-java-web-developer/"/>
+    <link href="http://martinusadyh.web.id/2013/03/20/lowongan-senior-java-web-developer/"/>
     <updated>2013-03-20T09:57:09+07:00</updated>
-    <id>http://martinusadyh.github.io/2013/03/20/lowongan-senior-java-web-developer</id>
+    <id>http://martinusadyh.web.id/2013/03/20/lowongan-senior-java-web-developer</id>
     <content type="html"><![CDATA[<p>Hii all, cuma ingin sekedar menyebarkan info lowongan di tempat saya bekerja saat ini :)</p>
 
 <p><strong>PT. Sumber Sarana</strong> is an Industrial Companies and a distributor of iron and concrete building materials that currently develop ERP project invite, dynamic, highly motivated and committed candidates to join the project.</p>
@@ -1594,9 +1594,9 @@ Bojonegoro
   
   <entry>
     <title type="html"><![CDATA[Nusantaride Event Ride Launch and Laugh]]></title>
-    <link href="http://martinusadyh.github.io/2013/03/17/nusantaride-event-ride-launch-and-laugh/"/>
+    <link href="http://martinusadyh.web.id/2013/03/17/nusantaride-event-ride-launch-and-laugh/"/>
     <updated>2013-03-17T21:00:18+07:00</updated>
-    <id>http://martinusadyh.github.io/2013/03/17/nusantaride-event-ride-launch-and-laugh</id>
+    <id>http://martinusadyh.web.id/2013/03/17/nusantaride-event-ride-launch-and-laugh</id>
     <content type="html"><![CDATA[<p>Halo sahabat adventure rider, kali ini buat penggemar motor yang demen ber-adventure ria akhirnya Nusantaride kali ini mengadakan event lagi tepatnya di Jatiluhur. Dan berikut ini adalah event resmi yang di publish oleh mimin Nusantaride di <a href="https://www.facebook.com/photo.php?fbid=4641973536242&amp;set=o.147651798611077&amp;type=1&amp;relevant_count=1&amp;ref=nf">Facebook Nusantaride</a> :</p>
 
 <p>[caption id=&ldquo;attachment_2540&rdquo; align=&ldquo;aligncenter&rdquo; width=&ldquo;225&rdquo;]<a href="http://martinusadyh.web.id/gallery/?album=4&amp;gallery=3&amp;pid=444"><img src="http://martinusadyh.web.id/wp-content/uploads/2013/03/RideLaunchAndLaugh-225x300.jpg" alt="Ride Launch And Laugh" /></a> Ride Launch And Laugh[/caption]</p>
@@ -1609,10 +1609,10 @@ Bojonegoro
   
   <entry>
     <title type="html"><![CDATA[Puncak Cikuray Yang Tertunda]]></title>
-    <link href="http://martinusadyh.github.io/2013/03/17/puncak-cikuray-yang-tertunda/"/>
+    <link href="http://martinusadyh.web.id/2013/03/17/puncak-cikuray-yang-tertunda/"/>
     <updated>2013-03-17T18:58:55+07:00</updated>
-    <id>http://martinusadyh.github.io/2013/03/17/puncak-cikuray-yang-tertunda</id>
-    <content type="html"><![CDATA[<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/MountCikuray.jpg" title="Mount Cikuray" ></p>
+    <id>http://martinusadyh.web.id/2013/03/17/puncak-cikuray-yang-tertunda</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/MountCikuray.jpg" title="Mount Cikuray" ></p>
 
 <p>Pendakian ke Gunung Cikuray sabtu kemarin (08/03/2013) merupakan pendakian pertama yang saya lakukan, dan sebenarnya kepingin naik gunung sudah sejak tahun 2010 dulu tapi baru bisa terealisasi kemarin (akhir tahun kemarin juga gagal ketika ingin ke Gede Pangrango karena tidak ada yang mau daftar langsung ke Cibodas :( ) :D Rencana pendakian ini sebenarnya sudah direncakan sejak jauh-jauh hari, berawal dari obrolan antara saya, Jimmy dan mas Dhamar tentang rencana cuti Jimmy yang mau naik ke Gunung Semeru :D Karena mas Dhamar ternyata juga tertarik ikutan naik, jadinya kita ngobrol-ngobrol dan akhirnya terpilihlah Gunung Cikuray sebagai ajang latihan sebelum ke Semeru dan kita sepakat bahwa kita akan berangkat dari Jakarta hari Jum&#8217;at (08/03/2013) malam sekitar jam 22:00 dan titik kumpulnya adalah di terminal kampung rambutan.</p>
 
@@ -1670,7 +1670,7 @@ Bojonegoro
 
 <p>Ok semua rencana sudah disusun dengan rapi, dan tepat hari Jum&#8217;at jam 20:45 kita bertiga (saya, Jimmy dan Dadang) memulai perjalanan ini dari kantor <a href="http://artivisi.com">PT. Artivisi Intermedia</a> yang berlokasi di pangkalan jati 2. Sekedar info Doni sudah pulang duluan ke Garut, sedangkan Luluk dan Dhamar akan langsung menuju ke terminal kampung rambutan dari daerah Kalibata.</p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/SemuasudahsiapYukBerangkat.jpg" title="Semua sudah siap Yuk Berangkat" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/SemuasudahsiapYukBerangkat.jpg" title="Semua sudah siap Yuk Berangkat" ></p>
 
 <p>Perjalanan dari pangkalan jati ke kampung rambutan kita tempuh dengan menggunakan angkot 22 jurusan kalimalang &ndash; pondok gede dengan ongkos @2500 dan diteruskan oleh angkot KR jurusan pondok gede &ndash; kampung rambutan dengan ongkos @4000. Perjalanan dari pangkalan jati &ndash; kampung rambutan lumayan tersendat Jum&#8217;at malam itu dikarenakan bertepatan dengan <strong><em>long weekend</em></strong>, dan akhirnya kita bertiga sampai dengan selamat di Terminal Kampung Rambutan tepat jam 22:00. Sembari kita menunggu Dhamar dan Luluk merapat, akhirnya kita habiskan waktu dengan minum kopi di salah satu penjual kopi di terminal Kampung Rambutan :)</p>
 
@@ -1679,67 +1679,67 @@ Bojonegoro
 <p>Tepat jam 04:15 akhirnya bis Karunia Bakti yang kita tumpangi sudah sampai di terminal Guntur &ndash; Garut, dan akhirnya kita pun turun bersama kawan-kawan seperjalanan yang ternyata sebagian besar dari mereka ingin mendaki ke Gunung Papandayan :)</p>
 
 <p>Setelah turun dari bis, kita berlima istirahat dulu di terminal Guntur sembari minum kopi dan teh hangat. Sedangkan Dhamar dan Luluk menunaikan kewajibannya yaitu Sholat Subuh di terminal Guntur. Setelah puas beristirahat, akhirnya kita meluncur ke rumah Doni yang berlokasi di Ciledug &ndash; Garut dengan menggunakan angkot 02 dengan tujuan ke Dinas Pariwisata :)
-<img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/IstirahatdiTerminalGunturGarut.jpg" title="Istirahat di Terminal Guntur Garut" ></p>
+<img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/IstirahatdiTerminalGunturGarut.jpg" title="Istirahat di Terminal Guntur Garut" ></p>
 
 <p>Akhirnya jam 05:30 kita sampai di rumah Doni dengan selamat, disini kegiatan yang kita lakukan adalah packing ulang tas masing-masing untuk pembagian beban kemudian makan-makan dan menunggu angkot yang akan mengantar kita menuju ke pemancar tempat dimana titik awal pendakian ke gunung Cikuray. Tepat jam 07:45 akhirnya kita mulai perjalanan dari rumah Doni yang berada di daerah Ciledug menuju ke Pemancar dengan ongkos PP adalah @60.000 yang dibayar waktu kita turun nanti. Di tengah perjalanan menembus kebun teh, ternyata kita harus ijin dahulu ke pak Satpam penjaga kebun teh dengan meninggalkan KTP beserta biaya untuk 1 orang Rp. 3.000,&ndash; dan karena kita naik angkot kita juga harus bayar biaya angkot sebesar Rp. 5.000,&ndash;</p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/PortalKebunTehMenujuCikuray.JPG" title="Portal di Kebun Teh Menuju Pemancar" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/PortalKebunTehMenujuCikuray.JPG" title="Portal di Kebun Teh Menuju Pemancar" ></p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/HarusDaftardiPatSatpam.JPG" title="Harus Daftar di Pat Satpam" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/HarusDaftardiPatSatpam.JPG" title="Harus Daftar di Pat Satpam" ></p>
 
 <p>Perjalanan setelah portal kebun teh sungguh sangat-sangat indah, di kanan kiri jalan kita bisa melihat bukit-bukit yang penuh dengan pohon teh. Meskipun jalan yang kita lewati tidak begitu bagus, tapi tidak mengurangi semangat kita semua :)</p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/PemandanganBukitTeh4.JPG" title="Pemandangan Kebun Teh" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/PemandanganBukitTeh4.JPG" title="Pemandangan Kebun Teh" ></p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/PemandanganBukitTeh3.JPG" title="Kondisi Jalan Menuju Pemancar" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/PemandanganBukitTeh3.JPG" title="Kondisi Jalan Menuju Pemancar" ></p>
 
 <p>Setelah beberapa jam perjalanan, di tanjakan terakhir sebelum pemancar angkot kita ternyata sudah tidak kuat lagi untuk meneruskan perjalanan dan kita diturunkan di bawah pemancar :( dan akhirnya dengan terpaksa kita berjalan kaki untuk menuju ke pemancar. Karena berdasarkan informasi yang kita baca sebaiknya sebelum naik ke Cikuray kaki kita di olesin dengan counterpain biar tidak begitu pegal waktu mendaki, akhirnya ramai-ramai kita bergantian mengoleskan counterpain baik ke kaki dan punggung sekalian bernarsis ria dahulu :D</p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/PemandanganBukitdariBawahPemancar.jpg" title="Pemandangan Bukit di bawah Pemancar" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/PemandanganBukitdariBawahPemancar.jpg" title="Pemandangan Bukit di bawah Pemancar" ></p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/NarsisRia.jpg" title="Narsis Ria" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/NarsisRia.jpg" title="Narsis Ria" ></p>
 
 <p>Puas berfoto-foto akhirnya perjuangan pertama kita pun dimulai, dihadapan kita sudah terbentang jalan tembus untuk naik ke pemancar dengan melewati kebun teh (tidak lewat jalan aspal) dengan kemiringan yang cukup untuk menguras tenaga. Ternyata benar kawan-kawan, baru beberapa langkah saja nafas saya sudah ngos-ngosan :D Dan alhasil sampai di jalanan aspal diatas berhasil dicapai dengan cukup menguras tenaga dan akhirnya saya pun minta istirahat sebentar :(</p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/PerjuanganPertamaUntukKePemancar.jpg" title="Perjuangan Pertama Menuju Pemancar" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/PerjuanganPertamaUntukKePemancar.jpg" title="Perjuangan Pertama Menuju Pemancar" ></p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/SemangatPemancarSudahdiDepan.jpg" title="Ayo Semangat, Pemancar Sudah di Dekat" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/SemangatPemancarSudahdiDepan.jpg" title="Ayo Semangat, Pemancar Sudah di Dekat" ></p>
 
 <p>Setelah bersusah-payah untuk mencapai pemancar, akhirnya jam 10:15 sampai jugalah kita di pemancar yang kata kawan-kawan pendaki inilah titik awal pendakian di gunung Cikuray. Di pemancar ini kita juga melakukan registrasi lagi dengan biaya se ikhlasnya saja (disini kita bayar sebesar Rp. 50.000,&ndash;. Kata abang penunggu di pos pendakian biaya seikhlasnya ini nanti akan digunakan untuk membangun fasilitas MCK bagi para pendaki yang lain), dan kita juga diberitahu oleh abang penunggu pos pendakian bahwa jika nanti kita tersesat ikuti saja jalur air karena jika ada kejadian pendaki hilang tim SAR akan mulai mencari di jalur air dahulu baru ke titik yang lain.  Disini kita beristirahat cukup lama, sekalian bernarsis ria lagi :D</p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/PosPendakianGunungCikuray.jpg" title="Pos Pendakian Gunung Cikuray" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/PosPendakianGunungCikuray.jpg" title="Pos Pendakian Gunung Cikuray" ></p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/PemandanganDariPemancar.jpg" title="Pemandangan di Pemancar" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/PemandanganDariPemancar.jpg" title="Pemandangan di Pemancar" ></p>
 
 <p>Puas beristirahat akhirnya tepat jam 11:05 kita melanjutkan perjalanan untuk benar-benar mendaki Gunung Cikuray, dan jalur awal yang kita hadapi adalah seperti gambar dibawah ini dan akan menanjak terus tanpa bonus sampai di puncaknya :D</p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/JalurAwalPendakian.JPG" title="Jalur Awal Pendakian" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/JalurAwalPendakian.JPG" title="Jalur Awal Pendakian" ></p>
 
 <p>Dan benar saudara-saudara, Gunung Cikuray memang tanpa ampun. Baru diawal saja sudah benar-benar menguras tenaga dan untungnya saya ditolong oleh sebuah tongkat sakti yang berfungsi untuk membagi beban agar semuanya tidak bertumpu di lutut saya yang belum pernah olahraga sama sekali. Setelah melewati tanjakan pertama, akhirnya kita memutuskan untuk istirahat lagi maklum saya merupakan pendaki pemula :D Kita beristirahat bersama beberapa pendaki lain yang sudah datang duluan dan mereka sedang menyiapkan makan siang, setelah betegur sapa dan bernarsis ria lagi akhirnya perjalanan kita lanjutkan :)</p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/PendakianDibukadenganJalurMenanjak.jpg" title="Pendakian Dibuka dengan Jalur Menanjak" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/PendakianDibukadenganJalurMenanjak.jpg" title="Pendakian Dibuka dengan Jalur Menanjak" ></p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/DibantutongkatSakti.jpg" title="Dibantu Tongkat Sakti" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/DibantutongkatSakti.jpg" title="Dibantu Tongkat Sakti" ></p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/MulaiMasukHutan.JPG" title="Mulai Masuk Hutan" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/MulaiMasukHutan.JPG" title="Mulai Masuk Hutan" ></p>
 
 <p>Belum mencapai pos 1, cuaca sudah mulai menunjukkan gejala-gejala akan turun hujan dan kabut juga sudah mulai turun hingga menghalangi pandangan kita. Disebuah tempat yang agak lapang setelah masuk hutan, akhirnya kita disini memutuskan untuk istirahat lagi sekedar untuk menggunakan jas hujan yang sudah dipersiapkan kemudian melanjutkan perjalanan menuju ke pos 1.</p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/CuacaBerkabut.jpg" title="Cuaca Berkabut" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/CuacaBerkabut.jpg" title="Cuaca Berkabut" ></p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/PakaiJasHujanDulu.jpg" title="Pakai Jas Hujan Dulu" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/PakaiJasHujanDulu.jpg" title="Pakai Jas Hujan Dulu" ></p>
 
 <p>Perjalanan menuju ke pos 1 kita tempuh kurang lebih selama 1 jam perjalanan dari pemancar (karena kita siput banget naiknya :D) dengan cuaca gerimis, dan kita sampai di pos 1 ini kurang lebih jam 12:10. Pada pos 1 ini kita menemukan air yang berasal dari pipa yang dijebol dan letaknya ada disebelah kanan jalur pendakian kalau kita naik, dan disini Dadang bertugas untuk memenuhi botol air yang sudah kosong sekedar untuk jaga-jaga supaya kita tidak kehabisan air diatas nanti.</p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/SampaidiPos1.jpg" title="Sampai di Pos 1" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/SampaidiPos1.jpg" title="Sampai di Pos 1" ></p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/TanjakandiPos1.jpg" title="Tanjakan di Pos 1" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/TanjakandiPos1.jpg" title="Tanjakan di Pos 1" ></p>
 
 <p>Tepat jam 12:30 kita meninggalkan pos 1 dan berjalan menuju ke pos 2, dalam perjalan kali ini cuaca juga semakin buruk dengan hujan yang turun makin deras. Perjalanan dari pos 1 menuju ke pos 2 kalau tidak salah memakan waktu 1 jam. Tapi kita tidak beristirahat di pos 2 ini, kita beristirahat tepat dibawah pos 2, karena disini juga kita menemukan sebuah air yang berasal dari pipa yang dijebol (sama seperti di pos 1 dibawah). Dan disini kita juga mengisi perbekalan air di botol yang sudah kosong, kebanyakan botol yang kita isi adalah botol-botol yang kita bawa diluar bukan yang didalam tas.</p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/DadangAmbilAir.JPG" title="Dadang Ambil Air" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/DadangAmbilAir.JPG" title="Dadang Ambil Air" ></p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/MelanjutkanPerjalananKePos3.JPG" title="Melanjutkan Perjalanan ke Pos 3" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/MelanjutkanPerjalananKePos3.JPG" title="Melanjutkan Perjalanan ke Pos 3" ></p>
 
 <p>Perjalanan dari pos 2 menuju ke pos 3 benar-benar merupakan sebuah ujian yang berat kalau menurut saya, karena jarak antara pos 2 dan pos 3 cukup jauh juga dan jalur juga makin terjal. Di tengah cuaca hujan dan dengan fisik yang mulai capek, akhirnya kita memutuskan untuk berhenti sebentar di tengah perjalanan menuju ke pos 3 untuk mengisi perut yang sudah lapar. Ketakutan utama saya adalah, jika kita paksakan terus berjalan dengan baju yang sudah basah dan dingin plus perut yang sudah keroncongan nantinya kita akan masuk angin. Dan jika sudah masuk angin, wah bisa bahaya :( Dan akhirnya semua team setuju untuk istirahat makan dahulu. Dengan tangan dan lutut yang gemetar karena dingin, akhirnya kita makan juga di tengah jalur pendakian antara pos 2 dan 3 dengan lauk tempe mendoan dan krupuk bekal yang dibawa Doni dari rumah pagi tadi :D</p>
 
@@ -1747,9 +1747,9 @@ Bojonegoro
 
 <p>Karena fisik sudah mulai payah, akhirnya di pos 3 ini team dipecah jadi 2 yaitu team pertama yang terdiri dari Jimmy, Dadang dan Luluk berangkat dahulu menuju ke puncak bayangan untuk mendirikan tenda. Sedangkan team kedua yaitu saya, Doni dan Dhamar menyusul belakangan. Karena tenda yang bawa saya dan Dhamar, akhirnya saya pun bertukar tas dengan Dadang dan perjalanan pun dilanjutkan. Tepat jam 16:30, akhirnya saya, Doni dan Dhamar berangkat menyusul team pertama yang sudah jalan duluan menuju ke pos bayangan. Perjalanan menuju ke pos 4 ini juga tidak kalah ekstrimnya, cuma jaraknya tidak sejauh dari pos 2 ke pos 3. Pada perjalanan ini saya juga sempat merasa takut dan putus asa, ditengah cuaca yang sudah mulai gelap, teriakan saya juga ternyata tidak berbalas dari team pertama. Anggapan saya waktu itu adalah, kita tertinggal jauh dari team pertama karena suara kita tidak terdengar :( Tidak berapa lama, akhirnya kita sampai juga di pos 4 tepat jam 17:30 dan cuaca sudah mulai gelap. Dan di pos 4 ini kita ditungguin oleh Jimmy, Dadang dan Luluk, team pertama menunggu kita karena ternyata senter dibawa oleh team pertama semua dan kita tidak ada yang membawa senter. Setelah menyerahkan 1 buah senter, akhirnya team pertama melanjutkan perjalanan menuju ke puncak bayangan.</p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/SuasanaPerjalananKePos4.jpg" title="Suasana Perjalanan ke Pos 4" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/SuasanaPerjalananKePos4.jpg" title="Suasana Perjalanan ke Pos 4" ></p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/SuasanaPerjalananKePos4_1.jpg" title="Suasana Perjalanan ke Pos 4a" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/SuasanaPerjalananKePos4_1.jpg" title="Suasana Perjalanan ke Pos 4a" ></p>
 
 <p>Di pos 4 inilah semangat saya mulai nge-drop, karena kata pendaki yang nge-camp di pos 3 puncak bayangan cuma 1 pos lagi dan ternyata setelah kita naik bukannya puncak bayangan yang kita dapatin melainkan pos 4 yang tempatnya tidak bisa untuk membuka tenda selain itu cuaca masih hujan dan sudah mulai gelap :(. Di pos ini jugalah Dhamar sepertinya sudah tidak sanggup lagi untuk naik, dan ingin istarahat lebih lama di pos 4 ini.</p>
 
@@ -1761,11 +1761,11 @@ Bojonegoro
 
 <p>Hari minggu tepat jam 07:00 akhirnya kita terbangun karena suasana diluar sudah terang benderang, dan kegiatan kita hari ini adalah masak pagi kemudian makan dan terus turun untuk kembali ke Jakarta :)</p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/SuasanaPagidariDalamTenda.JPG" title="Suasana Pagi dari Dalam Tenda" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/SuasanaPagidariDalamTenda.JPG" title="Suasana Pagi dari Dalam Tenda" ></p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/Pos5.JPG" title="Pos 5" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/Pos5.JPG" title="Pos 5" ></p>
 
-<p><img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/KegiatanPagiMasakMakanPagi.JPG" title="Kegiatan Pagi Masak Makan Pagi" ></p>
+<p><img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/KegiatanPagiMasakMakanPagi.JPG" title="Kegiatan Pagi Masak Makan Pagi" ></p>
 
 <p>Setelah selesai makan pagi, akhirnya kita mulai berkemas-kemas untuk turun. Sedangkan semua sampah yang kita hasilkan kita kumpulkan untuk kemudian dibakar, dan tepat jam 10:45 kita mulai perjalanan turun. Perjalanan turun ternyata lebih cepat dari pada naik, tidak begitu lama kita sudah sampai di pos 4 dan tidak begitu lama juga kita sampai di pos 3. Cuaca mulai berubah lagi sejak kita di pos 3, hujan perlahan-lahan mulai turun membahasahi bumi. Tapi untungnya tidak terlalu deras seperti kemarin, akibat dari hujan ini adalah jalanan jadi semakin licin dan ini mengakibatkan saya bermain perusutan :D</p>
 
@@ -1785,7 +1785,7 @@ Bojonegoro
 
 
 <p>Dan rincian ongkos perjalanan yang kita keluarkan adalah selama perjalanan kurang lebih sebagai berikut :
-<img class="center" src="http://martinusadyh.github.io/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/RincianBiaya.png" title="Rincian Biaya" ></p>
+<img class="center" src="http://martinusadyh.web.id/images/blog-images/Adventure/pendakian/PuncakCikurayYangTertunda/RincianBiaya.png" title="Rincian Biaya" ></p>
 
 <p>Bisa dikatakan pendakian pertama ini gagal karena kita tidak sampai ke puncak Cikuray, tapi tidak apa-apa :D Sembari mengutip kata-kata dari forum OANC di Kaskus <strong>&ldquo;Puncak itu bonus, kembali dengan selamat sampai rumah itu tujuan utama-nya&rdquo;</strong> :)</p>
 
@@ -1802,9 +1802,9 @@ Bojonegoro
   
   <entry>
     <title type="html"><![CDATA[Howto Change Default Editor Font in MySQL Workbench]]></title>
-    <link href="http://martinusadyh.github.io/2013/03/16/howto-change-default-editor-font-in-mysql-workbench/"/>
+    <link href="http://martinusadyh.web.id/2013/03/16/howto-change-default-editor-font-in-mysql-workbench/"/>
     <updated>2013-03-16T20:57:54+07:00</updated>
-    <id>http://martinusadyh.github.io/2013/03/16/howto-change-default-editor-font-in-mysql-workbench</id>
+    <id>http://martinusadyh.web.id/2013/03/16/howto-change-default-editor-font-in-mysql-workbench</id>
     <content type="html"><![CDATA[<p>Pernah merasa bahwa font yang digunakan oleh aplikasi <a href="http://dev.mysql.com/downloads/workbench/">MySQL Workbench</a> kurang nikmat dipandang mata ? Pernah merasa ingin mengganti font yang digunakan oleh <strong>MySQL Workbench</strong> melalui menu <strong>Edit > Preferences</strong> tapi masih saja tidak berubah  ? Jika iya, berarti kita mempunyai masalah yang sama :D Setelah kemarin iseng-iseng bertanya ke paman <a href="http://google.com">Google</a>, akhirnya saya menemukan juga bagaimana mengganti font untuk SQL Editor di <strong>MySQL Workbench</strong> :) Jika kita menggunakan linux, maka carilah file dengan nama <code>/home/namauser/.mysql/workbench</code> (catatan: <strong>namauser</strong> diganti dengan nama user anda) dan jika di Windows maka carilah file <code>C:\Users\User\AppData\Roaming\MySQL\Workbench\wb_options.xml</code> Jika sudah, sekarang carilah entri seperti dibawah ini :</p>
 
 <pre><code>&lt;value type="string" key="workbench.general.Editor:Font"&gt;Bitstream Vera Sans Mono 11&lt;/value&gt;
@@ -1826,9 +1826,9 @@ Bojonegoro
   
   <entry>
     <title type="html"><![CDATA[Bermain dengan Apache Solr dan Nutch]]></title>
-    <link href="http://martinusadyh.github.io/2013/03/02/bermain-dengan-apache-solr-dan-nutch/"/>
+    <link href="http://martinusadyh.web.id/2013/03/02/bermain-dengan-apache-solr-dan-nutch/"/>
     <updated>2013-03-02T00:38:10+07:00</updated>
-    <id>http://martinusadyh.github.io/2013/03/02/bermain-dengan-apache-solr-dan-nutch</id>
+    <id>http://martinusadyh.web.id/2013/03/02/bermain-dengan-apache-solr-dan-nutch</id>
     <content type="html"><![CDATA[<p>Sudah lama saya tidak menulis hal-hal yang berkaitan dengan dunia TI, dan akhirnya setelah cukup lama beristirahat akhirnya malam ini saya mencoba menuliskan pengalaman bermain-main dengan <a href="http://lucene.apache.org/solr/">Apache SOLR</a> dan <a href="http://nutch.apache.org/">Apache Nutch</a>. Sebenarnya kedua mainan ini merupakan barang lama, tapi bagi saya merupakan barang baru dikarenakan ada teman yang minta tolong dikonfigurasikan menggunakan kedua mainan ini dan ternyata mengkombinasikan 2 mainan ini tidak semudah seperti yang dibayangkan, maka akhirnya saya jadikan sebuah catatan tersendiri hanya sebagai pengingat saja :D</p>
 
 <p>Nah untuk yang belum tahu apasih sebenarnya <a href="http://lucene.apache.org/solr/">Apache SOLR</a> ini, bahasa mudahnya <strong>SOLR</strong> ini adalah sebuah aplikasi mesin pencari seperti <a href="http://google.com">Google</a> yang ditulis menggunakan bahasa pemrograman java. Dan berikut ini adalah penjelasan yang lebih lengkap diambil dari web resmi-nya <a href="http://lucene.apache.org/solr/">Apache SOLR</a>:</p>
@@ -2015,9 +2015,9 @@ martinusadyh@artivisi:/tmp/apache-nutch-1.6$
   
   <entry>
     <title type="html"><![CDATA[Ride And Capture Nusantaride Event]]></title>
-    <link href="http://martinusadyh.github.io/2013/01/18/ride-and-capture-nusantaride-event/"/>
+    <link href="http://martinusadyh.web.id/2013/01/18/ride-and-capture-nusantaride-event/"/>
     <updated>2013-01-18T22:46:35+07:00</updated>
-    <id>http://martinusadyh.github.io/2013/01/18/ride-and-capture-nusantaride-event</id>
+    <id>http://martinusadyh.web.id/2013/01/18/ride-and-capture-nusantaride-event</id>
     <content type="html"><![CDATA[<p>Hiii rekans,</p>
 
 <p>Sekedar meneruskan sebuah event yang akan di gelar pada tanggal 24 Januari 2013 oleh komunitas <a href="http://www.nusantaride.com">Nusantaride</a> , mungkin berguna buat rekan-rekan yang belum bergabung dan ingin ikut :)</p>
@@ -2101,9 +2101,9 @@ NUSANTARIDE</p>
   
   <entry>
     <title type="html"><![CDATA[Nusantaride Tempat Berkumpulnya Adventure Rider]]></title>
-    <link href="http://martinusadyh.github.io/2013/01/08/nusantaride-tempat-berkumpulnya-adventure-rider/"/>
+    <link href="http://martinusadyh.web.id/2013/01/08/nusantaride-tempat-berkumpulnya-adventure-rider/"/>
     <updated>2013-01-08T21:23:32+07:00</updated>
-    <id>http://martinusadyh.github.io/2013/01/08/nusantaride-tempat-berkumpulnya-adventure-rider</id>
+    <id>http://martinusadyh.web.id/2013/01/08/nusantaride-tempat-berkumpulnya-adventure-rider</id>
     <content type="html"><![CDATA[<p>[caption id=&ldquo;attachment_2393&rdquo; align=&ldquo;alignnone&rdquo; width=&ldquo;397&rdquo;]<a href="http://martinusadyh.web.id/gallery/?album=4&amp;gallery=3&amp;pid=386"><img src="http://martinusadyh.web.id/wp-content/uploads/2013/01/nusantaride.jpg" alt="Logo Nusantaride" /></a> Logo Nusantaride[/caption]
 Apakah diantara teman-teman ada yang mempunyai hobi berpetualang menjelajahi daerah-daerah wisata nan eksotis dengan menggunakan sepeda motor ? Jika iya, mungkin sudah saat-nya melirik sebuah komunitas <a href="http://www.nusantaride.com">Nusantaride</a> yang didalam-nya banyak sekali rider-rider yang berbagi pengalaman tentang daerah-daerah yang sudah pernah dikunjungi-nya melalui sebuah <strong>Ride Report</strong> :)</p>
 
@@ -2142,7 +2142,7 @@ Apakah diantara teman-teman ada yang mempunyai hobi berpetualang menjelajahi dae
 <p>=================================================</p>
 
 <p>web : www.nusantaride.com
-mailing list : <a href="&#x6d;&#97;&#105;&#108;&#x74;&#111;&#58;&#110;&#x75;&#115;&#97;&#x6e;&#116;&#x61;&#x72;&#x69;&#x64;&#x65;&#x40;&#121;&#x61;&#x68;&#x6f;&#x6f;&#x67;&#114;&#x6f;&#117;&#x70;&#x73;&#x2e;&#99;&#x6f;&#109;">&#110;&#117;&#115;&#97;&#110;&#x74;&#97;&#114;&#x69;&#x64;&#x65;&#64;&#121;&#x61;&#104;&#111;&#x6f;&#x67;&#x72;&#111;&#117;&#112;&#x73;&#x2e;&#99;&#111;&#109;</a>
+mailing list : <a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#110;&#117;&#115;&#x61;&#110;&#116;&#97;&#114;&#105;&#100;&#101;&#x40;&#121;&#x61;&#x68;&#111;&#x6f;&#x67;&#114;&#111;&#x75;&#112;&#x73;&#46;&#x63;&#111;&#x6d;">&#x6e;&#117;&#115;&#97;&#x6e;&#x74;&#x61;&#114;&#x69;&#x64;&#101;&#x40;&#x79;&#97;&#x68;&#111;&#x6f;&#x67;&#x72;&#x6f;&#117;&#112;&#115;&#46;&#x63;&#111;&#x6d;</a>
 Facebook : as in your screen right now :)
 twitter : @nusantaride</p>
 
@@ -2172,9 +2172,9 @@ NUSANTARIDE</p>
   
   <entry>
     <title type="html"><![CDATA[Perjalanan Menyusuri Hidden Paradise Sawarna Banten]]></title>
-    <link href="http://martinusadyh.github.io/2013/01/07/perjalanan-menyusuri-hidden-paradise-sawarna-banten/"/>
+    <link href="http://martinusadyh.web.id/2013/01/07/perjalanan-menyusuri-hidden-paradise-sawarna-banten/"/>
     <updated>2013-01-07T23:13:45+07:00</updated>
-    <id>http://martinusadyh.github.io/2013/01/07/perjalanan-menyusuri-hidden-paradise-sawarna-banten</id>
+    <id>http://martinusadyh.web.id/2013/01/07/perjalanan-menyusuri-hidden-paradise-sawarna-banten</id>
     <content type="html"><![CDATA[<p>[caption id=&ldquo;attachment_2195&rdquo; align=&ldquo;alignnone&rdquo; width=&ldquo;758&rdquo;]<a href="http://martinusadyh.web.id/gallery/?album=9&amp;gallery=7&amp;pid=292"><img src="http://martinusadyh.web.id/wp-content/uploads/2013/01/Dengan-Background-Tanjung-Layar-1024x768.jpg" alt="Foto Dulu dengan Background Tanjung Layar" /></a> Foto Dulu dengan Background Tanjung Layar[/caption]</p>
 
 <p>Bagi saya touring kali ini adalah touring yang tidak disangka-sangka, apalagi sampai ke <strong>Sawarna</strong> karena persiapan yang saya lakukan juga sangat-sangat singkat :D. Saya sendiri tahu <strong>Sawarna</strong> dari salah satu thread di kaskus yang akhir bulan kemarin sempat menjadi <strong>Hot Thread</strong> (maaf lupa link threadnya), dan sayang-nya ketika saya mengajak teman kantor untuk kesana; semua pada bilang &ldquo;Gila lu, jauh coy kalau kesana naek motor&rdquo; :( Akhirnya niatan untuk ke <strong>Sawarna</strong> musnah sudah, karena tidak ada teman dan saya sendiri belum pernah melakukan perjalanan jauh sendirian, jadi klop deh untuk menggagalkan niatan saya untuk <em>riding</em> ke <strong>Sawarna</strong> :D</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: e-Magazine | Martinus Ady H. BloG]]></title>
-  <link href="http://martinusadyh.github.io/blog/categories/e-magazine/atom.xml" rel="self"/>
-  <link href="http://martinusadyh.github.io/"/>
-  <updated>2013-11-23T21:45:02+07:00</updated>
-  <id>http://martinusadyh.github.io/</id>
+  <link href="http://martinusadyh.web.id/blog/categories/e-magazine/atom.xml" rel="self"/>
+  <link href="http://martinusadyh.web.id/"/>
+  <updated>2013-11-23T22:02:29+07:00</updated>
+  <id>http://martinusadyh.web.id/</id>
   <author>
     <name><![CDATA[Martinus Ady H]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[June issue of BSD magazine NanoBSD and ALIX]]></title>
-    <link href="http://martinusadyh.github.io/2011/06/03/june-issue-of-bsd-magazine-nanobsd-and-alix/"/>
+    <link href="http://martinusadyh.web.id/2011/06/03/june-issue-of-bsd-magazine-nanobsd-and-alix/"/>
     <updated>2011-06-03T01:14:24+07:00</updated>
-    <id>http://martinusadyh.github.io/2011/06/03/june-issue-of-bsd-magazine-nanobsd-and-alix</id>
+    <id>http://martinusadyh.web.id/2011/06/03/june-issue-of-bsd-magazine-nanobsd-and-alix</id>
     <content type="html"><![CDATA[<p><a href="http://martinusadyh.web.id/wp-content/uploads/2011/06/NanoBSD_and_ALIX_BSD_06_201.jpg"><img src="http://martinusadyh.web.id/wp-content/uploads/2011/06/NanoBSD_and_ALIX_BSD_06_201.jpg" alt="NanoBSD_and_ALIX_BSD_06_201" /></a>Here it is!</p>
 
 <p>We are back and present you with the June issue of BSD magazine. As you may have noticed, this month’s issue is a little bit thicker than usual and we hope you enjoy all the content!</p>

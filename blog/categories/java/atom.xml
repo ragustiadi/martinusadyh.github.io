@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Java | Martinus Ady H. BloG]]></title>
-  <link href="http://martinusadyh.github.io/blog/categories/java/atom.xml" rel="self"/>
-  <link href="http://martinusadyh.github.io/"/>
-  <updated>2013-11-23T21:45:02+07:00</updated>
-  <id>http://martinusadyh.github.io/</id>
+  <link href="http://martinusadyh.web.id/blog/categories/java/atom.xml" rel="self"/>
+  <link href="http://martinusadyh.web.id/"/>
+  <updated>2013-11-23T22:02:29+07:00</updated>
+  <id>http://martinusadyh.web.id/</id>
   <author>
     <name><![CDATA[Martinus Ady H]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Step by step Apache Tomcat SSL Configuration]]></title>
-    <link href="http://martinusadyh.github.io/2013/04/23/step-by-step-apache-tomcat-ssl-configuration/"/>
+    <link href="http://martinusadyh.web.id/2013/04/23/step-by-step-apache-tomcat-ssl-configuration/"/>
     <updated>2013-04-23T12:22:15+07:00</updated>
-    <id>http://martinusadyh.github.io/2013/04/23/step-by-step-apache-tomcat-ssl-configuration</id>
+    <id>http://martinusadyh.web.id/2013/04/23/step-by-step-apache-tomcat-ssl-configuration</id>
     <content type="html"><![CDATA[<p>Sedang bingung bagaimana mengaktifkan fitur <strong>SSL <em>(Secure Sockets Layer)</em></strong> pada <a href="http://tomcat.apache.org/">Apache Tomcat</a> ? Jika iya, pada tulisan kali ini mari kita bahas bagaimana mengkonfigurasi <strong>Apache Tomcat</strong> yang kita gunakan agar bisa mendukung fitur <strong>SSL</strong> ini. Pada tulisan kali ini sistem operasi yang digunakan adalah <strong>GNU/Linux Ubuntu 12.04</strong> sehingga semua proses konfigurasi dan installasi aplikasi akan mengikuti cara kerja dan struktur direktori milik Ubuntu :) Supaya lebih memudahkan, maka tulisan kali ini akan dibagi menjadi beberapa tahapan yang kurang lebih sebagai berikut :</p>
 
 <ol>
@@ -167,9 +167,9 @@ INFO: Server startup in 1040 ms
   
   <entry>
     <title type="html"><![CDATA[Bermain dengan Apache Solr dan Nutch]]></title>
-    <link href="http://martinusadyh.github.io/2013/03/02/bermain-dengan-apache-solr-dan-nutch/"/>
+    <link href="http://martinusadyh.web.id/2013/03/02/bermain-dengan-apache-solr-dan-nutch/"/>
     <updated>2013-03-02T00:38:10+07:00</updated>
-    <id>http://martinusadyh.github.io/2013/03/02/bermain-dengan-apache-solr-dan-nutch</id>
+    <id>http://martinusadyh.web.id/2013/03/02/bermain-dengan-apache-solr-dan-nutch</id>
     <content type="html"><![CDATA[<p>Sudah lama saya tidak menulis hal-hal yang berkaitan dengan dunia TI, dan akhirnya setelah cukup lama beristirahat akhirnya malam ini saya mencoba menuliskan pengalaman bermain-main dengan <a href="http://lucene.apache.org/solr/">Apache SOLR</a> dan <a href="http://nutch.apache.org/">Apache Nutch</a>. Sebenarnya kedua mainan ini merupakan barang lama, tapi bagi saya merupakan barang baru dikarenakan ada teman yang minta tolong dikonfigurasikan menggunakan kedua mainan ini dan ternyata mengkombinasikan 2 mainan ini tidak semudah seperti yang dibayangkan, maka akhirnya saya jadikan sebuah catatan tersendiri hanya sebagai pengingat saja :D</p>
 
 <p>Nah untuk yang belum tahu apasih sebenarnya <a href="http://lucene.apache.org/solr/">Apache SOLR</a> ini, bahasa mudahnya <strong>SOLR</strong> ini adalah sebuah aplikasi mesin pencari seperti <a href="http://google.com">Google</a> yang ditulis menggunakan bahasa pemrograman java. Dan berikut ini adalah penjelasan yang lebih lengkap diambil dari web resmi-nya <a href="http://lucene.apache.org/solr/">Apache SOLR</a>:</p>
@@ -356,9 +356,9 @@ martinusadyh@artivisi:/tmp/apache-nutch-1.6$
   
   <entry>
     <title type="html"><![CDATA[Konfigurasi User Web Applications Pada Apache Tomcat]]></title>
-    <link href="http://martinusadyh.github.io/2012/12/18/konfigurasi-user-web-applications-pada-apache-tomcat/"/>
+    <link href="http://martinusadyh.web.id/2012/12/18/konfigurasi-user-web-applications-pada-apache-tomcat/"/>
     <updated>2012-12-18T23:27:09+07:00</updated>
-    <id>http://martinusadyh.github.io/2012/12/18/konfigurasi-user-web-applications-pada-apache-tomcat</id>
+    <id>http://martinusadyh.web.id/2012/12/18/konfigurasi-user-web-applications-pada-apache-tomcat</id>
     <content type="html"><![CDATA[<p>Untuk yang sering bermain dengan <a href="http://httpd.apache.org/">Apache HTTPD</a> mungkin sudah tidak asing dengan <a href="http://httpd.apache.org/docs/2.2/mod/mod_userdir.html">module mod_userdir</a>, modul ini berfungsi supaya aplikasi web kita tidak perlu di simpan di direktori <code>/var/www</code> sesuai konfigurasi standart milik <strong>Apache</strong>, melainkan di direktori <code>~/public_html</code>. Keuntungan yang kita dapat adalah, kita tidak perlu merubah hak akses direktori <code>/var/www</code> ataupun menambahkan user kita kedalam group milik <strong>Apache</strong>. Dengan model seperti ini, proses <em>development</em> kita menjadi lebih mudah karena semuanya dilakukan pada direktori <code>/home</code> kita sendiri :)</p>
 
 <p>Nah tahukah kalian bahwa ternyata <a href="http://tomcat.apache.org/">Apache Tomcat</a> juga memiliki fitur yang sama seperti saudara-nya <strong>Apache HTTPD</strong> ? Jika di <strong>Apache HTTPD</strong> nama module-nya adalah <a href="http://httpd.apache.org/docs/2.2/mod/mod_userdir.html">mod_userdir</a>, maka pada <strong>Apache Tomcat</strong> dikenal dengan nama <a href="http://tomcat.apache.org/tomcat-7.0-doc/config/host.html#User_Web_Applications">User Web Applications</a>.</p>
@@ -414,9 +414,9 @@ martinusadyh@artivisi:~$ sudo /etc/init.d/tomcat7 start
   
   <entry>
     <title type="html"><![CDATA[Column Selection Mode In NetBeans IDE]]></title>
-    <link href="http://martinusadyh.github.io/2012/12/02/column-selection-mode-in-netbeans-ide/"/>
+    <link href="http://martinusadyh.web.id/2012/12/02/column-selection-mode-in-netbeans-ide/"/>
     <updated>2012-12-02T07:23:08+07:00</updated>
-    <id>http://martinusadyh.github.io/2012/12/02/column-selection-mode-in-netbeans-ide</id>
+    <id>http://martinusadyh.web.id/2012/12/02/column-selection-mode-in-netbeans-ide</id>
     <content type="html"><![CDATA[<p>Karena dikomporin teman yang menunjukkan dukungan <strong>Column Selection</strong> di text editor <strong>Sublime</strong>, akhirnya iseng-iseng apakah <a href="http://netbeans.org/">NetBeans IDE</a> mempunyai fitur yang sama dan ternyata ada loh :) Untuk mengaktifkan <strong>Column Mode Selection</strong> di <strong>NetBeans</strong>, tekanlah kombinasi tombol <code>CTRL+SHIFT+R</code> atau tekanlah tombol dengan gambar <a href="http://martinusadyh.web.id/wp-content/uploads/2012/12/ClickToEnableColumnModeEditing.png"><img src="http://martinusadyh.web.id/wp-content/uploads/2012/12/ClickToEnableColumnModeEditing.png" alt="" /></a> di <code>source mode</code>. Dan dibawah ini adalah tampilan <strong>Column Selection</strong> di NetBeans IDE.</p>
 
 <p><a href="http://martinusadyh.web.id/gallery/?album=4&amp;gallery=3&amp;pid=188"><img src="http://martinusadyh.web.id/wp-content/uploads/2012/12/ColumnModeSelectionInAction.png" alt="" /></a></p>
@@ -427,9 +427,9 @@ martinusadyh@artivisi:~$ sudo /etc/init.d/tomcat7 start
   
   <entry>
     <title type="html"><![CDATA[Create Auto Increment In JavaDB]]></title>
-    <link href="http://martinusadyh.github.io/2012/10/27/create-auto-increment-in-javadb/"/>
+    <link href="http://martinusadyh.web.id/2012/10/27/create-auto-increment-in-javadb/"/>
     <updated>2012-10-27T21:33:42+07:00</updated>
-    <id>http://martinusadyh.github.io/2012/10/27/create-auto-increment-in-javadb</id>
+    <id>http://martinusadyh.web.id/2012/10/27/create-auto-increment-in-javadb</id>
     <content type="html"><![CDATA[<p>[caption id=&ldquo;attachment_1883&rdquo; align=&ldquo;alignleft&rdquo; width=&ldquo;110&rdquo;]<a href="http://martinusadyh.web.id/wp-content/uploads/2012/08/JavaDB.png"><img src="http://martinusadyh.web.id/wp-content/uploads/2012/08/JavaDB.png" alt="JavaDB" /></a>JavaDB[/caption]Kemarin sempat bermain-main sebentar dengan <a href="http://www.oracle.com/technetwork/java/javadb/index.html">JavaDB</a> dan ternyata baru tahu, kalau editor SQL di NetBeans ternyata tidak (belum) ada fitur untuk membuat kolom <strong>auto increment</strong> untuk <strong>JavaDB</strong> :( Nah untuk teman-teman yang ingin membuat kolom <strong>auto increment</strong> di <strong>JavaDB</strong> mungkin bisa menambahkan perintah <code>ID INTEGER NOT NULL PRIMARY KEY GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1)</code> pada script <code>create table</code> di JavaDB seperti terlihat pada script dibawah ini :</p>
 
 <pre><code>create table M_BARANG

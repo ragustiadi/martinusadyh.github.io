@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Blogging | Martinus Ady H. BloG]]></title>
-  <link href="http://martinusadyh.github.io/blog/categories/blogging/atom.xml" rel="self"/>
-  <link href="http://martinusadyh.github.io/"/>
-  <updated>2013-11-23T21:45:02+07:00</updated>
-  <id>http://martinusadyh.github.io/</id>
+  <link href="http://martinusadyh.web.id/blog/categories/blogging/atom.xml" rel="self"/>
+  <link href="http://martinusadyh.web.id/"/>
+  <updated>2013-11-23T22:02:29+07:00</updated>
+  <id>http://martinusadyh.web.id/</id>
   <author>
     <name><![CDATA[Martinus Ady H]]></name>
     
@@ -15,20 +15,20 @@
   
   <entry>
     <title type="html"><![CDATA[Howto Disable Individual Jetpack Module]]></title>
-    <link href="http://martinusadyh.github.io/2013/06/22/howto-disable-individual-jetpack-module/"/>
+    <link href="http://martinusadyh.web.id/2013/06/22/howto-disable-individual-jetpack-module/"/>
     <updated>2013-06-22T15:21:07+07:00</updated>
-    <id>http://martinusadyh.github.io/2013/06/22/howto-disable-individual-jetpack-module</id>
+    <id>http://martinusadyh.web.id/2013/06/22/howto-disable-individual-jetpack-module</id>
     <content type="html"><![CDATA[<p>Gara-gara sering kelupaan bagaimana cara-nya men-disable sebuah modul di <a href="http://wordpress.org/plugins/jetpack/">Jetpack</a>, akhirnya saya buatkan posting sekalian biar besok-besok tidak lupa lagi :D Postingan ini ditulis gara-gara saya tidak puas dengan module <strong>Likes</strong> di Jetpack. Karena sudah terlanjur di aktifkan dan tidak puas, jadi beginilah step by step untuk mendisable-nya :)</p>
 
-<p><img class="center" src="/images/blog-images/blogging/HowtoDisableIndividualJetpackModule/TampilanModuleLikesyangAktif.png" width="300" height="183" title="Tampilan Module Likes yang Aktif" ></p>
+<p>{% img center /images/blog-images/blogging/HowtoDisableIndividualJetpackModule/TampilanModuleLikesyangAktif.png 300 183 Tampilan Module Likes yang Aktif %}</p>
 
 <p>Jika sudah, sekarang tekanlah tombol <strong>Learn More</strong> di module yang ingin di disable untuk menampilkan tombol <strong>Deactive</strong> seperti gambar dibawah ini (lihat tombol yang dibulatin) :</p>
 
-<p><img class="center" src="/images/blog-images/blogging/HowtoDisableIndividualJetpackModule/KlikTombolDeactive.png" width="300" height="196" title="Klik Tombol Deactive" ></p>
+<p>{% img center /images/blog-images/blogging/HowtoDisableIndividualJetpackModule/KlikTombolDeactive.png 300 196 Klik Tombol Deactive %}</p>
 
 <p>Kalau tampilan sudah seperti gambar diatas, maka sekarang tekanlah tombol <strong>Deactive</strong> untuk mendisable module yang dimaksud. Dan harusnya jika tidak ada masalah, maka kita akan melihat tampilan seperti gambar dibawah ini :</p>
 
-<p><img class="center" src="/images/blog-images/blogging/HowtoDisableIndividualJetpackModule/ProsesDeactiveBerhasil.png" width="300" height="181" title="Proses Deactive Berhasil" ></p>
+<p>{% img center /images/blog-images/blogging/HowtoDisableIndividualJetpackModule/ProsesDeactiveBerhasil.png 300 181 Proses Deactive Berhasil %}</p>
 
 <p>Sebenarnya gampang bukan ? Mungkin memang karena faktor <strong>&ldquo;U&rdquo;</strong> nih yang bikin jadi sering lupa :(</p>
 ]]></content>
@@ -36,9 +36,9 @@
   
   <entry>
     <title type="html"><![CDATA[PUAS INTERNETAN DENGAN PAKET 3G TELKOMSEL]]></title>
-    <link href="http://martinusadyh.github.io/2012/11/21/puas-internetan-dengan-paket-3g-telkomsel/"/>
+    <link href="http://martinusadyh.web.id/2012/11/21/puas-internetan-dengan-paket-3g-telkomsel/"/>
     <updated>2012-11-21T16:01:52+07:00</updated>
-    <id>http://martinusadyh.github.io/2012/11/21/puas-internetan-dengan-paket-3g-telkomsel</id>
+    <id>http://martinusadyh.web.id/2012/11/21/puas-internetan-dengan-paket-3g-telkomsel</id>
     <content type="html"><![CDATA[<p>Apakah anda tipe yang ingin…..
 Selalu eksis?? Selalu up to date pada setiap perkembangan?
 Kalau begitu Internet adalah sahabat terbaik anda. Dengan internet anda bisa mengakses segala macam informasi dari berbagai belahan dunia, bisa bersahabat dengan semua orang melalui jejaring sosial, dan masih banyak lagi. saat ini banyak sekali operator telpon seluler yang menawarkan berbagai paket untuk akses internet secara cepat dan murah. Namun anda harus berhati-hati karena tidak semua yang ditawarkan adalah kenyataan dan berjalan seperti yang anda harapkan. Anda harus memiliki berbagai pertimbangan sebelum memilih paket internet yang ditawarkan, pertimbangan tidak hanya pada harga namun juga kualitas. Salah satu operator terpopuler yang menawarkan <a href="http://www.telkomsel.com/halo">paket internet</a> sampai puas adalah Telkomsel.</p>
@@ -67,9 +67,9 @@ Kalau begitu Internet adalah sahabat terbaik anda. Dengan internet anda bisa men
   
   <entry>
     <title type="html"><![CDATA[SOPA dan PIPA Yang Menghebohkan Dunia Internet]]></title>
-    <link href="http://martinusadyh.github.io/2012/01/18/sopa-dan-pipa-yang-menghebohkan-dunia-internet/"/>
+    <link href="http://martinusadyh.web.id/2012/01/18/sopa-dan-pipa-yang-menghebohkan-dunia-internet/"/>
     <updated>2012-01-18T23:26:01+07:00</updated>
-    <id>http://martinusadyh.github.io/2012/01/18/sopa-dan-pipa-yang-menghebohkan-dunia-internet</id>
+    <id>http://martinusadyh.web.id/2012/01/18/sopa-dan-pipa-yang-menghebohkan-dunia-internet</id>
     <content type="html"><![CDATA[<p>Hari ini, <strong>Rabu 18 Januari 2012</strong> benar-benar hari yang sangat menghebohkan dunia persilatan di ranah Internet. Ini dikarenakan ada-nya undang-undang yang sedang digodok yaitu SOPA <a href="https://en.wikipedia.org/wiki/Stop_Online_Piracy_Act">(Stop Online Piracy Act)</a> dan PIPA <a href="https://en.wikipedia.org/wiki/PROTECT_IP_Act">(Protect IP Act)</a>. Karena 2 RUU ini, ada banyak situs-situs besar melakukan aksi <strong>blackout</strong> untuk menolak-nya. Dari banyak-nya situs yang melakukan <strong>blackout</strong>, dibawah ini merupakan beberapa tampilan situs yang melakukan <strong>blackout</strong> yang sempat saya lihat sendiri :</p>
 
 <ol>
@@ -141,9 +141,9 @@ Situs-situs web service dan sosial media seperti Facebook, YouTube, rapid*share,
   
   <entry>
     <title type="html"><![CDATA[Selamat Idul Fitri 1432 H]]></title>
-    <link href="http://martinusadyh.github.io/2011/08/29/selamat-idul-fitri-1432-h/"/>
+    <link href="http://martinusadyh.web.id/2011/08/29/selamat-idul-fitri-1432-h/"/>
     <updated>2011-08-29T21:32:06+07:00</updated>
-    <id>http://martinusadyh.github.io/2011/08/29/selamat-idul-fitri-1432-h</id>
+    <id>http://martinusadyh.web.id/2011/08/29/selamat-idul-fitri-1432-h</id>
     <content type="html"><![CDATA[<p>Untuk teman-teman yang beragama Islam, selamat <strong>Hari Raya Idul Fitri 1432 H</strong> ya, mohon maaf lahir bathin kalau selama ini saya ada salah selama ini ama teman-teman :)</p>
 
 <p><a href="http://martinusadyh.web.id/gallery/?album=4&amp;gallery=3&amp;pid=142"><img src="http://martinusadyh.web.id/wp-content/gallery/tutorial/kartu-cuapan-lebaran-1432-h.jpg" alt="Selamat Idul Fitri 1432 H" /></a><br/>
@@ -154,9 +154,9 @@ Gambar kartu lebaran diambil dari <a href="http://kaskus-us.blogspot.com/2011/08
   
   <entry>
     <title type="html"><![CDATA[Kesan Pertama Mencoba Google+]]></title>
-    <link href="http://martinusadyh.github.io/2011/07/01/kesan-pertama-mencoba-google/"/>
+    <link href="http://martinusadyh.web.id/2011/07/01/kesan-pertama-mencoba-google/"/>
     <updated>2011-07-01T23:48:42+07:00</updated>
-    <id>http://martinusadyh.github.io/2011/07/01/kesan-pertama-mencoba-google</id>
+    <id>http://martinusadyh.web.id/2011/07/01/kesan-pertama-mencoba-google</id>
     <content type="html"><![CDATA[<p>[caption id=&ldquo;attachment_1395&rdquo; align=&ldquo;alignleft&rdquo; width=&ldquo;119&rdquo; caption=&ldquo;Google Plus Logo&rdquo;]<a href="http://martinusadyh.web.id/wp-content/uploads/2011/07/google-logo-plus.png"><img src="http://martinusadyh.web.id/wp-content/uploads/2011/07/google-logo-plus.png" alt="Google Plus Logo" /></a>[/caption]Setelah kemarin minta invite ke teman-teman di <a href="mailto:id-android@googlegroups.com">id-android@googlegroups.com</a>, akhirnya malam ini kesampaian juga mencoba <strong>Facebook Killer</strong> milik Google yaitu <a href="https://plus.google.com/up/start/?continue=https://plus.google.com/&amp;type=st&amp;gpcaz=c2f1064b">Google+</a> :)</p>
 
 <p>Kesan pertama waktu menggunakan sih tidak jauh berbeda dengan <a href="http://facebook.com/">Facebook</a>, cuma ada beberapa perbedaan di <strong>Google+</strong> ini. Nah untuk yang penasaran seperti apa isinya  <a href="https://plus.google.com/up/start/?continue=https://plus.google.com/&amp;type=st&amp;gpcaz=c2f1064b">Google+</a> ini, silahkan melihat-lihat beberapa screenshot yang ada dibawah ini :</p>

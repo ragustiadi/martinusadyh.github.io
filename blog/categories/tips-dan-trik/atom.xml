@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Tips dan Trik | Martinus Ady H. BloG]]></title>
-  <link href="http://martinusadyh.github.io/blog/categories/tips-dan-trik/atom.xml" rel="self"/>
-  <link href="http://martinusadyh.github.io/"/>
-  <updated>2013-11-23T21:45:02+07:00</updated>
-  <id>http://martinusadyh.github.io/</id>
+  <link href="http://martinusadyh.web.id/blog/categories/tips-dan-trik/atom.xml" rel="self"/>
+  <link href="http://martinusadyh.web.id/"/>
+  <updated>2013-11-23T22:02:29+07:00</updated>
+  <id>http://martinusadyh.web.id/</id>
   <author>
     <name><![CDATA[Martinus Ady H]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Persiapan Sebelum Melakukan Pendakian]]></title>
-    <link href="http://martinusadyh.github.io/2013/07/21/persiapan-sebelum-melakukan-pendakian/"/>
+    <link href="http://martinusadyh.web.id/2013/07/21/persiapan-sebelum-melakukan-pendakian/"/>
     <updated>2013-07-21T04:46:30+07:00</updated>
-    <id>http://martinusadyh.github.io/2013/07/21/persiapan-sebelum-melakukan-pendakian</id>
+    <id>http://martinusadyh.web.id/2013/07/21/persiapan-sebelum-melakukan-pendakian</id>
     <content type="html"><![CDATA[<p>Setelah mengalami pertimbangan yang cukup lama, akhirnya saya putuskan juga untuk mem-publish tulisan ini :D Tulisan ini ditujukan untuk teman-teman yang masih baru mulai menyukai dunia pendakian gunung dan juga bukan bertujuan untuk menggurui, karena saya sendiri juga termasuk <strong>&ldquo;anak kemarin sore&rdquo;</strong> dalam dunia pendakian gunung. Sedangkan isi tulisan ini merupakan rangkuman dari saran-saran yang saya baca di forum (khususnya <a href="http://www.kaskus.co.id/forum/98/outdoor-adventure--nature-clubs">forum OANC kaskus</a>), groups pendakian gunung di FaceBook dan beberapa tambahan pengalaman pribadi sebelum melakukan pendakian :D Tulisan ini sebenarnya berdasarkan kejadian kemarin ketika saya melakukan <a href="martinusadyh.web.id/2013/06/27/pendakian-gunung-sindoro-3153-mdpl/">pendakian ke gunung sindoro</a> yang ternyata lupa membawa kopi :( yang mana merupakan menu wajib menurut saya. Karena kejadian tersebut, akhirnya muncul-lah ide untuk menuliskan hal-hal yang harus dilakukan sebelum melakukan pendakian :D</p>
 
 <p>Karena kegiatan pendakian gunung ini bisa dikatakan kegiatan yang &ldquo;cukup berbahaya&rdquo;, maka persiapan yang matang sebelum memulai pendakian sangat perlu dilakukan sebelum-nya. Beberapa persiapan yang perlu dilakukan menurut saya bisa dibagi menjadi 3 hal besar (tidak termasuk dana loh ya, asumsinya dana yang dibutuhkan mencukupi :D ) yang kurang lebih adalah :</p>
@@ -139,15 +139,15 @@ Sedangkan beberapa peralatan yang bisa di <em>sharing</em> dengan teman 1 team a
   
   <entry>
     <title type="html"><![CDATA[Cedera Otot Yang Umum Terjadi Selama Pendakian]]></title>
-    <link href="http://martinusadyh.github.io/2013/03/23/cedera-otot-yang-umum-terjadi-selama-pendakian/"/>
+    <link href="http://martinusadyh.web.id/2013/03/23/cedera-otot-yang-umum-terjadi-selama-pendakian/"/>
     <updated>2013-03-23T23:09:13+07:00</updated>
-    <id>http://martinusadyh.github.io/2013/03/23/cedera-otot-yang-umum-terjadi-selama-pendakian</id>
+    <id>http://martinusadyh.web.id/2013/03/23/cedera-otot-yang-umum-terjadi-selama-pendakian</id>
     <content type="html"><![CDATA[<p>Informasi dibawah ini saya ambil dari forum kaskus dengan judul thread yang sama yaitu <a href="http://www.kaskus.co.id/thread/513aaab5552acf0667000003/cedera-otot-yang-umum-terjadi-selama-pendakian/">Cedera Otot yang Umum Terjadi Selama Pendakian</a>, semoga informasi ini berguna buat para pendaki yang lain termasuk saya yang juga sering mengalami beberapa cedera yang dibahas dibawah ini :D :)</p>
 
 <h2>Kram Betis</h2>
 
 <p>Kram Betis (strained calves) dirasakan seperti terbakar, tidak ada tenaga dan kram pada otot betis. Hal ini diakibatkan saat mendaki tanjakan berbatu yang mengharuskan kita memanjat dengan menaikkan kaki satu2 sehingga beban tertumpu hanya pada betis , bukannya pada otot paha dan bokong (Ini pernah ane alami waktu di tanjakan kesel di Gunung Ungaran). Jika mengalaminya saat mendaki, kita harus istirahat, letakkan kaki yang sakit lebih tinggi dari jantung, dan pijat untuk melemaskannya. Untuk mencegah, sebelum mendaki kita harus melatih otot paha dan otot bokong kita sehingga otot tersebut bisa jadi tumpuan saat menanjak manjat.
-<img class="center" src="/images/blog-images/Adventure/TipsdanTrik/CederaOtotYangUmumTerjadiSelamaPendakian/KramBetis.JPG" title="Kram Betis" ></p>
+{% img center /images/blog-images/Adventure/TipsdanTrik/CederaOtotYangUmumTerjadiSelamaPendakian/KramBetis.JPG Kram Betis %}</p>
 
 <!-- more -->
 
@@ -155,27 +155,27 @@ Sedangkan beberapa peralatan yang bisa di <em>sharing</em> dengan teman 1 team a
 <h2>Cedera Pergelangan Kaki</h2>
 
 <p>Cedera pergelangan kaki (Rolled ankle) ini berupa rasa sakit dan bengkak pada pergelangan kaki, meski kita tidak menyadari kalau kita keseleo selama perjalanan. Cedera ini disebabkan jika otot betis ke bawah kurang kuat sehingga tidak memberikan kestabilan pada pergelangan kaki saat berjalan di tempat yang tidak rata seperti berbatu atau tanah bergelombang (seperti jalan di awal pendakian Gunung Papandayan euy). Untuk pencegahannya latih keseimbangan satu kaki dengan membawa beban untuk memperkuat otot kaki bawah kita termasuk pergelangan kaki. Jika bolak balik mengalami cedera, gunakan boot potongan tinggi!!
-<img class="center" src="/images/blog-images/Adventure/TipsdanTrik/CederaOtotYangUmumTerjadiSelamaPendakian/CederaPergelanganKaki.JPG" title="Cedera Pergelangan Kaki" ></p>
+{% img center /images/blog-images/Adventure/TipsdanTrik/CederaOtotYangUmumTerjadiSelamaPendakian/CederaPergelanganKaki.JPG Cedera Pergelangan Kaki %}</p>
 
 <h2>Lutut Gemetar</h2>
 
 <p>Sakit di otot paha dan lutut gemetar ( sore on quads and/or knee). Penyebabnya adalah saat turun dengan bawaan masih berat, posisi kesejajaran antara pinggul, lutut dan pergelangan kaki yang tidak tepat, dan terakhir akibat kaki panjang sebelah ( ane banget). Untuk mecegah, latih otot torso kita yaitu mulai dari bahu sampai pinggul sehingga tubuh kita stabil dalam membawa beban berat saat turun pendakian. Gunakan juga trekking poles kalau turun ( G Semeru ma Merapi turun tanpa trekking poles?alamat lutut gemetar ria…)
-<img class="center" src="/images/blog-images/Adventure/TipsdanTrik/CederaOtotYangUmumTerjadiSelamaPendakian/LututGemetar.JPG" title="Lutut Gemetar" ></p>
+{% img center /images/blog-images/Adventure/TipsdanTrik/CederaOtotYangUmumTerjadiSelamaPendakian/LututGemetar.JPG Lutut Gemetar %}</p>
 
 <h2>Sakit Otot Pinggul</h2>
 
 <p>Radang sendi Pinggul (Hip bursitis) dirasakan sakit luar biasa setiap langkah kita akibat kerusakan jaringan lunak di daerah pinggul.Alhasil, cara jalan kita pasti jadi aneh, seperti malas ngangkat paha kita. Ini yang paling sering kita alami sebenarnya bagi yang suka mendadak mendaki di akhir weekend tanpa persiapan olahraga beberapa minggu sebelumnya. Banyak duduk di kantor, langsung mau nanjak aje, otot pinggul kita lah yang jadi sasaran kram dan sakit selama pendakian. Latihan hip abductor sangat membantu menguatkan otot2 pinggul kita.
-<img class="center" src="/images/blog-images/Adventure/TipsdanTrik/CederaOtotYangUmumTerjadiSelamaPendakian/SakitOtotPinggul.JPG" title="Sakit Otot Pinggul" ></p>
+{% img center /images/blog-images/Adventure/TipsdanTrik/CederaOtotYangUmumTerjadiSelamaPendakian/SakitOtotPinggul.JPG Sakit Otot Pinggul %}</p>
 
 <h2>Metatarsalgia</h2>
 
 <p>Metatarsalgia (nyeri pada tulang jari tepat sebelum jari2 kaki) dirasakan seperti ada batu tajam di dalam sepatu kita. Hal ini terjadi jika kita menggunakan sepatu yang memiliki ujung sempit atau terlalu lekuk ke atas, selain kebiasaan menapak dengan ujung sepatu terlalu berlebihan saat pendakian. Ubah kebiasaan menapak. Tekanan saat menapak harus didistribusikan sampai ke tumit. Bantalan tambahan pada sole dalam dapat mengurangi tekanan di pangkal jari saat menapak.
-<img class="center" src="/images/blog-images/Adventure/TipsdanTrik/CederaOtotYangUmumTerjadiSelamaPendakian/Metatarsalgia.JPG" title="Metatarsalgia" ></p>
+{% img center /images/blog-images/Adventure/TipsdanTrik/CederaOtotYangUmumTerjadiSelamaPendakian/Metatarsalgia.JPG Metatarsalgia %}</p>
 
 <h2>Plantar Fasciitis</h2>
 
 <p>Plantar fasciitis (nyeri pada telapak kaki) dirasakan tidak hanya berupa rasa sakit pada lengkukan telapak kaki tetapi juga pada tumit kita. Fascia plantaris merupakan jaringan ikat yang memghubungkan jari – jari kaki dengan tumit dan menyokong lengkungan telapak kaki. Untuk mengobati, gunakan botol plastik dan pijakkan telapak kaki yang sakit sambil menggulungkan botol plastic tetsebut. Untuk pencegahan latihan berjalan dalam jarak jauh secara bertahap.
-<img class="center" src="/images/blog-images/Adventure/TipsdanTrik/CederaOtotYangUmumTerjadiSelamaPendakian/PlantarFasciitis.JPG" title="Plantar Fasciitis" ></p>
+{% img center /images/blog-images/Adventure/TipsdanTrik/CederaOtotYangUmumTerjadiSelamaPendakian/PlantarFasciitis.JPG Plantar Fasciitis %}</p>
 ]]></content>
   </entry>
   

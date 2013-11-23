@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: OpenSolaris | Martinus Ady H. BloG]]></title>
-  <link href="http://martinusadyh.github.io/blog/categories/opensolaris/atom.xml" rel="self"/>
-  <link href="http://martinusadyh.github.io/"/>
-  <updated>2013-11-23T21:45:02+07:00</updated>
-  <id>http://martinusadyh.github.io/</id>
+  <link href="http://martinusadyh.web.id/blog/categories/opensolaris/atom.xml" rel="self"/>
+  <link href="http://martinusadyh.web.id/"/>
+  <updated>2013-11-23T22:02:29+07:00</updated>
+  <id>http://martinusadyh.web.id/</id>
   <author>
     <name><![CDATA[Martinus Ady H]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[How To Embedding Your Binary Files into Shell Script]]></title>
-    <link href="http://martinusadyh.github.io/2012/08/04/how-to-embedding-your-binary-files-into-shell-script/"/>
+    <link href="http://martinusadyh.web.id/2012/08/04/how-to-embedding-your-binary-files-into-shell-script/"/>
     <updated>2012-08-04T14:47:56+07:00</updated>
-    <id>http://martinusadyh.github.io/2012/08/04/how-to-embedding-your-binary-files-into-shell-script</id>
+    <id>http://martinusadyh.web.id/2012/08/04/how-to-embedding-your-binary-files-into-shell-script</id>
     <content type="html"><![CDATA[<p>Pada tulisan kali ini, kita akan membahas bagaimana membuat sebuah shell script yang berisi sebuah <strong><em>binary file</em></strong>. Apa sih sebenarnya yang bisa kita lakukan dengan sebuah shell script yang berisi file binary ? Hm.. sebenarnya banyak sih, dan salah satunya adalah membuat installer untuk sistem operasi GNU/Linux seperti installer milik <strong>NetBeans IDE</strong> yang mempunyai ekstensi <strong>*.sh</strong> :)</p>
 
 <p>Nah untuk membantu tujuan kita diatas, kita membutuhkan bantuan sebuah shell script yaitu <a href="http://megastep.org/makeself/">makeself</a>. Untuk yang belum tahu apa itu script makeself, dibawah ini adalah deskripsi singkat tentang  script makeself :</p>
@@ -236,9 +236,9 @@ martinus@artivisi:[/tmp/test-makeself/makeself-2.1.5/result]$
   
   <entry>
     <title type="html"><![CDATA[DocBook Style On WordPress]]></title>
-    <link href="http://martinusadyh.github.io/2011/02/19/docbook-style-on-wordpress/"/>
+    <link href="http://martinusadyh.web.id/2011/02/19/docbook-style-on-wordpress/"/>
     <updated>2011-02-19T17:02:15+07:00</updated>
-    <id>http://martinusadyh.github.io/2011/02/19/docbook-style-on-wordpress</id>
+    <id>http://martinusadyh.web.id/2011/02/19/docbook-style-on-wordpress</id>
     <content type="html"><![CDATA[<p>Sebenarnya sudah sejak lama ingin menulis sebuah tulisan atau buku mengikuti gaya penulisan yang terdapat pada <a href="http://www.docbook.org/">DocBook</a>, tapi apa daya sampai sekarang masih belum ada waktu untuk <strong>&ldquo;ngoprek&rdquo;</strong> format yang tersedia di <strong>DocBook</strong> :D Keinginan saya yang lain yaitu bagaimana meng-integrasikan antara <a href="http://wordpress.org/download/">WordPress</a> yang sudah terbukti sebagai CMS (Content Management System) blogging yang paling populer dengan <strong>DocBook</strong> yang sudah dikenal luas sebagai alat untuk penulisan dokumentasi sebuah software.</p>
 
 <p>Kombinasi struktur buku yang terdapat di <strong>DocBook</strong> dengan banyak-nya plugin yang tersedia untuk <strong>WordPress</strong> plus adanya fasilitas komentar, bagi saya ini merupakan sebuah kombinasi yang pas bagi seoarang penulis untuk mem-<em>publish</em> tulisan-nya di Internet :) Plus-nya sebagai penulis yaitu kita bisa langsung mendapatkan respon pembaca melalui fasilitas komentar yang sudah terdapat pada <strong>WordPress</strong> :D</p>
@@ -595,9 +595,9 @@ martinus@artivisi:[/tmp/test-makeself/makeself-2.1.5/result]$
   
   <entry>
     <title type="html"><![CDATA[OpenIndiana Announcement]]></title>
-    <link href="http://martinusadyh.github.io/2010/09/15/openindiana-announcement/"/>
+    <link href="http://martinusadyh.web.id/2010/09/15/openindiana-announcement/"/>
     <updated>2010-09-15T06:54:54+07:00</updated>
-    <id>http://martinusadyh.github.io/2010/09/15/openindiana-announcement</id>
+    <id>http://martinusadyh.web.id/2010/09/15/openindiana-announcement</id>
     <content type="html"><![CDATA[<p>Untuk teman-teman pecinta <a href="http://opensolaris.org/">OpenSolaris</a> yang mungkin kemarin sempat kecewa, sekarang mungkin sudah bisa mulai tersenyum kembali :) Yaps karena ada sebuah project yang <strong>&ldquo;benar-benar OpenSource&rdquo;</strong> yaitu <a href="http://openindiana.org/">http://openindiana.org/</a> yang akan meneruskan pengembangan <a href="http://opensolaris.org">http://opensolaris.org</a> dengan metode yang lebih terbuka pada komunitas :) Buat teman-teman yang belum tahu apa itu <strong>OpenIndiana</strong>, ini adalah cuplikan dari situs resmi <strong>Project OpenIndiana</strong></p>
 
 <blockquote><p>OpenIndiana is a continuation of the OpenSolaris operating system. It was conceived during the period of uncertainty following the Oracle takeover of Sun Microsystems, after several months passed with no binary updates made available to the public. The formation proved timely, as Oracle discontinued OpenSolaris soon after in favour of Solaris 11 Express, a binary distribution with a more closed development model to debut later this year.</p></blockquote>
@@ -642,16 +642,16 @@ Saving to: `oi-dev-147-x86.iso'
   
   <entry>
     <title type="html"><![CDATA[OpenSolaris Project is Dead ???]]></title>
-    <link href="http://martinusadyh.github.io/2010/08/14/opensolaris-project-is-dead/"/>
+    <link href="http://martinusadyh.web.id/2010/08/14/opensolaris-project-is-dead/"/>
     <updated>2010-08-14T22:31:10+07:00</updated>
-    <id>http://martinusadyh.github.io/2010/08/14/opensolaris-project-is-dead</id>
+    <id>http://martinusadyh.web.id/2010/08/14/opensolaris-project-is-dead</id>
     <content type="html"><![CDATA[<p>Waw.. bulan-bulan ini merupakan bulan yang bisa dikatakan sangat menyedihkan untuk perkembangan dunia OpenSource :( , setelah kasus <a href="http://news.cnet.com/8301-30684_3-20013546-265.html">Oracle vs Google</a> tentang Android, sekarang timbul <strong>memo</strong> pada milis <a href="mailto:opensolaris-discuss@opensolaris.org">osol-discuss</a> yang menyatakan bahwa project <strong>OpenSolaris</strong> tidak akan dikembangkan lagi oleh Oracle dan diganti dengan Solaris 11 Express :( Setelah berbulan-bulan Oracle sunyi-senyap tanpa kabar tentang Project OpenSolaris akhirnya setelah timbul <strong>memo</strong> dibawah ini jelas sudah nasib OpenSolaris kedepan-nya :( , Dan dibawah ini adalah detail dari <strong>memo</strong> yang di posting ke milis <a href="mailto:opensolaris-discuss@opensolaris.org">osol-discuss</a> dengan Subject <strong>OpenSolaris cancelled, to be replaced with Solaris 11 Express</strong> :</p>
 
 <!-- more -->
 
 
 <blockquote><p>From : Alasdair Lumsden
-To : <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#111;&#112;&#x65;&#110;&#115;&#111;&#108;&#97;&#x72;&#105;&#x73;&#45;&#100;&#105;&#115;&#99;&#x75;&#115;&#115;&#x40;&#x6f;&#x70;&#x65;&#x6e;&#x73;&#x6f;&#x6c;&#x61;&#114;&#x69;&#x73;&#46;&#x6f;&#x72;&#103;">&#x6f;&#x70;&#101;&#110;&#115;&#111;&#x6c;&#97;&#114;&#x69;&#115;&#x2d;&#100;&#105;&#x73;&#x63;&#117;&#115;&#115;&#x40;&#111;&#112;&#101;&#x6e;&#115;&#x6f;&#x6c;&#97;&#114;&#105;&#115;&#x2e;&#x6f;&#114;&#x67;</a>
+To : <a href="&#109;&#97;&#x69;&#108;&#x74;&#111;&#x3a;&#x6f;&#112;&#x65;&#110;&#x73;&#111;&#x6c;&#x61;&#x72;&#x69;&#115;&#x2d;&#100;&#105;&#115;&#x63;&#x75;&#x73;&#x73;&#64;&#111;&#x70;&#x65;&#x6e;&#x73;&#111;&#108;&#x61;&#x72;&#105;&#115;&#46;&#111;&#x72;&#103;">&#111;&#x70;&#101;&#x6e;&#115;&#x6f;&#108;&#x61;&#x72;&#105;&#115;&#x2d;&#x64;&#x69;&#115;&#x63;&#x75;&#x73;&#x73;&#64;&#x6f;&#x70;&#x65;&#110;&#115;&#x6f;&#x6c;&#x61;&#114;&#105;&#x73;&#46;&#111;&#x72;&#x67;</a>
 Subject : <strong>OpenSolaris cancelled, to be replaced with Solaris 11 Express</strong></p></blockquote>
 
 <p>Hi All,</p>
@@ -738,7 +738,7 @@ ever.</p>
 <hr />
 
 <p>opensolaris-discuss mailing list
-<a href="&#x6d;&#97;&#105;&#x6c;&#116;&#x6f;&#x3a;&#x6f;&#112;&#x65;&#110;&#x73;&#x6f;&#x6c;&#97;&#114;&#x69;&#115;&#45;&#100;&#105;&#x73;&#x63;&#117;&#x73;&#x73;&#64;&#x6f;&#112;&#101;&#110;&#x73;&#111;&#x6c;&#97;&#114;&#105;&#x73;&#46;&#111;&#x72;&#103;">&#111;&#112;&#x65;&#110;&#x73;&#111;&#108;&#x61;&#x72;&#105;&#x73;&#45;&#100;&#105;&#115;&#99;&#x75;&#115;&#115;&#64;&#111;&#112;&#x65;&#110;&#115;&#x6f;&#108;&#97;&#114;&#x69;&#x73;&#46;&#x6f;&#114;&#103;</a></p>
+<a href="&#109;&#x61;&#x69;&#108;&#116;&#x6f;&#58;&#x6f;&#112;&#x65;&#x6e;&#115;&#111;&#x6c;&#x61;&#x72;&#105;&#115;&#45;&#100;&#105;&#x73;&#x63;&#x75;&#x73;&#115;&#x40;&#x6f;&#112;&#101;&#x6e;&#115;&#x6f;&#108;&#97;&#114;&#105;&#115;&#x2e;&#111;&#x72;&#x67;">&#111;&#112;&#101;&#x6e;&#x73;&#111;&#x6c;&#x61;&#114;&#105;&#115;&#45;&#x64;&#105;&#115;&#99;&#x75;&#115;&#x73;&#64;&#111;&#112;&#x65;&#x6e;&#115;&#x6f;&#x6c;&#97;&#x72;&#x69;&#x73;&#46;&#x6f;&#x72;&#x67;</a></p>
 
 <p>Sebelum <strong>memo</strong> ini muncul, ada beberapa <strong>&ldquo;pendekar&rdquo;</strong> dari OpenSolaris yang membuat sebuah project bernama <strong>Illumos</strong> yang halaman project-nya bisa teman-teman lihat <a href="http://www.illumos.org/announce">disini.</a></p>
 
@@ -748,9 +748,9 @@ ever.</p>
   
   <entry>
     <title type="html"><![CDATA[VMWare Technology Day 2010]]></title>
-    <link href="http://martinusadyh.github.io/2010/04/21/vmware-technology-day-2010/"/>
+    <link href="http://martinusadyh.web.id/2010/04/21/vmware-technology-day-2010/"/>
     <updated>2010-04-21T19:34:16+07:00</updated>
-    <id>http://martinusadyh.github.io/2010/04/21/vmware-technology-day-2010</id>
+    <id>http://martinusadyh.web.id/2010/04/21/vmware-technology-day-2010</id>
     <content type="html"><![CDATA[<p>Hii all sudah tahu tentang <a href="www.vmware.com">VMWare</a> kan ? :) Tahun ini ada Seminar loh tentang <a href="www.vmware.com">VMWare</a> yaitu <a href="http://app.connect.vmware.com/e/es.aspx?s=524&amp;e=13809817&amp;elq=5feac15458234447b85d79b9e37ca722">VMWare Technology Day 2010</a>. Hm&hellip; tidak percaya ? Sama, saya barusan di invite oleh se-seorang bernama Digit Oktavianto (hii friends ;) ) dan ternyata <strong>Waw &hellip; it&rsquo;s true man</strong> :D Mantap-mantap euy, nah kalau ingin lihat detail-nya silahkan cek dibawah ini :</p>
 
 <h1>VMWare Technology Day 2010</h1>

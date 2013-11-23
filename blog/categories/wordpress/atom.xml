@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: WordPress | Martinus Ady H. BloG]]></title>
-  <link href="http://martinusadyh.github.io/blog/categories/wordpress/atom.xml" rel="self"/>
-  <link href="http://martinusadyh.github.io/"/>
-  <updated>2013-11-23T21:45:02+07:00</updated>
-  <id>http://martinusadyh.github.io/</id>
+  <link href="http://martinusadyh.web.id/blog/categories/wordpress/atom.xml" rel="self"/>
+  <link href="http://martinusadyh.web.id/"/>
+  <updated>2013-11-23T22:02:29+07:00</updated>
+  <id>http://martinusadyh.web.id/</id>
   <author>
     <name><![CDATA[Martinus Ady H]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[How To Fixing Problem Jetpack 2.0.4 Breaks NextGen Galleries Plugins]]></title>
-    <link href="http://martinusadyh.github.io/2012/12/19/how-to-fixing-problem-jetpack-2-0-4-breaks-nextgen-galleries-plugins/"/>
+    <link href="http://martinusadyh.web.id/2012/12/19/how-to-fixing-problem-jetpack-2-0-4-breaks-nextgen-galleries-plugins/"/>
     <updated>2012-12-19T00:52:39+07:00</updated>
-    <id>http://martinusadyh.github.io/2012/12/19/how-to-fixing-problem-jetpack-2-0-4-breaks-nextgen-galleries-plugins</id>
+    <id>http://martinusadyh.web.id/2012/12/19/how-to-fixing-problem-jetpack-2-0-4-breaks-nextgen-galleries-plugins</id>
     <content type="html"><![CDATA[<p>Setelah kemarin melakukan upgrade ke <a href="http://wordpress.org/">WordPress</a>, baru malam ini mengalami masalah yaitu ada 1 fitur dari plugin <a href="http://wordpress.org/extend/plugins/nextgen-gallery/">NextGen Gallery</a> yaitu tampilan album tidak bisa masuk ke dalam gallery. Hasilnya adalah ketika kita masuk pada halaman gallery, maka tampilan dari gallery tersebut akan kosonng  :nangis: Hasil pencarian di <a href="http://google.com/">google</a> mengarahkan saya pada thread <a href="http://wordpress.org/support/topic/jetpack-204-breaks-nextgen-galleries">Jetpack 2.0.4 Breaks NextGen Galleries</a> yang ternyata plugin <a href="http://wordpress.org/extend/plugins/nextgen-gallery/">NextGen Gallery</a> hanya bermasalah jika module <strong>Publicize</strong> dan <strong>Sharing</strong> diaktifkan.</p>
 
 <p>Supaya <a href="http://wordpress.org/extend/plugins/nextgen-gallery/">NextGen Gallery</a> berfungsi dengan normal kembali, yang kita perlukan adalah men-disable kedua module tersebut dengan cara masuk ke menu <code>Jetpack &gt; Jetpack</code> pada halaman <strong>dashboard jetpack</strong>, klik tombol <code>Learn More</code> pada module <strong>Publicize</strong> dan <strong>Sharing</strong> kemudian klik tombol <code>Deactivate</code> seperti gambar dibawah ini :
@@ -29,9 +29,9 @@
   
   <entry>
     <title type="html"><![CDATA[Kesan Pertama Mencoba Google+]]></title>
-    <link href="http://martinusadyh.github.io/2011/07/01/kesan-pertama-mencoba-google/"/>
+    <link href="http://martinusadyh.web.id/2011/07/01/kesan-pertama-mencoba-google/"/>
     <updated>2011-07-01T23:48:42+07:00</updated>
-    <id>http://martinusadyh.github.io/2011/07/01/kesan-pertama-mencoba-google</id>
+    <id>http://martinusadyh.web.id/2011/07/01/kesan-pertama-mencoba-google</id>
     <content type="html"><![CDATA[<p>[caption id=&ldquo;attachment_1395&rdquo; align=&ldquo;alignleft&rdquo; width=&ldquo;119&rdquo; caption=&ldquo;Google Plus Logo&rdquo;]<a href="http://martinusadyh.web.id/wp-content/uploads/2011/07/google-logo-plus.png"><img src="http://martinusadyh.web.id/wp-content/uploads/2011/07/google-logo-plus.png" alt="Google Plus Logo" /></a>[/caption]Setelah kemarin minta invite ke teman-teman di <a href="mailto:id-android@googlegroups.com">id-android@googlegroups.com</a>, akhirnya malam ini kesampaian juga mencoba <strong>Facebook Killer</strong> milik Google yaitu <a href="https://plus.google.com/up/start/?continue=https://plus.google.com/&amp;type=st&amp;gpcaz=c2f1064b">Google+</a> :)</p>
 
 <p>Kesan pertama waktu menggunakan sih tidak jauh berbeda dengan <a href="http://facebook.com/">Facebook</a>, cuma ada beberapa perbedaan di <strong>Google+</strong> ini. Nah untuk yang penasaran seperti apa isinya  <a href="https://plus.google.com/up/start/?continue=https://plus.google.com/&amp;type=st&amp;gpcaz=c2f1064b">Google+</a> ini, silahkan melihat-lihat beberapa screenshot yang ada dibawah ini :</p>
@@ -63,9 +63,9 @@
   
   <entry>
     <title type="html"><![CDATA[Security Info Backdoor pada WordPress Plugin]]></title>
-    <link href="http://martinusadyh.github.io/2011/06/22/security-info-backdoor-pada-wordpress-plugin/"/>
+    <link href="http://martinusadyh.web.id/2011/06/22/security-info-backdoor-pada-wordpress-plugin/"/>
     <updated>2011-06-22T22:08:05+07:00</updated>
-    <id>http://martinusadyh.github.io/2011/06/22/security-info-backdoor-pada-wordpress-plugin</id>
+    <id>http://martinusadyh.web.id/2011/06/22/security-info-backdoor-pada-wordpress-plugin</id>
     <content type="html"><![CDATA[<p>Barusan saya menerima informasi di milis <a href="http://groups.google.com/group/id-slackware/browse_thread/thread/1a329bee0859df69">id-slackware@googlegroups.com</a> yang menyebutkan ada backdoor pada tiga plugin popular WordPress yaitu <strong>Add This, WPTouch</strong> dan <strong>W3Total Cache</strong>. Kutipan resmi dari team WordPress adalah kurang lebih seperti dibawah ini :</p>
 
 <blockquote><h1>Passwords Reset</h1></blockquote>
@@ -96,9 +96,9 @@
   
   <entry>
     <title type="html"><![CDATA[Payout Pertama Dari TNX]]></title>
-    <link href="http://martinusadyh.github.io/2010/06/11/payout-pertama-dari-tnx/"/>
+    <link href="http://martinusadyh.web.id/2010/06/11/payout-pertama-dari-tnx/"/>
     <updated>2010-06-11T02:33:29+07:00</updated>
-    <id>http://martinusadyh.github.io/2010/06/11/payout-pertama-dari-tnx</id>
+    <id>http://martinusadyh.web.id/2010/06/11/payout-pertama-dari-tnx</id>
     <content type="html"><![CDATA[<p>:gembira:  :gembira:   :mataduitan:  :mataduitan: Hore&hellip; akhirnya pecah juga telor dari <a href="http://www.tnx.net/">TNX</a> setelah sekian lama ikutan program jualan link ini :silau: Awalnya sih masih kurang yakin dengan model <strong>cari duit dari internet</strong> ini, maklum takut-nya sih kena tipu atau <strong>scam</strong> :pusing: <strong>Payout</strong> awal ini juga ga begitu besar sih cuma <strong>$5.52</strong> aja, tapi sebagai permulaan buat saya <strong>&ldquo;Ini merupakan awal yang bagus&rdquo;</strong> karena bukti pembayaran sudah langsung masuk ke <a href="http://paypal.com">Paypal</a> saya :semangat:  Nah payout ini juga sebagai bukti buat &ldquo;teman-teman&rdquo; se-kontrakan saya kalau ternyata <strong>&ldquo;Nge BLOG itu lebih menguntungkan daripada mainan POKER loh !!&rdquo;</strong> :swt2: , alasan sederhana saya yaitu <strong>&ldquo;Kalau main POKER ada kemungkinan untuk KALAH, sedangkan Nge-BLOG ? Hm.. Ga ada yang KALAH melainkan earning masuk terus euy !!!&rdquo;</strong> :gembira: Ok sekarang mana buktinya ?? Kan ada pepatah <strong>NO PIC == HOAX</strong> :silau: , nah ini bukti pembayaran yang telah dilakukan oleh <a href="http://www.tnx.net/">TNX</a> :
  <a href="http://www.flickr.com/photos/10243554@N02/4688949890/"><img src="http://farm5.static.flickr.com/4054/4688949890_a9b61747d6_b.jpg" alt="PayPall1" /></a><br/>
 Bukti Pembayaran TNX 1</p>

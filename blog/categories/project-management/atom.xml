@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Project Management | Martinus Ady H. BloG]]></title>
-  <link href="http://martinusadyh.github.io/blog/categories/project-management/atom.xml" rel="self"/>
-  <link href="http://martinusadyh.github.io/"/>
-  <updated>2013-11-23T21:45:02+07:00</updated>
-  <id>http://martinusadyh.github.io/</id>
+  <link href="http://martinusadyh.web.id/blog/categories/project-management/atom.xml" rel="self"/>
+  <link href="http://martinusadyh.web.id/"/>
+  <updated>2013-11-23T22:02:29+07:00</updated>
+  <id>http://martinusadyh.web.id/</id>
   <author>
     <name><![CDATA[Martinus Ady H]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Scrum Indonesia Meetup #2]]></title>
-    <link href="http://martinusadyh.github.io/2012/02/07/scrum-indonesia-meetup-2/"/>
+    <link href="http://martinusadyh.web.id/2012/02/07/scrum-indonesia-meetup-2/"/>
     <updated>2012-02-07T21:27:39+07:00</updated>
-    <id>http://martinusadyh.github.io/2012/02/07/scrum-indonesia-meetup-2</id>
+    <id>http://martinusadyh.web.id/2012/02/07/scrum-indonesia-meetup-2</id>
     <content type="html"><![CDATA[<p>Hii all&hellip;</p>
 
 <p>Minggu ini, komunitas <strong>Scrum Indonesia</strong> akan mengadakan meetup ke 2, dan topik yang akan dibahas adalah <strong>&ldquo;Piloting Scrum in your organization. Learn about techniques how you can pilot Scrum in your organization from the people that has done it before.&rdquo;</strong>.</p>
@@ -56,9 +56,9 @@
   
   <entry>
     <title type="html"><![CDATA[SlackBuild Script For Gitg]]></title>
-    <link href="http://martinusadyh.github.io/2011/06/24/slackbuild-script-for-gitg/"/>
+    <link href="http://martinusadyh.web.id/2011/06/24/slackbuild-script-for-gitg/"/>
     <updated>2011-06-24T00:01:38+07:00</updated>
-    <id>http://martinusadyh.github.io/2011/06/24/slackbuild-script-for-gitg</id>
+    <id>http://martinusadyh.web.id/2011/06/24/slackbuild-script-for-gitg</id>
     <content type="html"><![CDATA[<p>Karena mencari di SlackBuild ternyata tidak ada, maka saya posting kesini aja sekalian :) Nah untuk teman-teman yang ingin menginstall aplikasi <a href="http://trac.novowork.com/git">gitg</a> bisa menggunakan SlackBuild script yang sudah saya siapkan dan sebelum menggunakan-nya, pastikan bahwa kita sudah menginstall <a href="http://projects.gnome.org/gtksourceview/">gtksourceview</a> dahulu yang SlackBuild script-nya bisa di download di <a href="http://slackbuilds.org/repository/13.37/libraries/gtksourceview/">sini</a></p>
 
 <p>Untuk sementara ini, dependencies yang baru saya temukan baru <a href="http://projects.gnome.org/gtksourceview/">gtksourceview</a> di Slackware64 + GSB 3.0.0. Bagi teman-teman yang tidak menggunakan GNOME sebagai Desktop Manager-nya, jika mengetahui ada dependencies yang kurang tolong di infokan disini sekalian biar saya bisa update file <code>slack-required</code> dengan info dependencies yang terbaru :)</p>
@@ -182,9 +182,9 @@ cd $PKG
   
   <entry>
     <title type="html"><![CDATA[Training Git di Artivisi Intermedia]]></title>
-    <link href="http://martinusadyh.github.io/2011/01/05/training-git-di-artivisi-intermedia/"/>
+    <link href="http://martinusadyh.web.id/2011/01/05/training-git-di-artivisi-intermedia/"/>
     <updated>2011-01-05T21:13:21+07:00</updated>
-    <id>http://martinusadyh.github.io/2011/01/05/training-git-di-artivisi-intermedia</id>
+    <id>http://martinusadyh.web.id/2011/01/05/training-git-di-artivisi-intermedia</id>
     <content type="html"><![CDATA[<p>Buat yang belum tahu apa sih itu <a href="http://git-scm.com/">GIT</a> dan bagaimana cara menggunakan <a href="http://git-scm.com/">GIT</a> untuk kebutuhan <strong><em>development</em></strong> sehari-hari, kita dari Artivisi Intermedia akan membuka sebuah training tentang <a href="http://git-scm.com/">GIT</a>. Sedangkan detail apa saja yang dibahas, silahkan cek dibawah ini :</p>
 
 <p>Berikut silabusnya (1 sesi = 3 jam) :
@@ -202,9 +202,9 @@ cd $PKG
   
   <entry>
     <title type="html"><![CDATA[HowTo Become Good Technical Team Leader]]></title>
-    <link href="http://martinusadyh.github.io/2010/06/06/howto-become-good-technical-team-leader/"/>
+    <link href="http://martinusadyh.web.id/2010/06/06/howto-become-good-technical-team-leader/"/>
     <updated>2010-06-06T02:56:03+07:00</updated>
-    <id>http://martinusadyh.github.io/2010/06/06/howto-become-good-technical-team-leader</id>
+    <id>http://martinusadyh.web.id/2010/06/06/howto-become-good-technical-team-leader</id>
     <content type="html"><![CDATA[<p>Menjadi seorang &ldquo;team leader&rdquo; yang baik bukan merupakan pekerjaan yang mudah ternyata, selain kemampuan teknis (skill) yang baik ternyata ada aspek-aspek lain yang diperlukan (ini juga sudah pernah dibahas pada milis <a href="mailto:it-project-indonesia@googlegroups.com">it-project-indonesia@googlegroups.com</a> dan juga mas <a href="http://ifnu.artivisi.com/">Ifnu</a> sudah pernah menjelaskan panjang lebar kepada saya :D ). Nah kebetulan kemarin saya membaca artikel bagus di dzone dengan judul <a href="http://agile.dzone.com/news/good-technical-team-leader-%E2%80%A6?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed:+javalobby/frontpage+(Javalobby+/+Java+Zone">Good Technical Team Leader …?</a>&amp;utm_content=Google+Reader) yang ternyata juga tidak jauh berbeda :D</p>
 
 <p>Buat teman-teman yang ingin tahu kemampuan apa saja yang harus dimiliki oleh seorang &ldquo;team leader&rdquo; yang baik, dibawah ini adalah beberapa aspek yang harus teman-teman perhatikan untuk menjadi seorang &ldquo;team leader&rdquo; yang baik (daftar dibawah ini murni diambil dari artikel <a href="http://agile.dzone.com/news/good-technical-team-leader-%E2%80%A6?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed:+javalobby/frontpage+(Javalobby+/+Java+Zone">Good Technical Team Leader …?</a>&amp;utm_content=Google+Reader) dan ditampilkan dengan sedikit modifikasi) :</p>
@@ -255,9 +255,9 @@ GOLDEN Developer = Good Starter + Good Finisher :D</p></li>
   
   <entry>
     <title type="html"><![CDATA[Apa Itu Pair Programming]]></title>
-    <link href="http://martinusadyh.github.io/2010/04/18/apa-itu-pair-programming/"/>
+    <link href="http://martinusadyh.web.id/2010/04/18/apa-itu-pair-programming/"/>
     <updated>2010-04-18T15:50:29+07:00</updated>
-    <id>http://martinusadyh.github.io/2010/04/18/apa-itu-pair-programming</id>
+    <id>http://martinusadyh.web.id/2010/04/18/apa-itu-pair-programming</id>
     <content type="html"><![CDATA[<p>Bingung dengan apa yang disebut dengan <a href="http://en.wikipedia.org/wiki/Pair_programming">Pair Programming</a> ? <strong>Pair Programming</strong> ini sebenarnya adalah salah satu teknik yang terdapat dalam metodologi <strong>eXtreme Programming</strong> atau yang biasa disingkat dengan <strong>XP Programming</strong>, sedangkan <a href="http://en.wikipedia.org/wiki/Pair_programming">Pair Programming</a> sendiri itu adalah sebuah proses <strong>knowledge transfer</strong> yang terjadi didalam sebuah team <strong>software development</strong>.</p>
 
 <p>Cara kerja <a href="http://en.wikipedia.org/wiki/Pair_programming">Pair Programming</a> ini adalah dua orang programmer bekerja bersama memecahkan sebuah masalah dalam 1 komputer atau laptop, biasanya sih gabungan dari kombinasi <strong>junior programmer dan senior programmer</strong>. Nah proses <strong>knowledge transfer</strong> yang terjadi biasanya <strong>junior programmer</strong> yang menulis source code dan <strong>senior programmer</strong> yang melakukan <strong>review</strong> terhadap apa yang dilulis oleh <strong>junior</strong>-nya ini sudah benar atau belum. Si penulis source code didalam <a href="http://en.wikipedia.org/wiki/Pair_programming">Pair Programming</a> ini bisa disebut sebagai <strong>Driver</strong> dan yang melakukan <strong>review</strong> bisa disebut sebagai <strong>Observer</strong> atau <strong>Navigator</strong>.</p>
