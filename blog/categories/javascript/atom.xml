@@ -4,7 +4,7 @@
   <title><![CDATA[Category: JavaScript | Martinus Ady H. BloG]]></title>
   <link href="http://martinusadyh.web.id/blog/categories/javascript/atom.xml" rel="self"/>
   <link href="http://martinusadyh.web.id/"/>
-  <updated>2013-11-23T22:02:29+07:00</updated>
+  <updated>2013-11-23T22:30:08+07:00</updated>
   <id>http://martinusadyh.web.id/</id>
   <author>
     <name><![CDATA[Martinus Ady H]]></name>
@@ -23,16 +23,16 @@
 <p>Meskipun <a href="http://dojotoolkit.org/">Dojo Toolkit</a> juga mempunyai sebuah halaman <a href="http://dojotoolkit.org/api/">API Documentation</a>, tapi rasanya masih kurang lengkap menurut saya. Nah untuk mendebug sebuah widget Dojo untuk menampilkan seluruh function yang terdapat didalam-nya, maka kita memerlukan sebuah browser dan <a href="http://getfirebug.com/">Firebug</a> sebagai alat bantu kita (jika menggunakan Chrome, tidak perlu firebug lagi karena kita bisa membuka <strong>Developer Tools</strong> dengan menekan kombinasi tombol <strong>CTRL+SHIFT+J</strong>)</p>
 
 <p>Sebagai contoh misalkan kita mempunyai sebuah widget grid dengan id <code>tblSettingSegment</code> seperti gambar dibawah ini :
-{% img /images/blog-images/javascript/cara-mudah-mendebug-widget-di-dojo/Contoh_Grid.png &lsquo;Contoh Grid&rsquo; %}</p>
+<img src="/images/blog-images/javascript/cara-mudah-mendebug-widget-di-dojo/Contoh_Grid.png" title="&lsquo;Contoh Grid&rsquo;" ></p>
 
 <!-- more -->
 
 
 <p>jika grid tersebut sudah tampil di browser, maka bukalah firebug atau tekan kombinasi tombol <strong>CTRL+SHIFT+J</strong> kemudian di console ketikkan perintah <code>dijit.byId('tblSettingSegment')</code> kemudian tekan <strong>ENTER</strong> hingga Firebug tampilan-nya menjadi seperti dibawah ini :
-{% img /images/blog-images/javascript/cara-mudah-mendebug-widget-di-dojo/Debug_Grid_Widget.png &lsquo;Debug Grid Widget&rsquo; %}</p>
+<img src="/images/blog-images/javascript/cara-mudah-mendebug-widget-di-dojo/Debug_Grid_Widget.png" title="&lsquo;Debug Grid Widget&rsquo;" ></p>
 
 <p>Setelah hasilnya seperti diatas, maka kita bisa melihat seluruh fungsi yang terdapat di dojo grid tersebut dengan mengklik hasil output tersebut hingga tampilan-nya seperti gambar dibawah ini :
-{% img /images/blog-images/javascript/cara-mudah-mendebug-widget-di-dojo/Daftar_Function.png &lsquo;Daftar Function&rsquo; %}</p>
+<img src="/images/blog-images/javascript/cara-mudah-mendebug-widget-di-dojo/Daftar_Function.png" title="&lsquo;Daftar Function&rsquo;" ></p>
 
 <p>Nah disini kita bisa melihat seluruh function yang digunakan oleh Dojo grid baik yang terdapat di halaman API Documentation maupun tidak :) Mudah bukan ?</p>
 ]]></content>

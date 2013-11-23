@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Blogging | Martinus Ady H. BloG]]></title>
   <link href="http://martinusadyh.web.id/blog/categories/blogging/atom.xml" rel="self"/>
   <link href="http://martinusadyh.web.id/"/>
-  <updated>2013-11-23T22:02:29+07:00</updated>
+  <updated>2013-11-23T22:30:08+07:00</updated>
   <id>http://martinusadyh.web.id/</id>
   <author>
     <name><![CDATA[Martinus Ady H]]></name>
@@ -20,15 +20,15 @@
     <id>http://martinusadyh.web.id/2013/06/22/howto-disable-individual-jetpack-module</id>
     <content type="html"><![CDATA[<p>Gara-gara sering kelupaan bagaimana cara-nya men-disable sebuah modul di <a href="http://wordpress.org/plugins/jetpack/">Jetpack</a>, akhirnya saya buatkan posting sekalian biar besok-besok tidak lupa lagi :D Postingan ini ditulis gara-gara saya tidak puas dengan module <strong>Likes</strong> di Jetpack. Karena sudah terlanjur di aktifkan dan tidak puas, jadi beginilah step by step untuk mendisable-nya :)</p>
 
-<p>{% img center /images/blog-images/blogging/HowtoDisableIndividualJetpackModule/TampilanModuleLikesyangAktif.png 300 183 Tampilan Module Likes yang Aktif %}</p>
+<p><img class="center" src="/images/blog-images/blogging/HowtoDisableIndividualJetpackModule/TampilanModuleLikesyangAktif.png" width="300" height="183" title="Tampilan Module Likes yang Aktif" ></p>
 
 <p>Jika sudah, sekarang tekanlah tombol <strong>Learn More</strong> di module yang ingin di disable untuk menampilkan tombol <strong>Deactive</strong> seperti gambar dibawah ini (lihat tombol yang dibulatin) :</p>
 
-<p>{% img center /images/blog-images/blogging/HowtoDisableIndividualJetpackModule/KlikTombolDeactive.png 300 196 Klik Tombol Deactive %}</p>
+<p><img class="center" src="/images/blog-images/blogging/HowtoDisableIndividualJetpackModule/KlikTombolDeactive.png" width="300" height="196" title="Klik Tombol Deactive" ></p>
 
 <p>Kalau tampilan sudah seperti gambar diatas, maka sekarang tekanlah tombol <strong>Deactive</strong> untuk mendisable module yang dimaksud. Dan harusnya jika tidak ada masalah, maka kita akan melihat tampilan seperti gambar dibawah ini :</p>
 
-<p>{% img center /images/blog-images/blogging/HowtoDisableIndividualJetpackModule/ProsesDeactiveBerhasil.png 300 181 Proses Deactive Berhasil %}</p>
+<p><img class="center" src="/images/blog-images/blogging/HowtoDisableIndividualJetpackModule/ProsesDeactiveBerhasil.png" width="300" height="181" title="Proses Deactive Berhasil" ></p>
 
 <p>Sebenarnya gampang bukan ? Mungkin memang karena faktor <strong>&ldquo;U&rdquo;</strong> nih yang bikin jadi sering lupa :(</p>
 ]]></content>
